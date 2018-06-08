@@ -1,0 +1,49 @@
+extends ../_base/layout.pug
+
+block variables
+	- const lang = 'en'
+
+block append seo
+	meta(property="og:title" content="Aleksandr Shoronov")
+	meta(property="og:profile:first_name" content="Aleksandr")
+	meta(property="og:profile:last_name" content="Shoronov")
+
+block head
+	title Aleksandr Shoronov
+	meta(name="keywords" content="Web Developer, Web Development")
+	meta(name="description" content="Web-developer from Saint-Petersburg")
+
+block header
+	div.headline
+		img.headline__avatar.avatar(src="/assets/avatar.png")
+		div.headline__names
+			h1.headline__name Aleksandr Shoronov
+			h3.headline__position.position The Objects Creator
+
+block bio
+	| Hi! This is page of awesome web developer. He is currently working in the great company
+	|
+	+link({
+		type: 'company',
+		url: 'https://money.yandex.ru',
+		title: 'Yandex Money',
+		name: 'Yandex&nbsp;Money'
+	})
+	|.
+	| Also you can hear him almost every weak in the best podcast about frontend 
+	|
+	+link({
+		type: 'podcast',
+		url: 'https://youknow.st',
+		title: 'Frontend Youth',
+		name: 'Frontend&nbsp;Youth'
+	})
+	|.
+	| If you want contact with him, you can write to his warm and friendly 
+	+link({
+		type: 'email',
+		url: 'mailto:me@underoot.ru',
+		title: 'Email',
+		name: 'personal&nbsp;mail'
+	})
+	|.

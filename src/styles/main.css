@@ -1,0 +1,114 @@
+@font-face {
+	font-family: 'Fira Sans';
+	src: local('Fira Sans'),
+			 local('Fira'),
+			 url('./assets/FiraSans-Regular.woff2') format('woff2'),
+			 url('./assets/FiraSans-Regular.woff') format('woff');
+	font-weight: normal;
+}
+
+body {
+	margin: 0;
+	font-size: 1.25rem;
+	font-family: 'Fira Sans';
+}
+
+main {
+	padding: 10%;
+}
+
+.headline::after {
+	content: '';
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
+
+.headline__names {
+	margin-left: calc(75px + 1em);
+}
+
+.headline__name {
+	margin-top: 0;
+	margin-bottom: 0.25em;
+}
+
+.headline__position {
+	margin: 0;
+}
+
+.headline__avatar {
+	margin-right: 1em;
+}
+
+.avatar {
+	width: 85px;
+	height: 85px;
+	border-radius: 50%;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+	background-color: rgba(0, 0, 0, 0.2);
+	float: left;
+	animation-name: fade-in;
+	animation-duration: 0.3s;
+}
+
+@keyframes fade-in {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+.position {
+	color: #939393;
+}
+
+@media (max-width: 650px) {
+	.headline {
+		text-align: center;
+	}
+
+	.headline__avatar {
+		float: none;
+		margin-bottom: 1em;
+	}
+
+	.headline__names {
+		margin-left: 0;
+	}
+}
+
+.bio {
+	max-width: 900px;
+	font-size: 2rem;
+	line-height: 1.5;
+}
+
+.bio__link {
+	display: inline-block;
+	text-decoration: none;
+	padding: 5px;
+}
+
+.bio__link:visited {
+	background-color: rgb(0, 0, 238);
+}
+
+.bio__link_type_company {
+	color: white;
+	background-color: orange;
+}
+
+.bio__link_type_podcast {
+	color: white;
+	background-color: red;
+}
+
+.bio__link_type_email {
+	color: white;
+	background-color: indigo;
+}

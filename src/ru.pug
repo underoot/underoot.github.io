@@ -1,0 +1,51 @@
+extends _base/layout.pug
+
+block variables
+	- const lang = 'ru'
+
+block append seo
+	meta(property="og:title" content="Александр Шоронов")
+	meta(property="og:profile:first_name" content="Александр")
+	meta(property="og:profile:last_name" content="Шоронов")
+
+block append head
+	meta(name="keywords" content="Веб-разработчик, веб-разработка")
+	meta(name="description" content="Веб-разработчик из Санкт-Петербурга")
+	title Александр Шоронов
+
+block header
+	div.headline
+		img.headline__avatar.avatar(src="/assets/avatar.png")
+		div.headline__names
+			h1.headline__name Александр Шоронов
+			h3.headline__position.position Генератор объектов
+
+block bio
+	| Привет! Вы находитесь на странице классного веб&#xfeff;-&#xfeff;разработчика.
+	| Сейчас он трудится в классной компании
+	|
+	+link({
+		type: 'company',
+		url: 'https://money.yandex.ru',
+		title: 'Яндекс Деньги',
+		name: ' Яндекс&nbsp;Деньги'
+	})
+	|.
+	| Также вы можете услышать его почти каждую неделю в самом честном подкасте
+	|
+	+link({
+		type: 'podcast',
+		url: 'https://youknow.st',
+		title: 'Фронтенд Юность',
+		name: 'Фронтенд&nbsp;Юность'
+	})
+	|.
+	| Если вы хотите связаться с ним, напишите ему на теплую и ламповую
+	|
+	+link({
+		type: 'email',
+		url: 'mailto:me@underoot.ru',
+		title: 'Почта',
+		name: 'личную&nbsp;почту'
+	})
+	|.

@@ -1,0 +1,7 @@
+mixin link(data)
+	a(
+		class=`bio__link bio__link_type_${data.type}`
+		href=data.url 
+		title=data.title
+		target="_blank"
+	) !{data.name}
