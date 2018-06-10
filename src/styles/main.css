@@ -7,14 +7,33 @@
 	font-weight: normal;
 }
 
-body {
+html, body {
+	height: 100%;
 	margin: 0;
+}
+
+body {
 	font-size: 1.25rem;
 	font-family: 'Fira Sans';
 }
 
-main {
-	padding: 10%;
+.wrapper {
+	box-sizing: border-box;
+	min-height: 100%;
+	margin-bottom: -100px;
+	padding: 100px 10% 0;
+}
+
+.push {
+	height: 100px;
+}
+
+.link_to_github {
+	background-image: url('/assets/github.svg');
+}
+
+.link_to_twitter {
+	background-image: url('/assets/twitter.svg');
 }
 
 .headline::after {
@@ -67,21 +86,6 @@ main {
 	color: #939393;
 }
 
-@media (max-width: 650px) {
-	.headline {
-		text-align: center;
-	}
-
-	.headline__avatar {
-		float: none;
-		margin-bottom: 1em;
-	}
-
-	.headline__names {
-		margin-left: 0;
-	}
-}
-
 .bio {
 	max-width: 900px;
 	font-size: 2rem;
@@ -94,6 +98,10 @@ main {
 	padding: 5px;
 }
 
+.bio__link:focus {
+	background-color: transparent;
+}
+
 .bio__link:visited {
 	background-color: rgb(0, 0, 238);
 }
@@ -103,12 +111,90 @@ main {
 	background-color: orange;
 }
 
+.bio__link_type_company:focus {
+	color: orange;
+}
+
 .bio__link_type_podcast {
 	color: white;
 	background-color: red;
 }
 
+.bio__link_type_podcast:focus {
+	color: red;
+}
+
 .bio__link_type_email {
 	color: white;
 	background-color: indigo;
+}
+
+.bio__link_type_email:focus {
+	color: indigo;
+}
+
+.footer {
+	box-sizing: border-box;
+	padding-left: 10%;
+	max-width: 900px;
+	height: 100px;
+	display: flex;
+}
+
+.footer__links {
+	display: flex;
+	align-items: center;
+}
+
+.footer__link {
+	padding: 10px;
+	color: black;
+}
+
+.social__links {
+	display: flex;
+	align-items: center;
+	list-style-type: none;
+	padding-left: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.social__link {
+	display: inline-block;
+	margin: 10px 10px;
+}
+
+.social__anchor {
+	display: block;
+	width: 40px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+@media (max-width: 650px) {
+	.wrapper {
+		padding-top: 50px;
+		text-align: center;
+	}
+
+	.headline__avatar {
+		float: none;
+		margin-right: 0;
+		margin-bottom: 1em;
+	}
+
+	.headline__names {
+		margin-left: 0;
+	}
+
+	.bio {
+		font-size: 1.25rem;
+	}
+
+	.footer {
+		padding-left: 0;
+		justify-content: center;
+	}
 }

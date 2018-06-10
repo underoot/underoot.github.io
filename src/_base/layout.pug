@@ -13,11 +13,25 @@ html(lang=lang)
 		link(href="/styles/main.css" rel="stylesheet")
 		block seo
 			include includes/seo
-		include includes/metrika
+		if process.env.NODE_ENV === 'production'
+			include includes/metrika
 	body
-		main
-			header
-				block header
-			article
-				p.bio
-					block bio
+		.wrapper
+			main
+				.hero
+					block hero
+				article
+					p.bio
+						block bio
+			.push
+		footer.footer
+			ul.social__links
+				li.social__link: a.link_to_github.social__anchor(
+					href="https://github.com/underoot"
+					target="_blank"
+				)
+				li.social__link: a.link_to_twitter.social__anchor(
+					href="https://twitter.com/underoot"
+					target="_blank"
+				)
+			block footer

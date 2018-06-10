@@ -7,7 +7,7 @@
     "build": "gulp",
     "start": "gulp serve",
     "deploy": "github-pages",
-    "predeploy": "npm run build"
+    "predeploy": "NODE_ENV=production npm run build"
   },
   "repository": {
     "type": "git",

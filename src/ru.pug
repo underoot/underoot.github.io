@@ -12,7 +12,7 @@ block append head
 	meta(name="description" content="Веб-разработчик из Санкт-Петербурга")
 	title Александр Шоронов
 
-block header
+block hero
 	div.headline
 		img.headline__avatar.avatar(src="/assets/avatar.png")
 		div.headline__names
@@ -20,7 +20,7 @@ block header
 			h3.headline__position.position Генератор объектов
 
 block bio
-	| Привет! Вы находитесь на странице классного веб&#xfeff;-&#xfeff;разработчика.
+	| Привет! Вы находитесь на странице отличного веб&#xfeff;-&#xfeff;разработчика.
 	| Сейчас он трудится в классной компании
 	|
 	+link({
@@ -48,3 +48,7 @@ block bio
 		name: 'личную&nbsp;почту'
 	})
 	|.
+
+block footer
+	.footer__links
+		a.footer__link(href="/en") EN

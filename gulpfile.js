@@ -11,7 +11,13 @@ gulp.task('pages', () => {
 		'src/**/*.pug',
 		'!src/_base/**/*.pug'
 	])
-		.pipe(pug())
+		.pipe(pug({
+			data: {
+				process: {
+					env: process.env
+				}
+			}
+		}))
 		.pipe(gulp.dest('./dist'));
 });
 
