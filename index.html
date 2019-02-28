@@ -18,20 +18,35 @@
             src: local('Fira Sans'), url('FiraSans.woff2');
         }
 
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
         body {
             margin: 0;
-        }
-        body {
             font-family: 'Fira Sans', sans-serif;
         }
 
         main {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
             text-align: center;
-            padding: 40px 80px 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
         h1::first-letter {
             color: #f00;
+        }
+
+        h1, h2 {
+            margin-block-start: 0px;
         }
 
         .position {
@@ -46,7 +61,7 @@
 <body>
     <main>
         <h1>Александр Шоронов</h1>
-        <h3 class="position">Разработчик интерфейсов</h3>
+        <h2 class="position">Разработчик интерфейсов</h2>
         <address class="address">
             <a class="address__item" href="mailto:alexshoronov@gmail.com">e-mail</a>
             <a class="address__item" href="https://t.me/underoot" target="_blank" rel="noopener">telegram</a>
