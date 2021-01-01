@@ -7,7 +7,7 @@
     "build:folder": "rm -rf dist && mkdir dist",
     "build:static": "cp -r public/* dist/",
     "build:styles": "postcss -o dist/index.css index.css",
-    "build:pages": "./index.tsx",
+    "build:pages": "ts-node index.tsx",
     "build": "NODE_ENV=production npm-run-all build:*"
   },
   "repository": {
