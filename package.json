@@ -4,6 +4,7 @@
   "description": "Personal Home Page",
   "main": "index.js",
   "scripts": {
+    "build:folder": "rm -rf dist && mkdir dist",
     "build:static": "cp -r public/* dist/",
     "build:styles": "postcss -o dist/index.css index.css",
     "build:pages": "./index.tsx",
