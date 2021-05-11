@@ -27,6 +27,8 @@ export function Post({
         <meta name="og:image:width" content="1200" />
         <meta name="og:image:height" content="800" />
         <meta name="og:description" content={description} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content={image} />
         <meta name="og:author" content="Aleksandr Shoronov" />
         <title>{title}</title>
       </>
