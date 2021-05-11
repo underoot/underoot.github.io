@@ -28,7 +28,7 @@ export function Post({
         <meta name="og:image:height" content="800" />
         <meta name="og:description" content={description} />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content={image} />
+        <meta name="twitter:image" content={`https://underoot.dev${image}} />
         <meta name="twitter:title" content={title} />
         <meta name="og:author" content="Aleksandr Shoronov" />
         <title>{title}</title>
