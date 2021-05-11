@@ -26,7 +26,7 @@ example, in UNIX-like operating system, ELF file format, which is being commonly
 used, has magic number that consists of hexadecimal number `0x7F` and followed
 by `ELF` string. More interesting that Java class file and Mach-O file format,
 which is executable format for MacOS, have the same magic number: `CAFEBABE`.
-Creator of Java, James Gosling even
+Creator of Java, James Gosling, even
 [explained](http://radio-weblogs.com/0100490/2003/01/28.html) why he chose this
 magic number and if it has common with Mach-O executable file format.
 
