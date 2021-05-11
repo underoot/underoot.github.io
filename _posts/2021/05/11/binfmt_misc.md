@@ -83,7 +83,8 @@ After that file `nodejs` should appears in the `/proc/sys/fs/binfmt_misc`
 folder:
 
 ```sh
-~ ls /proc/sys/fs/binfmt_misc nodejs register status
+~ ls /proc/sys/fs/binfmt_misc
+nodejs register status
 ```
 
 This means that your first custom binary format just have registered. Let's
@@ -92,7 +93,8 @@ create simple javascript file and execute it:
 ```sh
 ~ echo "console.log('Hello, world!')" > index.js
 ~ chmod +x ./index.js # Add permission to execute file
-~ ./index.js Hello, world!
+~ ./index.js
+Hello, world!
 ```
 
 Voila! Your JavaScript executable file format is ready for using.
