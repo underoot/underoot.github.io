@@ -2,14 +2,16 @@ import React, { PropsWithChildren, ReactNode } from 'react';
 
 type PageProps = {
   header?: ReactNode;
+  lang?: string;
 }
 
 export function Page({
   header,
-  children
+  children,
+  lang = 'ru'
 }: PropsWithChildren<PageProps>) {
   return (
-    <html lang="ru">
+    <html lang={lang}>
       <head>
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-57288431-1"></script>
         <script dangerouslySetInnerHTML={{__html: `
@@ -31,7 +33,7 @@ export function Page({
       <body className="antialiased">
         <div className="main">
           <header className="text-center px-4 py-4 pb-8">
-            <a href="/" className="inline-block">
+            <a href={lang === 'en' ? '/' : `/${lang}`} className="inline-block">
               <div className="logo" />
             </a>
           </header>
@@ -40,6 +42,10 @@ export function Page({
         <footer className="max-w-prose mx-auto text-center px-4 md:text-right">
           build with ❤️️ by&nbsp;
           <a href="https://github.com/underoot" className="font-bold">underoot</a>
+          {lang === 'ru'
+            ? <a href="/" target="_blank" rel="noreferrer" className="block">On english</a>
+            : <a href="/ru" target="_blank" rel="noreferrer" className="block">По-русски</a>
+          }
         </footer>
       </body>
     </html>

@@ -1,6 +1,8 @@
 #!/usr/bin/env npx ts-node
 
-import { readdir } from 'fs/promises';
+import { dirname } from 'path';
+import { lstatSync } from 'fs';
+import { execSync } from 'child_process';
 import unified from 'unified';
 import markdown from 'remark-parse';
 import remark2rehype from 'remark-rehype';
@@ -16,13 +18,13 @@ import { mkdirSync, writeFileSync } from 'fs';
 
 import { Index } from './pages/index';
 import { Post } from './pages/post';
-import { format } from 'date-fns';
 
 type FileData = {
   article: {
+    url: string;
     image: string;
     title: string;
-    url: string;
+    lang: string;
     createdAt: Date;
     description: string;
   }
@@ -46,13 +48,16 @@ function ejectShortDescription() {
   return transformer;
 
   function transformer(tree, file) {
+    const stat = lstatSync(file.path);
+
     visit(tree, { type: 'heading', depth: 1 }, (node) => {
       file.data.article = {
         title: select(':first-child', node).value,
+        lang: file.data.frontmatter.lang,
         url: file.data.frontmatter.url,
         description: file.data.frontmatter.description,
         image: file.data.frontmatter.image,
-        createdAt: getCreatedAtFromBasename(file.basename)
+        createdAt: new Date(stat.ctimeMs)
       };
     });
     return tree;
@@ -71,28 +76,39 @@ const processor = unified()
   .use(remark2rehype)
   .use(html);
 
-(async function make() {
-  const files = await readdir('_posts');
+async function make(lang: string) {
+  const files = await execSync('find . -type f', { cwd: '_posts'}).toString().split('\n');
   const posts = [];
+
+  try { mkdirSync(`dist/`, { recursive: true }) } catch (e) {};
 
   for (const file of files) {
     if (/.\.md$/.test(file)) {
       const { contents, data } = await processor.process(vfile.readSync(`_posts/${file}`));
-      const { article: { url, createdAt } } = data as FileData;
+      const { article: { lang: postLang, createdAt } } = data as FileData;
+      const url = file.replace('.md', '.html');
       const article = {
         ...(data as FileData).article,
+        url,
         contents: contents.toString()
       }
 
-      posts.push((data as FileData).article);
-      try { mkdirSync(`dist/${format(createdAt, 'yyyyLLdd')}`, { recursive: true }) } catch (e) {};
-      writeFileSync(`dist/${format(createdAt, 'yyyyLLdd')}/${url}.html`, render(
+      if (postLang !== lang) {
+        continue;
+      }
+
+      posts.push(article);
+      try { mkdirSync(`dist/${dirname(file)}`, { recursive: true }) } catch (e) {};
+      writeFileSync(`dist/${url}`, render(
         <Post {...article} />
       ));
     }
   }
 
-  writeFileSync('dist/index.html', render(
+  writeFileSync(`dist/${lang === 'en' ? 'index' : lang}.html`, render(
     <Index posts={posts} />
   ));
-})();
+};
+
+make('ru');
+make('en');
