@@ -14,7 +14,7 @@ type IndexProps = {
 
 export function Index({ posts }: IndexProps) {
   return (
-    <Page header={
+    <Page lang={posts[0].lang} header={
       <title>@underoot</title>
     }>
       <ul className="prose-sm max-w-prose mx-auto px-4">
