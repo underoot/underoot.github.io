@@ -3,7 +3,7 @@ lang: en
 image: images/20210511192400.jpg
 description: >
   You can easily extend your Linux kernel for executing JavaScript files.
-  Let's talk about executable file formats and Linux custom binary files.
+  Let's talk about executable file formats and Linux custom binary formats.
 ---
 # How to execute JS like a binary
 
@@ -67,7 +67,7 @@ kernel to execute javascript files with `.js` extension with `node` program in
 the future:
 
 ```sh
-# echo ":nodejs:E::js:/usr/bin/node" > /proc/sys/fs/binfmt_misc/register
+# echo ":nodejs:E::js::/usr/bin/node:" > /proc/sys/fs/binfmt_misc/register
 ```
 
 There are list of parameters, which delimited from each other using colons, that
@@ -83,7 +83,7 @@ After that file `nodejs` should appears in the `/proc/sys/fs/binfmt_misc`
 folder:
 
 ```sh
-ls /proc/sys/fs/binfmt_misc nodejs register status
+~ ls /proc/sys/fs/binfmt_misc nodejs register status
 ```
 
 This means that your first custom binary format just have registered. Let's
