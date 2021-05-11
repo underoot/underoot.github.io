@@ -26,7 +26,7 @@ export function Index({ posts }: IndexProps) {
                 <p>{post.description}</p>
               </a>
               <div className="flex justify-between">
-                <a href={post.url} className="text-blue-400">Открыть</a>
+                <a href={post.url} className="text-blue-400">{post.lang === 'ru' ? 'Открыть' : 'Open'}</a>
                 <time dateTime={post.createdAt.toISOString()} className="text-gray-400">
                   {format(post.createdAt, 'PPpp', { locale: locales[post.lang] })}
                 </time>
