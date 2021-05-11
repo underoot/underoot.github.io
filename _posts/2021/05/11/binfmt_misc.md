@@ -1,6 +1,6 @@
 ---
 lang: en
-image: images/20210511192400.jpg
+image: /images/20210511192400.jpg
 description: >
   You can easily extend your Linux kernel for executing JavaScript files.
   Let's talk about executable file formats and Linux custom binary formats.
