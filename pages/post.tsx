@@ -3,6 +3,7 @@ import React from 'react';
 import { Page } from './page';
 
 type PostProps = {
+  lang: string;
   description: string;
   image: string;
   title: string;
@@ -12,12 +13,13 @@ type PostProps = {
 
 export function Post({
   title,
+  lang,
   description,
   image,
   contents
 }: PostProps) {
   return (
-    <Page header={
+    <Page lang={lang} header={
       <>
         <meta name="description" content={description} />
         <meta name="author" content="Aleksandr Shoronov" />

@@ -1,5 +1,5 @@
 ---
-url: 2020
+lang: ru
 image: /images/20201231171817.jpg
 description: >
   В уходящем году, несмотря на его особенность, было много чего классного и интересного, лично для меня.
@@ -7,7 +7,7 @@ description: >
 ---
 # Мои итоги 2020-го
 Получил наклейки от [ФБК](https://fbk.info).
-Прочитал Конституция в прежней редакции.
+Прочитал Конституцию в прежней редакции.
 Уволился из [Яндекса](https://yandex.ru).
 Вернулся в [Яндекс.Деньги](https://money.yandex.ru).
 Посетил [Брюссель](https://goo.gl/maps/SVWAPhqw2qXrgrJF8).
@@ -15,7 +15,7 @@ description: >
 Впервые завел на конференции разговор с иностранцем.
 Задонатил [OpenSUSE](https://opensuse.org).
 Выпил крафтовое пиво OpenSUSE.
-Попробовал бельгийские [вафли](https://en.wikipedia.org/wiki/Waffle). 
+Попробовал бельгийские [вафли](https://en.wikipedia.org/wiki/Waffle).
 Увидел [писающего мальчика](https://goo.gl/maps/9MPD6jSFyh6givTZ6) и [писающую девочку](https://goo.gl/maps/GPBPGQD7f864ibyf7).
 Освоил [React Native](https://reactnative.dev).
 Тушил пожар на работе.
