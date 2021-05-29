@@ -165,7 +165,6 @@ Page — страница с результатами запросов), а пр
 | Колумбия              | 44                         | —<a href="#serp_remark"><sup>*</sup></a> | 44                                       |
 | Коморы                | 62                         | —<a href="#serp_remark"><sup>*</sup></a> | 61                                       |
 | Конго                 | 57                         | —<a href="#serp_remark"><sup>*</sup></a> | 57                                       |
-| Корея                 | 68                         | 35                                       | 68                                       |
 | Косово                | 39                         | —<a href="#serp_remark"><sup>*</sup></a> | —<a href="#serp_remark"><sup>*</sup></a> |
 | Коста-Рика            | 41                         | —<a href="#serp_remark"><sup>*</sup></a> | 41                                       |
 | Кот-д’Ивуар           | 79                         | —<a href="#serp_remark"><sup>*</sup></a> | 79                                       |
@@ -252,6 +251,7 @@ Page — страница с результатами запросов), а пр
 | Эстония               | 51                         | —<a href="#serp_remark"><sup>*</sup></a> | 51                                       |
 | Эфиопия               | 71                         | —<a href="#serp_remark"><sup>*</sup></a> | 71                                       |
 | ЮАР                   | 68                         | 27                                       | 68                                       |
+| Южная Корея           | 68                         | 35                                       | 68                                       |
 | Южная Осетия          | 51                         | —<a href="#serp_remark"><sup>*</sup></a> | 51                                       |
 | Южный Судан           | 69                         | —<a href="#serp_remark"><sup>*</sup></a> | 69                                       |
 
