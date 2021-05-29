@@ -260,28 +260,36 @@ Page — страница с результатами запросов), а пр
 
 Далее привожу курьезные результаты с моими комментариями:
 
+![](https://raw.githubusercontent.com/underoot/yandex-ages/master/screenshots/%D0%90%D0%B2%D1%81%D1%82%D1%80%D0%B8%D1%8F_google.png)
 ![](https://raw.githubusercontent.com/underoot/yandex-ages/master/screenshots/%D0%90%D0%B2%D1%81%D1%82%D1%80%D0%B8%D1%8F_yandex.png)
 _А президент Австрии знает что отмечает такой знаменательный юбилей?_
 
+![](https://github.com/underoot/yandex-ages/raw/master/screenshots/%D0%91%D0%BE%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%D1%8F_google.png)
 ![](https://github.com/underoot/yandex-ages/raw/master/screenshots/%D0%91%D0%BE%D0%BB%D0%B3%D0%B0%D1%80%D0%B8%D1%8F_yandex.png)
 _Президенту Болгарии скинули 26 лет. Кажется в Яндекс изобрели машину времени
 для президентов_
 
+![](https://github.com/underoot/yandex-ages/raw/master/screenshots/%D0%AE%D0%B6%D0%BD%D0%B0%D1%8F%20%D0%9A%D0%BE%D1%80%D0%B5%D1%8F_google.png)
 ![](https://github.com/underoot/yandex-ages/raw/master/screenshots/%D0%AE%D0%B6%D0%BD%D0%B0%D1%8F%20%D0%9A%D0%BE%D1%80%D0%B5%D1%8F_yandex.png)
 _Если Корея, то, по версии Яндекс только одна — там где Ким Чен Ын разумеется._
 
+![](https://github.com/underoot/yandex-ages/raw/master/screenshots/%D0%9B%D0%B0%D1%82%D0%B2%D0%B8%D1%8F_google.png)
 ![](https://github.com/underoot/yandex-ages/raw/master/screenshots/%D0%9B%D0%B0%D1%82%D0%B2%D0%B8%D1%8F_yandex.png)
 _Президент Латвии может считаться долгожителем. Но кто изображен на фотографии?_
 
+![](https://github.com/underoot/yandex-ages/raw/master/screenshots/%D0%9F%D0%B0%D0%BB%D0%B5%D1%81%D1%82%D0%B8%D0%BD%D0%B0_google.png)
 ![](https://github.com/underoot/yandex-ages/raw/master/screenshots/%D0%9F%D0%B0%D0%BB%D0%B5%D1%81%D1%82%D0%B8%D0%BD%D0%B0_yandex.png)
 _Без комментариев_
 
+![](https://github.com/underoot/yandex-ages/raw/master/screenshots/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F_google.png)
 ![](https://github.com/underoot/yandex-ages/raw/master/screenshots/%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F_yandex.png)
 _Тут, конечно, все в порядке_
 
+![](https://github.com/underoot/yandex-ages/raw/master/screenshots/%D0%A1%D0%A8%D0%90_google.png)
 ![](https://github.com/underoot/yandex-ages/raw/master/screenshots/%D0%A1%D0%A8%D0%90_yandex.png)
 _Но ведь с Капитолием все в порядке, Яндекс_
 
+![](https://github.com/underoot/yandex-ages/raw/master/screenshots/%D0%A4%D0%B8%D0%BD%D0%BB%D1%8F%D0%BD%D0%B4%D0%B8%D1%8F_google.png)
 ![](https://github.com/underoot/yandex-ages/raw/master/screenshots/%D0%A4%D0%B8%D0%BD%D0%BB%D1%8F%D0%BD%D0%B4%D0%B8%D1%8F_yandex.png)
 _Пожалуй, это рекорд..._
 
