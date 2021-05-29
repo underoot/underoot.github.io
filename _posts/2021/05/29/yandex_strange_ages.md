@@ -282,5 +282,8 @@ _Тут, конечно, все в порядке_
 ![](https://github.com/underoot/yandex-ages/raw/master/screenshots/%D0%A1%D0%A8%D0%90_yandex.png)
 _Но ведь с Капитолием все в порядке, Яндекс_
 
+![](https://github.com/underoot/yandex-ages/raw/master/screenshots/%D0%A4%D0%B8%D0%BD%D0%BB%D1%8F%D0%BD%D0%B4%D0%B8%D1%8F_yandex.png)
+_Пожалуй, это рекорд..._
+
 Кстати, все скрипты и все скриншоты с данными я положил [к себе на Github](https://github.com/underoot/yandex-ages) —
 милости прошу. Спасибо за внимание и до новых встреч!
