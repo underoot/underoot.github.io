@@ -8,6 +8,7 @@ import markdown from 'remark-parse';
 import remark2rehype from 'remark-rehype';
 import frontmatter from 'remark-frontmatter';
 import parseFrontmatter from 'remark-parse-frontmatter';
+import gfm from 'remark-gfm';
 import html from 'rehype-stringify';
 import visit from 'unist-util-visit';
 import vfile from 'to-vfile';
@@ -72,6 +73,7 @@ const processor = unified()
   .use(markdown)
   .use(frontmatter, ['yaml'])
   .use(parseFrontmatter)
+  .use(gfm)
   .use(ejectShortDescription)
   .use(remark2rehype)
   .use(html);
