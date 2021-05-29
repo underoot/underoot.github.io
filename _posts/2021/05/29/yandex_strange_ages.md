@@ -255,8 +255,8 @@ Page — страница с результатами запросов), а пр
 | Южная Осетия          | 51                         | —<a href="#serp_remark"><sup>*</sup></a> | 51                                       |
 | Южный Судан           | 69                         | —<a href="#serp_remark"><sup>*</sup></a> | 69                                       |
 
-<a id="serp_remark"><sup>*</sup> — Точный результат не был дан, вы можете
-обратиться к [скриншотам](https://github.com/underoot/yandex-ages/tree/master/screenshots) за поисковым результатом, или же повторить его сами.
+<a id="serp_remark"><sup>*</sup> — <small>Точный результат не был дан, вы можете
+обратиться к [скриншотам](https://github.com/underoot/yandex-ages/tree/master/screenshots) за поисковым результатом, или же повторить его сами.</small>
 
 Далее привожу курьезные результаты с моими комментариями:
 
