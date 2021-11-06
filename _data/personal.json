@@ -1,0 +1,19 @@
+{
+    "contacts": [
+        {
+            "name": "Email",
+            "link": "mailto:hi@underoot.dev",
+            "display": "hi@underoot.dev"
+        },
+        {
+            "name": "Telegram",
+            "link": "https://t.me/underoot",
+            "display": "underoot"
+        },
+        {
+            "name": "Twitter",
+            "link": "https://twitter.com/underoot",
+            "display": "underoot"
+        }
+    ]
+}
