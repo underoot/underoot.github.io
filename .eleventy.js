@@ -2,7 +2,6 @@ const htmlmin = require('html-minifier');
 const csso = require('csso');
 
 module.exports = (eleventyConfig) => {
-  eleventyConfig.addPassthroughCopy('css');
   eleventyConfig.addPassthroughCopy('fonts');
   eleventyConfig.addPassthroughCopy('favicon.ico');
   eleventyConfig.addPassthroughCopy('CNAME');
