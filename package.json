@@ -1,17 +1,19 @@
 {
   "name": "@underoot/blog",
   "version": "1.0.0",
-  "description": "My small personal page",
-  "main": "index.js",
+  "description": "Personal Home Page",
   "scripts": {
     "start": "eleventy --serve"
   },
   "keywords": [],
-  "author": "",
+  "author": "Aleksandr Shoronov <alexshoronov@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy": "^1.0.1",
     "csso": "^4.2.0",
-    "html-minifier": "^4.0.0"
+    "html-minifier": "^4.0.0",
+    "markdown-it": "^13.0.0",
+    "markdown-it-highlightjs": "^4.0.1",
+    "markdown-it-link-attributes": "^4.0.0"
   }
 }
