@@ -1,7 +1,5 @@
-const htmlmin = require('html-minifier');
-const csso = require('csso');
-
 module.exports = (eleventyConfig) => {
+  eleventyConfig.addPassthroughCopy('styles');
   eleventyConfig.addPassthroughCopy('fonts');
   eleventyConfig.addPassthroughCopy('favicon.ico');
   eleventyConfig.addPassthroughCopy('CNAME');
@@ -9,7 +7,7 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addTransform('html:minify', (content, outputPath) =>{
     // Eleventy 1.0+: use this.inputPath and this.outputPath instead
     if (outputPath && outputPath.endsWith('.html')) {
-      let minified = htmlmin.minify(content, {
+      let minified = require('html-minifier').minify(content, {
         useShortDoctype: true,
         removeComments: true,
         collapseWhitespace: true
@@ -23,9 +21,30 @@ module.exports = (eleventyConfig) => {
 
   eleventyConfig.addTransform('css:minify', (content, outputPath) => {
     if (outputPath && outputPath.endsWith('.css')) {
-      return csso.minify(content).css;
+      return require('csso').minify(content).css;
     }
 
     return content;
   });
+
+  eleventyConfig.setLibrary(
+    'md', require('markdown-it')({ html: true })
+      .use(require('markdown-it-highlightjs/core'), {
+        hljs: ((hljs) => {
+          hljs.configure({
+            classPrefix: ''
+          });
+
+          return hljs;
+        })(require('highlight.js'))
+      })
+      .use(require('markdown-it-link-attributes'), {
+        matcher(href, config) {
+          return href.startsWith("https:");
+        },
+        attrs: {
+          target: '_blank'
+        }
+      })
+  );
 }

@@ -2,14 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="utf-8"></meta>
-    <meta name="description" content="{{ description }}"></meta>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ '/css/main.css' }}"></link>
+    <meta name="description" content="{{ description }}"></meta>
+    <link rel="stylesheet" href="/styles/main.css"></link>
     <title>{{ title }}</title>
   </head>
   <body>
+    <header><h1><a href="/">🏡</a></h1></header>
     <main>
-      {{ content | safe }}
+      {{ content }}
     </main>
   </body>
 </html>

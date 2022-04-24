@@ -16,12 +16,6 @@
 }
 
 @font-face {
-  font-family: Drogowskaz;
-  src: url(/fonts/Drogowskaz.ttf);
-  font-display: swap;
-}
-
-@font-face {
   font-family: Jost;
   src: url(/fonts/JostMedium.ttf);
   font-weight: 500;
@@ -30,7 +24,6 @@
 
 body {
   margin: 0;
-  width: 100%;
   font-family: Jost, sans-serif;
   font-size: var(--typo-size-l);
   font-weight: 500;
@@ -38,9 +31,17 @@ body {
   color: var(--typo-color-white-primary);
 }
 
+p {
+  margin: 0px;
+}
+
+p + p {
+  text-indent: 1em;
+}
+
 main {
   line-height: 1.5;
-  max-width: 980px;
+  max-width: 600px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1.5em;
@@ -48,7 +49,7 @@ main {
 }
 
 h1 {
-  font-family: Drogowskaz, sans-serif;
+  font-family: Jost, sans-serif;
   font-size: 2em;
 }
 
