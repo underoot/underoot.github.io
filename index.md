@@ -1,5 +1,5 @@
 ---
-layout: index.html
+layout: index
 
 title: site@underoot ~
 description: >-

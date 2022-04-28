@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{{ description }}"></meta>
     <link rel="stylesheet" href="/styles/common.css"></link>
-    <link rel="stylesheet" href="/styles/main.css"></link>
+    <link rel="stylesheet" href="/styles/console.css"></link>
     <title>{{ title }}</title>
   </head>
   <body>
-    <header><h1><a href="/">🏡</a></h1></header>
     <main>
-      {{ content }}
+      <header><h1><a href="/">🏡 </a><br />{{ title }}</h1></header>
+      <div class="content">
+        {{ content }}
+      </div>
     </main>
   </body>
 </html>
