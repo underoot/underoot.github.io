@@ -1183,3 +1183,18 @@ h6 {
 .kg-image-card.kg-width-wide + .kg-image-card.kg-width-wide {
     margin: -2.25em 0 3em;
 }
+
+@media (max-width: 768px) {
+  .site-main {
+    padding: 0px;
+    padding-bottom: 4vw;
+  }
+
+  .post-feature-image {
+    margin: 0 calc(-4vw);
+  }
+
+  .post-feed {
+    padding-top: 4vw;
+  }
+}
