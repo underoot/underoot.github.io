@@ -1,0 +1,33 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="You might be think that there is no difference between classic prototype inheritance and inheritance based on classes. But that's not true actually."><link rel="stylesheet" href="/styles/common.css"><link rel="stylesheet" href="/styles/main.css"><title>Class prototype</title></head><body><header><h1><a href="/">🏡</a></h1></header><main><h1>Class prototype</h1><p>ES6 brings us an easy way to project abstractions with a paradigm known for people with C++/Java experience — classes:</p><pre><code class="hljs language-js"><span class="keyword">class</span> <span class="title class_">Shape</span> {}
+<span class="keyword">class</span> <span class="title class_">Circle</span> <span class="keyword">extends</span> <span class="title class_ inherited__">Shape</span> {}
+</code></pre><p>Classes were introduced to specification years ago and an old, more &quot;native&quot; way to inherit one object from another by using a prototype chain becomes something similar to ancient Egypt hieroglyphs, especially for developers who started to learn language recently:</p><pre><code class="hljs language-js"><span class="keyword">function</span> <span class="title function_">Shape</span>(<span class="params"></span>) {}
+<span class="keyword">function</span> <span class="title function_">Circle</span>(<span class="params"></span>) {}
+
+<span class="title class_">Circle</span>.<span class="property"><span class="keyword">prototype</span></span> = <span class="title class_">Object</span>.<span class="title function_">create</span>(<span class="title class_">Shape</span>.<span class="property"><span class="keyword">prototype</span></span>);
+</code></pre><p>I would like to refer the curious reader to MDN for further information about this way of inheritance. I want to mention only one thing: an inheritance with classes also based on a prototype chain. So we can say that both code examples are similar. But there are nuances. <a name="prototype-property"></a></p><h2><a href="#prototype-property">Prototype property</a></h2><p>Suppose that you have created two classes and want to try to extend one from another with the last one way:</p><pre><code class="hljs language-js"><span class="keyword">class</span> <span class="title class_">Shape</span> {}
+<span class="keyword">class</span> <span class="title class_">Circle</span> <span class="keyword">extends</span> <span class="title class_ inherited__">Shape</span> {}
+
+<span class="title class_">Circle</span>.<span class="property"><span class="keyword">prototype</span></span> = <span class="title class_">Object</span>.<span class="title function_">create</span>(<span class="title class_">Shape</span>.<span class="property"><span class="keyword">prototype</span></span>);
+</code></pre><p>The class actually is <code>function</code> with the constructor body and this way should work, right? But nope: when you will add some properties to <code>Shape</code> prototype, it won't be exposed to instances of <code>Circle</code> for some reason:</p><pre><code class="hljs language-js"><span class="title class_">Shape</span>.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">calcArea</span> = <span class="keyword">function</span> <span class="title function_">calcArea</span>(<span class="params"></span>) {}
+
+<span class="keyword">new</span> <span class="title class_">Circle</span>().<span class="title function_">calcArea</span>(); <span class="comment">// &lt;...&gt;.getArea is not a function</span>
+</code></pre><p><a name="why"></a></p><h2><a href="#why">Why it's happening?</a></h2><p>The reason for this behaviour is hidden behind the property descriptor associated with <code>prototype</code> . If you will take a look at it for a class you will notice that this property is not writable. That means that you cannot change the value of the prototype of the class by default. Opposite that, a prototype of the function is writable.</p><pre><code class="hljs language-js"><span class="title class_">Object</span>.<span class="title function_">getOwnPropertyDescriptor</span>(<span class="keyword">class</span> {}, <span class="string">&#x27;prototype&#x27;</span>)
+<span class="comment">/*
+ * { 
+ *   value: {}, 
+ *   writable: false, 
+ *   enumerable: false, 
+ *   configurable: false 
+ * }
+ */</span>
+
+<span class="title class_">Object</span>.<span class="title function_">getOwnPropertyDescriptor</span>(<span class="keyword">function</span>(<span class="params"></span>) {}, <span class="string">&#x27;prototype&#x27;</span>)
+<span class="comment">/*
+ * { 
+ *   value: {}, 
+ *   writable: true, 
+ *   enumerable: false, 
+ *   configurable: false 
+ * }
+ */</span>
+</code></pre><p>This behaviour is described in the algorithm of evaluation of a class definition in the specification. According to <a href="https://262.ecma-international.org/12.0/#sec-runtime-semantics-classdefinitionevaluation" target="_blank">the 12th step of the algorithm</a>, an abstract operation <a href="https://262.ecma-international.org/12.0/#sec-makeconstructor" target="_blank"><code>MakeConstructor</code></a> is executed which receives <code>writablePrototype</code> property with a false value.</p><p>And, as you can already guess, for all ways to instantiate a new function — <a href="https://262.ecma-international.org/12.0/#sec-runtime-semantics-instantiateordinaryfunctionobject" target="_blank">declaration</a>, <a href="https://262.ecma-international.org/12.0/#sec-runtime-semantics-instantiateordinaryfunctionexpression" target="_blank">expression</a> or <a href="https://262.ecma-international.org/12.0/#sec-function-p1-p2-pn-body" target="_blank">function constructor</a> — operation <code>MakeConstructor</code> is called without passing to it <code>writableProperty</code>, which, by default, receives a true value.</p></main></body></html>

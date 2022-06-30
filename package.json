@@ -1,22 +1,42 @@
 {
-  "name": "@underoot/blog",
+  "name": "@underoot/site",
   "version": "1.0.0",
-  "description": "Personal Home Page",
+  "description": "My Personal Home Page",
+  "main": ".eleventy.js",
   "scripts": {
-    "start": "eleventy --serve"
+    "start": "yarn run dev",
+    "dev": "cross-env ELEVENTY_ENV=dev eleventy --serve",
+    "build": "cross-env ELEVENTY_ENV=prod eleventy",
+    "test": "yarn run build",
+    "lint": "eslint . --ext .js --cache"
   },
-  "keywords": [],
-  "author": "Aleksandr Shoronov <alexshoronov@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TryGhost/eleventy-starter-ghost.git"
+  },
+  "keywords": [
+    "eleventy",
+    "static",
+    "site"
+  ],
+  "author": "Aleksandr Shoronov",
   "license": "MIT",
-  "devDependencies": {
-    "@11ty/eleventy": "^1.0.1",
-    "csso": "^4.2.0",
-    "html-minifier": "^4.0.0",
-    "markdown-it": "^13.0.0",
-    "markdown-it-highlightjs": "^4.0.1",
-    "markdown-it-link-attributes": "^4.0.0"
+  "homepage": "https://github.com/underoot/underoot.github.io",
+  "dependencies": {
+    "@11ty/eleventy": "^0.11.0",
+    "@11ty/eleventy-plugin-rss": "^1.1.1",
+    "@tryghost/content-api": "^1.4.4",
+    "@tryghost/helpers": "^1.1.6",
+    "clean-css": "^4.2.1",
+    "cross-env": "^7.0.0",
+    "dotenv": "^8.0.0",
+    "eleventy-plugin-lazyimages": "liamfiddler/eleventy-plugin-lazyimages",
+    "eleventy-plugin-local-images": "^0.4.0",
+    "eslint-utils": "3.0.0",
+    "html-minifier": "^4.0.0"
   },
-  "resolutions": {
-    "portscanner": "2.2.0"
+  "devDependencies": {
+    "eslint": "7.32.0",
+    "eslint-plugin-ghost": "2.11.0"
   }
 }
