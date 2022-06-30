@@ -9,28 +9,21 @@ metadata:
 <?xml version="1.0" encoding="utf-8"?>
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
-    <title><![CDATA[{{ site.title }}]]></title>
-    <description><![CDATA[{{ site.description }}]]></description>
-    <atom:link href="{{ site.url + page.url }}" rel="self" type="application/rss+xml" />
-    {%- for post in collections.posts.slice(0,1) | sort(true, false, 'updated_at') %}
-    <lastBuildDate>{{ post.updated_at }}</lastBuildDate>
+    <title>{{ site.title }}</title>
+    <description>{{ site.description }}</description>
+    <language>{{ site.lang }}</language>
+    <link>{{ site.url }}</link>
+    {%- for post in collections.posts.slice(0,1) | sort(true, false, 'published_at') %}
+    <lastBuildDate>{{ post.published_at | date }}</lastBuildDate>
     {%- endfor %}
-    <id>{{ site.url }}/</id>
-    <author>
-      <name>{{ collections.authors[0].name }}</name>
-    </author>
-    <image>
-        <url>{{ site.url }}/favicon.png</url>
-        <title>{{ site.title }}</title>
-        <link>{{ site.url }}</link>
-    </image>
+    <atom:link href="{{ site.url + page.url }}" rel="self" type="application/rss+xml" />
     {%- for post in collections.posts %}
     <item>
-      <title><![CDATA[{{ post.title }}]]></title>
-      <link href="{{ site.url + post.url }}"/>
+      <title>{{ post.title }}</title>
+      <link>{{ site.url + post.url }}</link>
+      <description><![CDATA[ {{ post.html | htmlToAbsoluteUrls(site.url + page.url) | safe }} ]]></description>
+      <pubDate>{{ post.published_at | date }}</pubDate>
       <guid>{{ site.url + post.url }}</guid>
-      <pubDate>{{ post.updated_at }}</pubDate>
-      <description><![CDATA[{{ post.html | htmlToAbsoluteUrls(site.url + page.url) | safe }}]]></description>
     </item>
     {%- endfor %}
   </channel>
