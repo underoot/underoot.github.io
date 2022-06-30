@@ -15,18 +15,6 @@
             <p>{{ post.excerpt }}</p>
         </div>
         <footer class="post-card-footer">
-            <div class="post-card-footer-left">
-                {% if post.primary_author.profile_image %}
-                <div class="post-card-avatar">
-                    <img
-                        class="author-profile-image"
-                        src="{{ post.primary_author.profile_image }}"
-                        alt="{{ post.primary_author.name }}"
-                    />
-                </div>
-                {% endif %}
-                <span>{{ post.primary_author.name }}</span>
-            </div>
             <div class="post-card-footer-right">
                 <div>{{ post.html | safe | getReadingTime }} min read</div>
             </div>
