@@ -9,9 +9,9 @@ metadata:
 <?xml version="1.0" encoding="utf-8"?>
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
-    <title>{{ site.title }}</title>
-    <description>{{ site.description }}</description>
-    <atom:link href="{{ site.url + page.url }}" rel="self" type="application/rss+xml"/>
+    <title><![CDATA[{{ site.title }}]]></title>
+    <description><![CDATA[{{ site.description }}]]></description>
+    <atom:link href="{{ site.url + page.url }}" rel="self" type="application/rss+xml" />
     {%- for post in collections.posts.slice(0,1) | sort(true, false, 'updated_at') %}
     <lastBuildDate>{{ post.updated_at }}</lastBuildDate>
     {%- endfor %}
@@ -19,13 +19,18 @@ metadata:
     <author>
       <name>{{ collections.authors[0].name }}</name>
     </author>
+    <image>
+        <url>{{ site.url }}/favicon.png</url>
+        <title>{{ site.title }}</title>
+        <link>{{ site.url }}</link>
+    </image>
     {%- for post in collections.posts %}
     <item>
-      <title>{{ post.title }}</title>
+      <title><![CDATA[{{ post.title }}]]></title>
       <link href="{{ site.url + post.url }}"/>
       <guid>{{ site.url + post.url }}</guid>
       <pubDate>{{ post.updated_at }}</pubDate>
-      <content type="html">{{ post.html | htmlToAbsoluteUrls(site.url + page.url) }}</content>
+      <description><![CDATA[{{ post.html | htmlToAbsoluteUrls(site.url + page.url) | safe }}]]></description>
     </item>
     {%- endfor %}
   </channel>
