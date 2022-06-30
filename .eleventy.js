@@ -192,6 +192,8 @@ module.exports = function(config) {
     }
   });
 
+  config.addNunjucksFilter('date', date => new Date(date).toUTCString());
+
   // Eleventy configuration
   return {
     dir: {
