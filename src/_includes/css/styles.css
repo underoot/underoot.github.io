@@ -36,10 +36,10 @@ what's here to work the way you'd like it to.
 :root {
   /* Colours */
   --color-primary: #3eb0ef;
-  --color-base: #15171a;
-  --color-secondary: #5b7a81;
+  --color-base: #ffffff;
+  --color-secondary: #eeeeee;
   --color-border: #c7d5d8;
-  --color-bg: #f5f5f5;
+  --color-bg: #00b7f9;
 
   /* Fonts */
   --font-sans-serif: "Jost", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
@@ -147,6 +147,7 @@ video {
 }
 body {
   line-height: 1;
+  background-color: var(--color-bg);
 }
 ol,
 ul {
@@ -323,7 +324,8 @@ html {
 
 body {
   overflow-x: hidden;
-  color: #3c484e;
+  color: var(--color-base);
+  background: var(--color-bg);
   font-family: var(--font-sans-serif);
   font-size: 1.5rem;
   line-height: 1.6em;
@@ -331,7 +333,6 @@ body {
   font-style: normal;
   letter-spacing: 0;
   text-rendering: optimizeLegibility;
-  background: #fff;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -457,7 +458,7 @@ blockquote cite a {
 }
 
 a {
-  color: #26a8ed;
+  color: #004468;
   text-decoration: none;
 }
 
@@ -539,7 +540,7 @@ h6 {
 }
 
 .container {
-  max-width: 1120px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 0 4vw;
 }
@@ -559,7 +560,6 @@ h6 {
 .post-full-content {
   max-width: 720px;
   margin: 0 auto;
-  background: #fff;
 }
 
 .post-full-content figcaption {
@@ -600,6 +600,10 @@ h6 {
 .content-title {
   margin: 0 0 0.8em;
   font-size: 5rem;
+  text-decoration: underline;
+  text-decoration-thickness: 10px;
+  text-decoration-color: #e10013;
+  text-decoration-style: solid;
 }
 @media (max-width: 500px) {
   .content-title {
@@ -676,7 +680,7 @@ h6 {
   white-space: pre-wrap;
   padding: 20px;
   background: var(--color-base);
-  color: #fff;
+  color: #000;
   border-radius: 12px;
 }
 
@@ -687,9 +691,6 @@ h6 {
   padding-top: 20px;
   padding-bottom: 20px;
   color: #fff;
-  background: var(--color-base);
-  background-position: center;
-  background-size: cover;
 }
 
 .site-nav-item {
@@ -782,21 +783,11 @@ h6 {
   text-decoration: none;
 }
 
-/* Main
-/* ---------------------------------------------------------- */
-
-.site-main {
-  padding: 4vw 0;
-}
-
 /* Index
 /* ---------------------------------------------------------- */
 
 .post-feed {
-  display: grid;
   justify-content: space-between;
-  grid-gap: 30px;
-  grid-template-columns: 1fr 1fr 1fr;
 }
 
 @media (max-width: 980px) {
@@ -817,6 +808,15 @@ h6 {
 
 .post-card:hover {
   text-decoration: none;
+}
+
+.post-card-tag {
+  color: var(--color-base);
+  margin-right: 4px;
+}
+
+.post-card-container + .post-card-container {
+  margin-top: 24px;
 }
 
 .post-card-header {
@@ -853,7 +853,7 @@ h6 {
 .post-card-footer {
   display: flex;
   align-items: center;
-  margin: 10px 0 0 0;
+  margin: -12px 0 0 0;
   color: var(--color-secondary);
 }
 
@@ -1009,7 +1009,6 @@ h6 {
   padding: 20px 0 40px 0;
   color: rgba(255, 255, 255, 0.7);
   font-size: 1.3rem;
-  background: var(--color-base);
 }
 
 .site-foot-nav {
@@ -1029,7 +1028,7 @@ h6 {
 
 .site-foot-nav-right a {
   display: inline-block;
-  padding: 2px 5px;
+  padding-right: 5px;
 }
 
 .site-foot-nav-right a:last-child {
