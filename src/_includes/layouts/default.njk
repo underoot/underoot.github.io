@@ -45,7 +45,7 @@
             <meta property="article:author" content="{{ site.url }}">
         {%- endblock -%}
 
-        <link rel="alternate" href="{{ site.url }}/articles/feed/" type="application/rss+xml" title="{{ site.title }}">
+        <link rel="alternate" href="{{ site.url }}feed.xml" type="application/rss+xml" title="{{ site.title }}">
 
         {% set css %}{% include "css/styles.css" %}{% endset %}
         <style>{{ css | cssmin | safe }}</style>
@@ -58,7 +58,6 @@
     <body>
         {% include "partials/icons.njk" %}
         <div class="viewport">
-
             <div class="viewport-top">
                 {% include "partials/header.njk" %}
 
