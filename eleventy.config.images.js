@@ -32,9 +32,9 @@ module.exports = eleventyConfig => {
 		return eleventyImage.generateHTML(metadata, imageAttributes);
 	});
 
-	eleventyConfig.addAsyncShortcode("imageLink", async function imageShortcode(src) {
+	eleventyConfig.addAsyncShortcode("ogImageLink", async function imageShortcode(src) {
 		const metadata = await eleventyImage(src, {
-			widths: ["auto"],
+			widths: [512],
 			formats: ["jpeg"],
 			outputDir: path.join(eleventyConfig.dir.output, "img"),
 		});
