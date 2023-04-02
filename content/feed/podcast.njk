@@ -15,7 +15,7 @@ permalink: /podcast/feed.xml
 		<itunes:subtitle>{{ metadata.description }}</itunes:subtitle>
 		<itunes:type>episodic</itunes:type>
 		<itunes:author>{{ metadata.author.name }}</itunes:author>
-		<itunes:explicit>false</itunes:explicit>
+		<itunes:explicit>no</itunes:explicit>
 		<itunes:owner>
 				<itunes:name>{{ metadata.author.name }}</itunes:name>
 				<itunes:email>{{ metadata.author.email }}</itunes:email>
@@ -40,7 +40,7 @@ permalink: /podcast/feed.xml
 			<itunes:episode>{{ post.data.episode }}</itunes:episode>
 			<itunes:duration>{{ post.data.audio.duration }}</itunes:duration>
 			<itunes:author>{{ metadata.author.name }}</itunes:author>
-			<itunes:explicit>false</itunes:explicit>
+			<itunes:explicit>no</itunes:explicit>
 			<itunes:summary>{{ post.data.description }}</itunes:summary>
 			<itunes:image href="{{ metadata.url + metadata.assets.cover }}" />
 		</item>
