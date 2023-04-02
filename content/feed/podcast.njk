@@ -28,7 +28,7 @@ permalink: /podcast/feed.xml
 		{%- for post in collections.podcasts | reverse %}
 		{% set absolutePostUrl %}{{ post.url | htmlBaseUrl(metadata.url) }}{% endset %}
 		<item>
-			<title>{{ post.data.title }}</title>
+			<title>{{ post.data.audio.title or post.data.title }}</title>
 			<link>{{ absolutePostUrl }}</link>
 			<pubDate>{{ post.date | dateToRfc822 }}</pubDate>
 			<description><![CDATA[
