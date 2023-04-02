@@ -1,5 +1,5 @@
 module.exports = {
-	"title": "Glitchy Da Vincy",
+	"title": "Glitchy Da Vinci",
 	"url": "https://underoot.dev",
 	"language": "en",
 	"description": "Personal blog of street coder, podcaster, Linux fun and just kind guy!",
