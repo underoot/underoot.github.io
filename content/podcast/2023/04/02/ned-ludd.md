@@ -13,7 +13,7 @@ telegramPostId: 39
 ---
 ## Audio
 
-<audio src='{{ "http://www.podtrac.com/pts/redirect.mp3/" + metadata.url + audio.src }}' controls></audio>
+<audio src='{{ "https://dts.podtrac.com/redirect.mp3/" + metadata.url + audio.src }}' controls></audio>
 
 <small>In audio is being used soundtrack <a href="https://soundcloud.com/savestate/leaving-the-atmosphere" target="_blank">Savestate — Leaving the Atmosphere</a></small>
 
