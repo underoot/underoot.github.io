@@ -129,6 +129,13 @@ main {
 	min-width: 40rem;
 	max-width: 100vw;
 }
+
+@media (max-width: 720px) {
+	main {
+		min-width: 100%;
+	}
+}
+
 main :first-child {
 	margin-top: 0;
 }
