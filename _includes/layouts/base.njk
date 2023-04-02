@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ metadata.language }}">
+<html lang="{{ language or metadata.language }}">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,7 +38,7 @@
 			<meta property="og:image" content="{{ metadata.url }}{% if splash %}{% ogImageLink splash %}{% else %}{{ metadata.assets.splash }}{% endif %}">
 			<meta property="og:description" content="{{ description or metadata.description }}">
 			<meta property="og:site_name" content="{{ metadata.title }}">
-			<meta property="og:locale" content="{{ language or metadata.lang }}">
+			<meta property="og:locale" content="{{ language or metadata.language }}">
 			<meta property="article:author" content="{{ metadata.url }}">
 		{%- endblock -%}
 
