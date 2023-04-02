@@ -22,20 +22,20 @@
 			<meta name="twitter:url" content="{{ metadata.url + page.url }}">
 			<meta name="twitter:title" content="{{ social_title }}">
 			<meta name="twitter:description" content="{{ description or metadata.description }}">
-			<meta name="twitter:image" content="{% if splash %}{% imageLink splash %}{% else %}{{ metadata.assets.splash }}{% endif %}">
+			<meta name="twitter:image" content="{{ metadata.url }}{% if splash %}{% imageLink splash %}{% else %}{{ metadata.assets.splash }}{% endif %}">
 
 			<!-- Schema -->
 			<link rel="author" href="{{ metadata.url }}">
 			<link rel="publisher" href="{{ metadata.url }}">
 			<meta itemprop="name" content="{{ social_title }}">
 			<meta itemprop="description" content="{{ description or metadata.description }}">
-			<meta itemprop="image" content="{% if splash %}{% imageLink splash %}{% else %}{{ metadata.assets.splash }}{% endif %}">
+			<meta itemprop="image" content="{{ metadata.url }}{% if splash %}{% imageLink splash %}{% else %}{{ metadata.assets.splash }}{% endif %}">
 
 			<!-- Facebook OpenGraph -->
 			<meta property="og:url" content="{{ metadata.url + page.url }}">
 			<meta property="og:type" content="website">
 			<meta property="og:title" content="{{ social_title }}">
-			<meta property="og:image" content="{% if splash %}{% imageLink splash %}{% else %}{{ metadata.assets.splash }}{% endif %}">
+			<meta property="og:image" content="{{ metadata.url }}{% if splash %}{% imageLink splash %}{% else %}{{ metadata.assets.splash }}{% endif %}">
 			<meta property="og:description" content="{{ description or metadata.description }}">
 			<meta property="og:site_name" content="{{ metadata.title }}">
 			<meta property="og:locale" content="{{ language or metadata.lang }}">
