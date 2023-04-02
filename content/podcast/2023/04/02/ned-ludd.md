@@ -1,5 +1,6 @@
 ---
 title: 🎧 Glitchy Da Vinci. "Nedd Ludd"
+date: 2023-04-02
 description: |
   Recently a group of famous scientists, businessmen, and engineers signed up for an open letter "Pause Giant AI Experiments" which spotlights the hypothetical weakness of modern society for the results of a new technical revolution. It's not the first time when humanity faces so dramatic changes.
   Let's talk about the Luddites — enemies of the technical progress of the Industrial Revolution.
