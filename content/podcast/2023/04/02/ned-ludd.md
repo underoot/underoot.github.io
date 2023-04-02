@@ -6,14 +6,14 @@ description: |
 splash: https://images.unsplash.com/photo-1497997092403-f091fcf5b6c4
 episode: 1
 audio:
-  src: /audio/gdv_e1.mp3
+  src: https://github.com/underoot/underoot.github.io/raw/main/audio/gdv_e1.mp3
   length: 15309740
   duration: 477
 telegramPostId: 39
 ---
 ## Audio
 
-<audio src='{{ "https://dts.podtrac.com/redirect.mp3/" + metadata.url + audio.src }}' controls></audio>
+<audio src='{{ "https://dts.podtrac.com/redirect.mp3/" + audio.src }}' controls></audio>
 
 <small>In audio is being used soundtrack <a href="https://soundcloud.com/savestate/leaving-the-atmosphere" target="_blank">Savestate — Leaving the Atmosphere</a></small>
 
