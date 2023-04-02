@@ -126,6 +126,7 @@ a[href]:active {
 
 main {
 	padding: 1rem;
+	min-width: 40rem;
 	max-width: 100vw;
 }
 main :first-child {
