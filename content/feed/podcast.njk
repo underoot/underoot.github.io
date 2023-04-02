@@ -1,0 +1,49 @@
+---
+permalink: /podcast/feed.xml
+---
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+	<channel>
+		<title>{{ metadata.title }}</title>
+		<description>
+			<![CDATA[{{ metadata.description }}]]>
+		</description>
+		<copyright>СС BY-NC-ND 4.0</copyright>
+		<language>{{ metadata.language }}</language>
+		<link>{{ metadata.url + "/tags/podcasts/"}}</link>
+		<atom:link href="{{ metadata.url + page.url }}" rel="self" type="application/rss+xml" />
+		<itunes:subtitle>{{ metadata.description }}</itunes:subtitle>
+		<itunes:type>episodic</itunes:type>
+		<itunes:author>{{ metadata.author.name }}</itunes:author>
+		<itunes:explicit>false</itunes:explicit>
+		<itunes:owner>
+				<itunes:name>{{ metadata.author.name }}</itunes:name>
+				<itunes:email>{{ metadata.author.email }}</itunes:email>
+		</itunes:owner>
+		<itunes:image href="{{ metadata.url + metadata.assets.cover }}" />
+		<itunes:category text="Technology" />
+		<itunes:category text="News">
+			<itunes:category text="Tech News" />
+		</itunes:category>
+		{%- for post in collections.podcasts | reverse %}
+		{% set absolutePostUrl %}{{ post.url | htmlBaseUrl(metadata.url) }}{% endset %}
+		<item>
+			<title>{{ post.data.title }}</title>
+			<link>{{ absolutePostUrl }}</link>
+			<pubDate>{{ post.date | dateToRfc822 }}</pubDate>
+			<description><![CDATA[
+				{{ post.data.description }}
+				<p>Transcript and additional links you can open <a href="{{ metadata.url + post.url }}">on the page of episode</a></p>
+			]]></description>
+			<guid isPermaLink="true">{{ metadata.url + post.url }}</guid>
+			<enclosure type="audio/mpeg" url="{{ "http://www.podtrac.com/pts/redirect.mp3/" + metadata.url + post.data.audio.src }}" length="{{ post.data.audio.length }}" />
+			<itunes:episode>{{ post.data.episode }}</itunes:episode>
+			<itunes:duration>{{ post.data.audio.duration }}</itunes:duration>
+			<itunes:author>{{ metadata.author.name }}</itunes:author>
+			<itunes:explicit>false</itunes:explicit>
+			<itunes:summary>{{ post.data.description }}</itunes:summary>
+			<itunes:image href="{{ metadata.url + metadata.assets.cover }}" />
+		</item>
+		{%- endfor %}
+	</channel>
+</rss>
