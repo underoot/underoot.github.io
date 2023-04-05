@@ -1,4 +1,5 @@
 const { DateTime } = require("luxon");
+const minifyXML = require("minify-xml");
 const markdownItAnchor = require("markdown-it-anchor");
 
 const pluginRss = require("@11ty/eleventy-plugin-rss");
@@ -91,6 +92,16 @@ module.exports = function(eleventyConfig) {
 			slugify: eleventyConfig.getFilter("slugify")
 		});
 	});
+
+	eleventyConfig.addTransform("htmlmin", function(content) {
+    if(this.page.outputPath && this.page.outputPath.endsWith(".xml")) {
+      return minifyXML.minify(content, {
+				shortenNamespaces: false
+			});
+    }
+
+    return content;
+  });
 
 	// Features to make your build faster (when you need them)
 

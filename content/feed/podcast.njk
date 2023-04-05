@@ -31,18 +31,14 @@ permalink: /podcast/feed.xml
 			<title>{{ post.data.audio.title or post.data.title }}</title>
 			<link>{{ absolutePostUrl }}</link>
 			<pubDate>{{ post.date | dateToRfc822 }}</pubDate>
-			<description><![CDATA[
-				{{ post.data.description }}
-
-				<p>Transcript and additional links you can open <a href="{{ metadata.url + post.url }}">on the page of episode</a></p>
-			]]></description>
+			<description><![CDATA[{{ post.data.description | safe }}<p>Transcript and additional links you can open <a href="{{ metadata.url + post.url }}">on the page of episode</a></p>]]></description>
 			<guid isPermaLink="true">{{ metadata.url + post.url }}</guid>
 			<enclosure type="audio/mpeg" url="{{ "https://dts.podtrac.com/redirect.mp3/" + post.data.audio.src }}" length="{{ post.data.audio.length }}" />
 			<itunes:episode>{{ post.data.episode }}</itunes:episode>
 			<itunes:duration>{{ post.data.audio.duration }}</itunes:duration>
 			<itunes:author>{{ metadata.author.name }}</itunes:author>
 			<itunes:explicit>no</itunes:explicit>
-			<itunes:summary>{{ post.data.description }}</itunes:summary>
+			<itunes:summary>{{ post.data.summary or post.data.description | safe }}</itunes:summary>
 			<itunes:image href="{{ metadata.url + metadata.assets.cover }}" />
 		</item>
 		{%- endfor %}
