@@ -4,7 +4,8 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>{{ title or metadata.title }}</title>
-		<meta name="description" content="{{ description or metadata.description }}">
+		{% set description %}{{ summary or description or metadata.description}}{% endset %}
+		<meta name="description" content="{{ description }}">
 		<link rel="icon" type="image/x-icon" href="/favicon.ico">
 
 		{#- Atom and JSON feeds included by default #}
@@ -22,14 +23,14 @@
 			<meta name="twitter:card" content="summary_large_image">
 			<meta name="twitter:url" content="{{ metadata.url + page.url }}">
 			<meta name="twitter:title" content="{{ social_title }}">
-			<meta name="twitter:description" content="{{ description or metadata.description }}">
+			<meta name="twitter:description" content="{{ description }}">
 			<meta name="twitter:image" content="{{ metadata.url }}{% if splash %}{% ogImageLink splash %}{% else %}{{ metadata.assets.splash }}{% endif %}">
 
 			<!-- Schema -->
 			<link rel="author" href="{{ metadata.url }}">
 			<link rel="publisher" href="{{ metadata.url }}">
 			<meta itemprop="name" content="{{ social_title }}">
-			<meta itemprop="description" content="{{ description or metadata.description }}">
+			<meta itemprop="description" content="{{ description }}">
 			<meta itemprop="image" content="{{ metadata.url }}{% if splash %}{% ogImageLink splash %}{% else %}{{ metadata.assets.splash }}{% endif %}">
 
 			<!-- Facebook OpenGraph -->
@@ -37,7 +38,7 @@
 			<meta property="og:type" content="website">
 			<meta property="og:title" content="{{ social_title }}">
 			<meta property="og:image" content="{{ metadata.url }}{% if splash %}{% ogImageLink splash %}{% else %}{{ metadata.assets.splash }}{% endif %}">
-			<meta property="og:description" content="{{ description or metadata.description }}">
+			<meta property="og:description" content="{{ description }}">
 			<meta property="og:site_name" content="{{ metadata.title }}">
 			<meta property="og:locale" content="{{ language or metadata.language }}">
 			<meta property="article:author" content="{{ metadata.url }}">
@@ -46,11 +47,11 @@
 		<script defer data-domain="underoot.dev" src="https://stat.underoot.dev/js/script.js"></script>
 
 		{#-
-		CSS bundles are provided via the `eleventy-plugin-bundle` plugin:
-		1. You can add to them using `{% css %}`
-		2. You can get from them using `{% getBundle "css" %}` or `{% getBundleFileUrl "css" %}`
-		3. You can do the same for JS: {% js %}{% endjs %} and <script>{% getBundle "js" %}</script>
-		4. Learn more: https://github.com/11ty/eleventy-plugin-bundle
+			CSS bundles are provided via the `eleventy-plugin-bundle` plugin:
+			1. You can add to them using `{% css %}`
+			2. You can get from them using `{% getBundle "css" %}` or `{% getBundleFileUrl "css" %}`
+			3. You can do the same for JS: {% js %}{% endjs %} and <script>{% getBundle "js" %}</script>
+			4. Learn more: https://github.com/11ty/eleventy-plugin-bundle
 		#}
 
 		{#- Add an arbitrary string to the bundle #}
