@@ -1,6 +1,7 @@
 ---
 title: Train with light bulbs
 splash: content/splash.png
+description: Once upon a time, with my colleagues I discussed one funny old logical problem which becomes a basement for the 3D game on Three.js
 ---
 Once upon a time, with my colleagues I discussed one funny old logical problem, that I had heard from my former technical lead:
 
