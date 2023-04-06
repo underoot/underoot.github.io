@@ -33,7 +33,8 @@ module.exports = eleventyConfig => {
 	});
 
 	eleventyConfig.addAsyncShortcode("ogImageLink", async function imageShortcode(src) {
-		const metadata = await eleventyImage(src, {
+		const urlPath = this.page.inputPath.replace(/\/[^\/]*$/, '');
+		const metadata = await eleventyImage(/^http(s)/.test(src) ? src : path.join(urlPath, src), {
 			widths: [512],
 			formats: ["jpeg"],
 			outputDir: path.join(eleventyConfig.dir.output, "img"),
