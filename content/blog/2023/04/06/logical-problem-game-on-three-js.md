@@ -1,5 +1,5 @@
 ---
-title: Train with light bulbs
+title: Logical problem game on Three.js
 splash: content/splash.png
 description: Once upon a time, with my colleagues I discussed one funny old logical problem which becomes a basement for the 3D game on Three.js
 ---
