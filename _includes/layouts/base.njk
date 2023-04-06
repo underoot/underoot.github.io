@@ -17,6 +17,9 @@
 
 		{%- block seo -%}
 			{% set social_title %}{{ title or metadata.title }}{% endset %}
+			{% set social_image %}
+				{{ metadata.url }}{% if splash %}{% ogImageLink splash %}{% else %}{{ metadata.assets.splash }}{% endif %}
+			{% endset %}
 			<!-- Twitter Card -->
 			<meta name="twitter:site" content="{{ metadata.social.twitter }}">
 			<meta name="twitter:creator" content="{{ metadata.social.twitter }}">
@@ -24,20 +27,20 @@
 			<meta name="twitter:url" content="{{ metadata.url + page.url }}">
 			<meta name="twitter:title" content="{{ social_title }}">
 			<meta name="twitter:description" content="{{ description }}">
-			<meta name="twitter:image" content="{{ metadata.url }}{% if splash %}{% ogImageLink splash %}{% else %}{{ metadata.assets.splash }}{% endif %}">
+			<meta name="twitter:image" content="{{ social_image }}">
 
 			<!-- Schema -->
 			<link rel="author" href="{{ metadata.url }}">
 			<link rel="publisher" href="{{ metadata.url }}">
 			<meta itemprop="name" content="{{ social_title }}">
 			<meta itemprop="description" content="{{ description }}">
-			<meta itemprop="image" content="{{ metadata.url }}{% if splash %}{% ogImageLink splash %}{% else %}{{ metadata.assets.splash }}{% endif %}">
+			<meta itemprop="image" content="{{ social_image }}">
 
 			<!-- Facebook OpenGraph -->
 			<meta property="og:url" content="{{ metadata.url + page.url }}">
 			<meta property="og:type" content="website">
 			<meta property="og:title" content="{{ social_title }}">
-			<meta property="og:image" content="{{ metadata.url }}{% if splash %}{% ogImageLink splash %}{% else %}{{ metadata.assets.splash }}{% endif %}">
+			<meta property="og:image" content="{{ social_image }}">
 			<meta property="og:description" content="{{ description }}">
 			<meta property="og:site_name" content="{{ metadata.title }}">
 			<meta property="og:locale" content="{{ language or metadata.language }}">
@@ -102,5 +105,8 @@
 		</footer>
 
 		<!-- Current page: {{ page.url | htmlBaseUrl }} -->
+		<script type="module">
+			import "/is-land.js";
+		</script>
 	</body>
 </html>

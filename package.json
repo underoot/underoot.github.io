@@ -30,6 +30,7 @@
 		"@11ty/eleventy-plugin-bundle": "^1.0.4",
 		"@11ty/eleventy-plugin-rss": "^1.2.0",
 		"@11ty/eleventy-plugin-syntaxhighlight": "^4.2.0",
+		"@11ty/is-land": "^4.0.0",
 		"luxon": "^3.3.0",
 		"markdown-it-anchor": "^8.6.7",
 		"minify-xml": "^3.4.0"

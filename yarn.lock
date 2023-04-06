@@ -128,6 +128,11 @@
     semver "^7.3.8"
     slugify "^1.6.6"
 
+"@11ty/is-land@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@11ty/is-land/-/is-land-4.0.0.tgz#9c36c33b687550708cb74e7fdc8a180f79c29cbb"
+  integrity sha512-RxbjF2+FzSu3rerHrWLRsvsPX2YM47RwXpdWCCzLhwRSsz5sJe9TnK7mphEld1gZnp2GeD5ByvhqjIc4CqidsQ==
+
 "@11ty/lodash-custom@^4.17.21":
   version "4.17.21"
   resolved "https://registry.yarnpkg.com/@11ty/lodash-custom/-/lodash-custom-4.17.21.tgz#a8d2e25a47ee3bb58b71cde4edc2ae8dd3d1b269"

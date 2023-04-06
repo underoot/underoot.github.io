@@ -37,6 +37,9 @@ module.exports = eleventyConfig => {
 			widths: [512],
 			formats: ["jpeg"],
 			outputDir: path.join(eleventyConfig.dir.output, "img"),
+			cacheOptions: {
+				duration: '*'
+			}
 		});
 
 		return metadata.jpeg[0].url;
