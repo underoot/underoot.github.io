@@ -12,6 +12,9 @@ Enjoy! 🕹️
 <is-land on:visible>
 	<style>
 		#game {
+			background-color: black;
+			border-radius: 24px;
+			overflow: hidden;
 			height: 600px;
 		}
 	</style>
