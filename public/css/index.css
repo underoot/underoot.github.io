@@ -1,6 +1,8 @@
 /* Defaults */
 :root {
-	--font-family: Jost, -apple-system, system-ui, sans-serif;
+	--font-family: 'Computer Modern', Jost, -apple-system, system-ui, sans-serif;
+	--font-family-book: 'Computer Modern Book', Jost, -apple-system, system-ui, sans-serif;
+	--font-family-heading: 'Computer Modern Sans', -apple-system, system-ui, sans-serif;
 	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
 }
 
@@ -36,10 +38,31 @@
 }
 
 @font-face {
-  font-family: Jost;
-  src: url(/fonts/Jost-400-Book.ttf);
-  font-weight: 400;
-  font-display: fallback;
+	font-family: 'Computer Modern';
+	src: url(/fonts/NewCM10-Regular.otf);
+	font-weight: 400;
+	font-display: fallback;
+}
+
+@font-face {
+	font-family: 'Computer Modern';
+	src: url(/fonts/NewCM10-Bold.otf);
+	font-weight: bolder;
+	font-display: fallback;
+}
+
+@font-face {
+	font-family: 'Computer Modern Book';
+	src: url(/fonts/NewCM10-Book.otf);
+	font-weight: bolder;
+	font-display: fallback;
+}
+
+@font-face {
+	font-family: 'Computer Modern Sans';
+	src: url(/fonts/NewCMSans10-Bold.otf);
+	font-weight: bolder;
+	font-display: fallback;
 }
 
 @font-face {
@@ -58,7 +81,7 @@ html,
 body {
 	padding: 0;
 	margin: 0 auto;
-	font-family: var(--font-family);
+	font-family: var(--font-family-book);
 	color: var(--text-color);
 	background-color: var(--background-color);
 	min-height: 100vh;
@@ -74,6 +97,18 @@ body {
 
 pre {
 	overflow-y: scroll;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--font-family-heading);
+	font-weight: 700;
+	margin: 1em 0 .5em;
+	line-height: 1.25;
 }
 
 footer {
@@ -292,6 +327,7 @@ nav {
 	word-spacing: -0.5px;
 }
 .postlist-link {
+	font-family: var(--font-family-heading);
 	font-size: 1.1875em; /* 19px /16 */
 	font-weight: 700;
 	flex-basis: calc(100% - 1.5rem);
