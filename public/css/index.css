@@ -79,6 +79,9 @@ pre {
 footer {
 	padding: 1rem;
 	margin-top: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 /* https://www.a11yproject.com/posts/how-to-hide-content/ */
