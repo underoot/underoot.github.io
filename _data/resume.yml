@@ -1,0 +1,114 @@
+basics:
+  name: Aleksandr Shoronov
+  label: Senior Software Engineer
+  image: https://avatars.githubusercontent.com/u/2480721
+  email: alex.shoronov@gmail.com
+  phone: +372 5667 1227
+  url: https://underoot.dev
+  highlights:
+    - A software engineer with more than 8 years of experience in software design
+    - Developed applications and infrastructure systems for fintech, transport and educational spheres
+    - Result-oriented, focused on business values, strong communication skills, constant learner
+    - Interested in UI, practices and paradigms in software, system programming, micro-electronics
+  location:
+    city: Tallinn
+    countryCode: EE
+    region: Harjumaa
+  profiles:
+  - network: GitHub
+    username: underoot
+    url: https://github.com/underoot
+  - network: LinkedIn
+    username: underoot
+    url: https://www.linkedin.com/in/underoot/
+work:
+- company: Bolt
+  url: https://bolt.eu
+  summary: >
+    Working in a team, which develops instruments for operating a rental fleet of micro-mobility vehicles such as e-scooters and e-bikes.
+    Leading development of web back-office for managing fleet and mobile application for operating vehicles.
+  positions:
+  - position: Senior Software Engineer
+    startDate: 2021-10-01
+    highlights:
+      - "Boosted fleet utilization by 25% by developing features for the mobile application"
+      - "Improved performance of the mobile application by 30% by refactoring and optimizing code"
+      - "Technologies: React Native, Detox, TypeScript, GitHub Actions"
+  - position: Software Engineer
+    startDate: 2020-12-07
+    endDate: 2021-09-30
+    highlights:
+      - "Actively participated in the development of the mobile application for operating vehicles"
+      - "Developed a map-based monitoring system for a fleet of micro-mobility vehicles, which becomes a foundation for the same products in the future"
+      - "Technologies: React, TypeScript, WebGL, Google Maps"
+- company: Yandex.Money
+  url: https://yoomoney.ru
+  positions:
+  - position: Senior Software Engineer
+    startDate: 2020-01-24
+    endDate: 2020-11-24
+    summary: >
+      Participated in the full cycle of development of a new fintech product
+      with new for me React Native technology stack: from scratch to launch
+    highlights:
+      - "Developed 20+ screens in the mobile app, enhancing user experience"
+      - "Developed a native module for React Native, which allowed to tokenize business bank cards in the application"
+      - "Developed a personal cabinet web application for business clients, which allowed them to manage their accounts and cards"
+      - "Technologies: React Native, TypeScript, Redux, Detox, Fastlane, Swift, Kotlin"
+- company: Yandex
+  url: https://ya.ru
+  positions:
+  - position: User Interface Developer
+    startDate: 2019-01-28
+    endDate: 2020-01-23
+    highlights:
+      - "Was part of a team, which developed educational services for schools and universities with 1000+ students, such as Yandex.Contest — a platform for programming competitions"
+      - "Involved in courses about web development at IFMO as lecturer and methodologist which help in improving the qualification for 30 students"
+      - "Technologies: React, TypeScript, Node.js, MongoDB, PostgreSQL"
+- company: Yandex.Money
+  url: https://yoomoney.ru
+  positions:
+  - position: Senior Software Engineer
+    startDate: 2016-07-25
+    endDate: 2019-01-25
+    highlights:
+      - "Developed Node.js back-end and web pages of a high-load check-out system \"Yandex.Kassa\""
+      - "Was promoted to SSE, and later, in this position, joined the platform team, where participated in the development of high-load common services for all Yandex.Money products"
+      - "Technologies: Node.js, Jenkins, React, BEM methodology"
+- company: Cloud Technologies
+  url: https://smartycrm.com
+  positions:
+  - position: Senior Software Engineer
+    startDate: 2015-01-12
+    endDate: 2016-07-15
+    summary: >
+      Started as a Junior Software Engineer and was involved in the development front-end part of the CRM product.
+      Later lead the development of back-end microservices for that CRM product
+    highlights:
+      - "Technologies: React, Node.js, MongoDB, RabbitMQ, Docker, Kubernetes"
+- company: Mozilla
+  url: https://mozilla.org
+  positions:
+  - position: OSS Contributor
+    summary: >
+      Contributed to the development of the Firefox browser and got familiar with the development process of a large open-source project.
+    highlights:
+      - <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=889057">Made the Console log sources toolbar responsive</a>
+      - <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1790067">Removed the warning about Relative position of table rows</a>
+      - "Technologies: JavaScript, C++, XUL"
+education:
+  institution: Ivanovo State Power University
+  url: http://ispu.ru
+  area: Software Engineering
+  studyType: Bachelor
+  startDate: 2011-09-05
+  endDate: 2015-06-26
+  summary: >
+    During my study, I learned a lot about computer science, coded in C++, and C#, practiced different algorithms and data structures.
+    My specialization helped me to understand the basics of software development and to get a good foundation for my future career.
+    Participated in the ACM ICPC competition in 2013 and 2014 years and reached the semi-finals in 2014.
+awards:
+  - title: I 💛 Frontend CTF 2022
+    date: 2022-02-22
+    summary: >
+      Winner in the nomination "Researcher". Solved all missions and captured all flags, including optional, first
