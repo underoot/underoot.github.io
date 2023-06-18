@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<style>
+	@font-face {
+		font-family: 'Computer Modern Sans';
+		src: url(/fonts/NewCMSans10-Bold.otf);
+		font-weight: bold;
+		font-display: fallback;
+	}
+
+	@font-face {
+		font-family: 'Computer Modern Book';
+		src: url(/fonts/NewCM10-Book.otf);
+		font-weight: normal;
+		font-display: fallback;
+	}
+
+	body {
+		font-family: 'Computer Modern Book';
+		max-width: 210mm;
+		margin: 0 auto;
+	}
+
+	a {
+		color: black;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: 'Computer Modern Sans';
+	}
+
+	h1 a,
+	h2 a {
+		display: none;
+	}
+
+	html {
+		font-size: 16px;
+	}
+
+	* {
+		line-height: 1.45rem;
+		margin-bottom: 1.45rem;
+		margin-top: 0;
+	}
+
+	h1 {
+		line-height: 2.9rem;
+		margin-bottom: 1.45rem;
+		font-size: 2rem;
+	}
+
+	h2 {
+		line-height: 1.45rem;
+		margin-top: 1.45rem;
+		margin-bottom: 1rem;
+		font-size: 1.45em;
+	}
+
+	h3 {
+		line-height: 2.175rem;
+		margin-top: 1rem;
+		margin-bottom: 0.5rem;
+	}
+
+	ul {
+		padding-left: 0px;
+	}
+
+	ul { list-style: none }
+
+	li::before {
+		content: "• ";
+	}
+
+	li {
+		margin-bottom: 0px;
+	}
+
+	header {
+		margin-bottom: 0px;
+	}
+
+	header,
+	.work__header {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+	}
+
+	.email,
+	.work__header {
+		margin-bottom: 0px;
+	}
+
+	.work__header * {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	.work__header {
+		align-items: flex-end;
+		margin-bottom: 1rem;
+	}
+
+	header * {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	header p {
+		margin-bottom: 0.25rem;
+	}
+
+	header {
+		align-items: flex-end;
+		margin-bottom: 0.5rem;
+	}
+
+	header div {
+		font-size: 0.8rem;
+		line-height: 0.8rem;
+	}
+
+	p + ul {
+		margin-top: -1rem;
+	}
+
+	@media print {
+    .pagebreak { page-break-before: always; } /* page-break-after works, as well */
+	}
+</style>
+
+<header>
+	<h1>{{ resume.basics.name }}</h1>
+	<div>
+		{% for profile in resume.basics.profiles %}
+			<a href="{{ profile.url }}" target="_blank">{{ profile.url }}</a><br />
+		{% endfor %}
+		<p class="langs">Programming languages: JS/TS, C
+	</div>
+</header>
+
+<a href="mailto:{{ resume.basics.email }}" class="email">{{ resume.basics.email }}</a>
+
+<h2>Summary</h2>
+<ul>
+	{% for highlight in resume.basics.highlights %}
+		<li>
+			{{ highlight }}
+		</li>
+	{% endfor %}
+</ul>
+
+<h2>Experience</h2>
+{% for work in resume.work %}
+	<a href="{{ work.url }}" target="_blank"><h3>{{ work.company }}</h3></a>
+	{% if work.summary %}<p>{{ work.summary }}</p>{% endif %}
+	{% for position in work.positions %}
+		<div class="work__header">
+			<strong>{{ position.position }}</strong>
+			{% if position.startDate %}
+				<p>{{ position.startDate | htmlDateStringShort }} - {%if position.endDate %}{{ position.endDate | htmlDateStringShort }}{% else %}Present{% endif %}</p>
+			{% endif %}
+		</div>
+		{% if position.summary %}<p>{{ position.summary }}</p>{% endif %}
+		{% if position.highlights %}
+			<ul>
+				{% for highlight in position.highlights %}
+					<li>
+						{{ highlight | safe }}
+					</li>
+				{% endfor %}
+			</ul>
+		{% endif %}
+	{% endfor %}
+{% endfor %}
+
+<h2>Education</h2>
+<div class="work__header">
+	<h3><a href="{{resume.education.url}}">{{ resume.education.institution }}</a>, {{ resume.education.studyType }}</h3>
+	<p>{{ resume.education.startDate | htmlDateStringShort }} - {%if resume.education.endDate %}{{ resume.education.endDate | htmlDateStringShort }}{% else %}Present{% endif %}</p>
+</div>
+{% if resume.education.summary %}<p>{{ resume.education.summary }}</p>{% endif %}
+{% if resume.education.highlights %}
+	<ul>
+		{% for highlight in resume.education.highlights %}
+			<li>
+				{{ highlight }}
+			</li>
+		{% endfor %}
+	</ul>
+{% endif %}

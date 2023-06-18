@@ -1,6 +1,8 @@
 const { DateTime } = require("luxon");
 const minifyXML = require("minify-xml");
 const markdownItAnchor = require("markdown-it-anchor");
+const yaml = require("js-yaml");
+const markdownIt = require("markdown-it");
 
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
@@ -39,6 +41,8 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
 	eleventyConfig.addPlugin(pluginBundle);
 
+	eleventyConfig.addDataExtension("yml", contents => yaml.load(contents));
+
 	// Filters
 	eleventyConfig.addFilter("readableDate", (dateObj, format, zone) => {
 		// Formatting tokens for Luxon: https://moment.github.io/luxon/#/formatting?id=table-of-tokens
@@ -48,6 +52,11 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addFilter('htmlDateString', (dateObj) => {
 		// dateObj input: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
 		return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
+	});
+
+	eleventyConfig.addFilter('htmlDateStringShort', (dateObj) => {
+		// dateObj input: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
+		return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('MMM yyyy');
 	});
 
 	// Get the first `n` elements of a collection.
@@ -118,8 +127,7 @@ module.exports = function(eleventyConfig) {
 		templateFormats: [
 			"md",
 			"njk",
-			"html",
-			"liquid",
+			"html"
 		],
 
 		// Pre-process *.md files with: (default: `liquid`)
