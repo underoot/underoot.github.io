@@ -1,5 +1,6 @@
 ---
 title: 🎧 Glitchy Da Vinci. "Twitter, RSS, AJAX are legacy?"
+date: 2023-04-14
 summary: "This episode is dedicated to the events that happened to me this week: a couple of broken instruments, but at the same time a couple of good things also happened to me"
 description: >
   <p>This episode is dedicated to the events that happened to me this week: my favorite RSS reader stops to read from Twitter, and Firefox stops to play YouTube in the background, but I found the interesting technical episode of another podcast and shared my thoughts about AJAX in modern Web development</p>
