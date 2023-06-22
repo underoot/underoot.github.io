@@ -130,6 +130,16 @@
 		margin-top: -1rem;
 	}
 
+	.work__url {
+		margin-bottom: 0rem;
+	}
+
+	.work__url > h3 {
+		margin-top: 0;
+		display: inline-block;
+		text-decoration: underline;
+	}
+
 	@media print {
     .pagebreak { page-break-before: always; } /* page-break-after works, as well */
 	}
@@ -158,7 +168,7 @@
 
 <h2>Experience</h2>
 {% for work in resume.work %}
-	<a href="{{ work.url }}" target="_blank"><h3>{{ work.company }}</h3></a>
+	<a href="{{ work.url }}" class="work__url" target="_blank"><h3>{{ work.company }}</h3></a>
 	{% if work.summary %}<p>{{ work.summary }}</p>{% endif %}
 	{% for position in work.positions %}
 		<div class="work__header">
