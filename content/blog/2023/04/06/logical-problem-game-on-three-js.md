@@ -1,6 +1,7 @@
 ---
 title: Logical problem game on Three.js
 splash: content/splash.png
+date: 2023-04-06
 description: Once upon a time, with my colleagues I discussed one funny old logical problem which becomes a basement for the 3D game on Three.js
 telegramPostId: 40
 ---
