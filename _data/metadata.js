@@ -1,5 +1,5 @@
 module.exports = {
-	"title": "Glitchy Da Vinci",
+	"title": "underoot labs",
 	"url": process.env.NODE_ENV === "production" ? "https://underoot.dev" : "http://localhost:8080",
 	"language": "en",
 	"description": "Personal blog of street coder, podcaster, Linux fun and just kind guy!",
