@@ -3,6 +3,7 @@ title: "Analogue of 2048 with Emoji"
 splash: https://unsplash.com/photos/zDDdoYqQ64U/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8NHx8ZW1vaml8ZW58MHx8fHwxNzAwNTQ4NjQ0fDA&force=true&w=2400
 description: |
   I've built game with Emoji, which is, basically, analogue of 2048, but built on concept of Zero-Width-Joiner. It's called Emerji.
+telegramPostId: 119
 ---
 
 ## TL;DR
