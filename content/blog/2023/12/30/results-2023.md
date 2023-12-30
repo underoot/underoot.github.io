@@ -2,6 +2,7 @@
 title: My 2023 in glance
 description: >
   2023 goes to the end and it's time to look back and see what happened.
+splash: content/photo_2023-12-30_15-56-35.jpg
 ---
 - For the first time visited <a href="https://www.openstreetmap.org/relation/1473947" target="_blank">Egypt</a> 🇪🇬
 - Switched from <a href="https://support.apple.com/kb/SP779" target="_blank">iPhone </a> to <a href="https://www.samsung.com/global/galaxy/galaxy-z-fold4/" target="_blank">Android 🤖</a>
