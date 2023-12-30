@@ -23,7 +23,7 @@ telegramPostId: 123
 - Find out my favorite beverage: <a href="https://nokianpanimo.fi/tuote/sunn-cream-soda/" target="_blank">Cream soda</a> from Nokian Panimo
 - Visited <a href="https://www.openstreetmap.org/relation/365331" target="_blank">Italy</a> with road trip on a rent car
 - Attended <a href="https://arvutimuuseum.ee" target="_blank">Estonian computer museum</a> during <a href="https://www.instagram.com/estonianmuseums/" target="_blank">night of museums</a>
-- Traveled to <a href="https://www.openstreetmap.org/relation/189934"  target="_blank">Saaremaa</a> to see lavender field
+- Traveled to <a href="https://www.openstreetmap.org/relation/147194"  target="_blank">Hijumaa</a> to see lavender field
 - Visited <a href="https://www.visitestonia.com/en/kirna-manor-park">tulip festival</a> in Kirna manor park
 - Reproduced physical experiment of <a href="https://en.wikipedia.org/wiki/Camera_obscura" target="_blank">camera obscura</a>
 - Participated in bike parade
