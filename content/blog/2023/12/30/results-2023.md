@@ -23,7 +23,6 @@ splash: content/photo_2023-12-30_15-56-35.jpg
 - Attended <a href="https://arvutimuuseum.ee" target="_blank">Estonian computer museum</a> during <a href="https://www.instagram.com/estonianmuseums/" target="_blank">night of museums</a>
 - Traveled to <a href="https://www.openstreetmap.org/relation/189934"  target="_blank">Saaremaa</a> to see lavender field
 - Visited <a href="https://www.visitestonia.com/en/kirna-manor-park">tulip festival</a> in Kirna manor park
-- Saw interesting and strange geo objects
 - Reproduced physical experiment of <a href="https://en.wikipedia.org/wiki/Camera_obscura" target="_blank">camera obscura</a>
 - Participated in bike parade
 - Was in camping for the night during summer
