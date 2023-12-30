@@ -8,7 +8,7 @@ splash: content/photo_2023-12-30_15-56-35.jpg
 - Switched from <a href="https://support.apple.com/kb/SP779" target="_blank">iPhone </a> to <a href="https://www.samsung.com/global/galaxy/galaxy-z-fold4/" target="_blank">Android 🤖</a>
 - Started <a href="https://t.me/underootlabs" target="_blank">my Telegram channel</a>
 - Finished B1 Estonian language course
-- Passed A2 Estonian language exam
+- Passed A2 Estonian language exam. Yah, ma räägin eesti keelt!
 - Visited <a href="/blog/2023/02/06/fosdem2023/" target="_blank">FOSDEM</a>
 - Had skiing in Estonia
 - Enjoyed beautiful nature of Estonia
