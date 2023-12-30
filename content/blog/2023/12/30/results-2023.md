@@ -12,6 +12,7 @@ splash: content/photo_2023-12-30_15-56-35.jpg
 - Visited <a href="/blog/2023/02/06/fosdem2023/" target="_blank">FOSDEM</a>
 - Had skiing in Estonia
 - Enjoyed beautiful nature of Estonia
+- Actively used <a href="https://chat.openai.com/" target="_blank">ChatGPT</a> and <a href="https://github.com/features/copilot" target="_blank">Copilot</a> for writing code 🤖
 - Started <a href="https://www.youtube.com/@underootlabs" target="_blank">my Youtube channel</a> (will continue soon)
 - Bought an electric piano
 - Bought vinyl for the first time, but haven't bought player yet
