@@ -1,0 +1,3 @@
+Sitemap: https://underoot.dev/sitemap.xml
+User-agent: *
+Allow: /
