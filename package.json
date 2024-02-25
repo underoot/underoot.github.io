@@ -1,10 +1,9 @@
 {
-	"name": "eleventy-base-blog",
-	"version": "8.0.0",
-	"description": "A starter repository for a blog web site using the Eleventy site generator.",
+	"name": "@underoot/php",
+	"version": "0.1.0",
+	"description": "Personal Home Page (aka PHP)",
 	"scripts": {
 		"build": "env NODE_ENV=production npx @11ty/eleventy",
-		"build-ghpages": "npx @11ty/eleventy --pathprefix=/eleventy-base-blog/",
 		"start": "npx @11ty/eleventy --serve --quiet",
 		"debug": "DEBUG=Eleventy* npx @11ty/eleventy",
 		"debugstart": "DEBUG=Eleventy* npx @11ty/eleventy --serve --quiet",
@@ -20,9 +19,6 @@
 		"url": "https://underoot.dev/"
 	},
 	"license": "MIT",
-	"engines": {
-		"node": ">=16"
-	},
 	"devDependencies": {
 		"@11ty/eleventy": "^2.0.1",
 		"@11ty/eleventy-img": "^3.0.0",
