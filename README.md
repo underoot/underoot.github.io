@@ -1,38 +1,25 @@
-# Glitchy Da Vinci homepage
+# Aleksandr Shoronov (aka `underoot`) Personal Home Page (aka PHP)
+
+The best personal home page ever.
+
+## Prerequisites
+
+- Install Node.js and npm
+- Install Git LFS (Large File Storage) if you want to work with large files. See [Git LFS](https://git-lfs.github.com/)
 
 ## Getting Started
 
-1. Clone this Repository
-
 ```
-git clone https://github.com/underoot/underoot.github.io
+npm install
 ```
 
-2. Navigate to the directory
-
+For development:
 ```
-cd underoot.github.io
-```
-
-3. Have a look at `eleventy.config.js` to see if you want to configure any Eleventy options differently.
-4. Install dependencies
-
-```
-yarn
+npm start
 ```
 
-5. Run Eleventy
-
-Generate a production-ready build:
+## Building production version
 
 ```
-npx @11ty/eleventy
+npm run build
 ```
-
-Or build and host locally on a local development server:
-
-```
-npx @11ty/eleventy --serve
-```
-
-Or you can run [debug mode](https://www.11ty.dev/docs/debugging/) to see all the internals.
