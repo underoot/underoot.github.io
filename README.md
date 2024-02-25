@@ -1,4 +1,4 @@
-# Aleksandr Shoronov (aka `underoot`) Personal Home Page (aka PHP)
+# Personal Home Page (aka PHP)
 
 The best personal home page ever.
 
