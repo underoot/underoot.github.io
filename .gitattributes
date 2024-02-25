@@ -3,3 +3,5 @@ _site/img/**/*.jpeg filter=lfs diff=lfs merge=lfs -text
 _site/img/**/*.webp filter=lfs diff=lfs merge=lfs -text
 _site/img/**/*.avif filter=lfs diff=lfs merge=lfs -text
 _site/img/**/*.png filter=lfs diff=lfs merge=lfs -text
+content/**/*.png filter=lfs diff=lfs merge=lfs -text
+content/**/*.jpg filter=lfs diff=lfs merge=lfs -text
