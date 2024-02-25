@@ -1,0 +1,35 @@
+name: Update README.md
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'content/about/index.md'
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout Content
+        uses: actions/checkout@v4
+      - name: Checkout README.md
+        uses: actions/checkout@v4
+        with:
+          repository: 'underoot/underoot'
+          ssh-key: ${{ secrets.UNDEROOT_SSH_KEY }}
+          path: 'underoot'
+      - name: Copy README.md
+        run: cp content/about/index.md underoot/README.md
+      - name: Remove Frontmatter
+        run: sed -i '1,/^---$/d' underoot/README.md
+      - name: Commit
+        run: |
+          export GIT_REV=$(git rev-parse --short HEAD)
+          cd underoot
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git add README.md
+          git commit -m "Update README.md with underoot/underoot.github.io@$GIT_REV"
+          git push
+
