@@ -1,6 +1,7 @@
 ---
 title: Emoji in JS strings
 date: 2022-04-02
+description: Emoji are not simple characters, they are more complex than you think. Let's consider how they are represented in JavaScript strings
 ---
 Let's consider JavaScript string, which consist only one emoji and we want to take length from it:
 

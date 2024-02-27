@@ -1,6 +1,7 @@
 ---
 title: Fragile semantic patch
 date: 2022-07-26
+description: Looks like nobody cares about semantic versioning in JavaScript world. Recently I faced with strange behaviour of quite usual command during development of React Native application
 ---
 Every knows that package management is hard job. I think that it even deserved to be put into <a href="https://martinfowler.com/bliki/TwoHardThings.html" target="_blank">the list the most hard things</a> in computer programming alongside with naming and caching.
 

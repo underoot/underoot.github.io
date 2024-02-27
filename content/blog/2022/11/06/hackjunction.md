@@ -1,6 +1,7 @@
 ---
 title: Junction 2022
 date: 2022-11-06
+description: The Junction 2022 hackathon was amazing. I worked in a team together with my ex-colleague and we have developed an application that measures the pulse when browsing websites
 ---
 On 4-6 November, I took part in the <a href="https://web.archive.org/web/20221103155752/https://www.junction2022.com/" target="_blank">Junction 2022</a> hackathon. It was amazing. I worked in a team together with my ex-colleague Aleksey Khlebaev. We have developed an application that measures the pulse when browsing websites.
 

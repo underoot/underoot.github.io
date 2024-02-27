@@ -1,6 +1,6 @@
 ---
 title: 📹 React event internals
-description: React event internals
+description: Recently I've become curious about mechanisms of resubscription to events in React when event handler property to component changed. Some things I already knew about it, but some things become interesting to discover. Share with you about them in this video
 date: 2023-08-28
 telegramPostId: 106
 ---

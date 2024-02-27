@@ -1,6 +1,7 @@
 ---
 title: How to save time with ZSH completion system
 date: 2021-05-16
+description: Do you know that you can create your own completion for your Git aliases which can make network requests to API? I will show you how to do that.
 ---
 What you, as software engineer, usually do? Right! You create new gitbranches almost every day, even more than once per day. For example, one of myeveryday patterns following:
 1. Look into the board in JIRA;

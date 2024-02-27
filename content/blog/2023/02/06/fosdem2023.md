@@ -1,5 +1,6 @@
 ---
 title: FOSDEM 2023
+description: Every year I'm looking forward to FOSDEM. It's a great place to meet interesting enthusiastic people from all corners of the World and have endless chats, ask questions and encourage yourself to be part of it
 date: 2023-02-06
 ---
 One friend told me that conferences are boring. It's maybe true (partly actually) if we will consider only the material of the talks. But, the conferences it's more than just talks: it's more about communication, networking.
