@@ -1,6 +1,6 @@
 ---
 title: 📹 Jetpack Compose vs React Native
-description: Comparison of Jetpack Compose and React Native
+description: I'm sharing my experience and my thoughts about Jetpack Compose and React Native. Also, I will make my hands dirty with examples of code on Kotlin and I also developed a simple application on Android with React Native and Jetpack Compose to compare to approaches of development mobile application
 date: 2023-07-31
 telegramPostId: 90
 ---

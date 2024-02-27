@@ -46,25 +46,27 @@ module.exports = function(eleventyConfig) {
 	// Filters
 	eleventyConfig.addFilter("readableDate", (dateObj, format, zone) => {
 		// Formatting tokens for Luxon: https://moment.github.io/luxon/#/formatting?id=table-of-tokens
-		return DateTime.fromJSDate(dateObj, { zone: zone || "utc" }).toFormat(format || "dd LLLL yyyy");
+		return DateTime.fromJSDate(dateObj, { zone: zone || "utc" }).toFormat(
+			format || "dd LLLL yyyy"
+		);
 	});
 
-	eleventyConfig.addFilter('htmlDateString', (dateObj) => {
+	eleventyConfig.addFilter("htmlDateString", dateObj => {
 		// dateObj input: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
-		return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
+		return DateTime.fromJSDate(dateObj, { zone: "utc" }).toISO();
 	});
 
-	eleventyConfig.addFilter('htmlDateStringShort', (dateObj) => {
+	eleventyConfig.addFilter("htmlDateStringShort", dateObj => {
 		// dateObj input: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
-		return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('MMM yyyy');
+		return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("MMM yyyy");
 	});
 
 	// Get the first `n` elements of a collection.
 	eleventyConfig.addFilter("head", (array, n) => {
-		if(!Array.isArray(array) || array.length === 0) {
+		if (!Array.isArray(array) || array.length === 0) {
 			return [];
 		}
-		if( n < 0 ) {
+		if (n < 0) {
 			return array.slice(n);
 		}
 
@@ -79,14 +81,16 @@ module.exports = function(eleventyConfig) {
 	// Return all the tags used in a collection
 	eleventyConfig.addFilter("getAllTags", collection => {
 		let tagSet = new Set();
-		for(let item of collection) {
+		for (let item of collection) {
 			(item.data.tags || []).forEach(tag => tagSet.add(tag));
 		}
 		return Array.from(tagSet);
 	});
 
 	eleventyConfig.addFilter("filterTagList", function filterTagList(tags) {
-		return (tags || []).filter(tag => ["all", "nav", "post", "posts"].indexOf(tag) === -1);
+		return (tags || []).filter(
+			tag => ["all", "nav", "post", "posts"].indexOf(tag) === -1
+		);
 	});
 
 	// Customize Markdown library settings:
@@ -96,22 +100,22 @@ module.exports = function(eleventyConfig) {
 				placement: "after",
 				class: "header-anchor",
 				symbol: "#",
-				ariaHidden: false,
+				ariaHidden: false
 			}),
-			level: [1,2,3,4],
+			level: [1, 2, 3, 4],
 			slugify: eleventyConfig.getFilter("slugify")
 		});
 	});
 
 	eleventyConfig.addTransform("htmlmin", function(content) {
-    if(this.page.outputPath && this.page.outputPath.endsWith(".xml")) {
-      return minifyXML.minify(content, {
+		if (this.page.outputPath && this.page.outputPath.endsWith(".xml")) {
+			return minifyXML.minify(content, {
 				shortenNamespaces: false
 			});
-    }
+		}
 
-    return content;
-  });
+		return content;
+	});
 
 	// Features to make your build faster (when you need them)
 
@@ -124,11 +128,7 @@ module.exports = function(eleventyConfig) {
 	return {
 		// Control which files Eleventy will process
 		// e.g.: *.md, *.njk, *.html, *.liquid
-		templateFormats: [
-			"md",
-			"njk",
-			"html"
-		],
+		templateFormats: ["md", "njk", "html"],
 
 		// Pre-process *.md files with: (default: `liquid`)
 		markdownTemplateEngine: "njk",
@@ -138,9 +138,9 @@ module.exports = function(eleventyConfig) {
 
 		// These are all optional:
 		dir: {
-			input: "content",          // default: "."
-			includes: "../_includes",  // default: "_includes"
-			data: "../_data",          // default: "_data"
+			input: "content", // default: "."
+			includes: "../_includes", // default: "_includes"
+			data: "../_data", // default: "_data"
 			output: "_site"
 		},
 
@@ -154,6 +154,6 @@ module.exports = function(eleventyConfig) {
 		// When paired with the HTML <base> plugin https://www.11ty.dev/docs/plugins/html-base/
 		// it will transform any absolute URLs in your HTML to include this
 		// folder name and does **not** affect where things go in the output folder.
-		pathPrefix: "/",
+		pathPrefix: "/"
 	};
 };

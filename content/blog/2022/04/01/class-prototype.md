@@ -1,6 +1,7 @@
 ---
 title: Class prototype
 date: 2022-04-01
+description: A brief explanation of the difference between the prototype property of a class and a function
 ---
 ES6 brings us an easy way to project abstractions with a paradigm known for people with C++/Java experience — classes:
 

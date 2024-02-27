@@ -1,6 +1,7 @@
 ---
 title: Super-fast Node.js alternative
 date: 2022-07-06
+description: Bun is a super-fast Node.js alternative written in Zig. Let's see if it's worth it after some time
 ---
 Recently found an attractive server platform <a href="https://bun.sh" target="_blank">bun</a>. It's a platform written on the base of <a href="https://developer.apple.com/documentation/javascriptcore" target="_blank">JavaScriptCore</a> and supports many valuable things from the box like Node.js modules resolving algorithm, part of Node.js built-in APIs and web APIs. It even supports out-of-box transpilation of TypeScript code and JSX. The author says that it’s a very fast instrument and provides benchmarks for it which looks astonishing. Also, he emphasises that bun’s start time is very short, probably if compared with Node.js.
 

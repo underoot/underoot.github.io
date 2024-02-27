@@ -1,0 +1,22 @@
+<ul class="postlist h-feed hfeed">
+{% for post in posts | reverse %}
+	<li class="postlist__item post h-entry hentry">
+		{% if post.data.title %}
+			<a href="{{ post.url }}" class="post__link u-url">
+				<h3 class="p-name entry-title">
+					{{ post.data.title }}
+				</h3>
+			</a>
+		{% endif %}
+		{% set content %}{{ post.data.summary or post.data.description or post.content | safe }}{% endset %}
+		<div class="post__content e-content p-summary entry-summary">
+			{{ content | safe }}
+		</div>
+		<a class="post__date" href="{{ post.url }}">
+			<time class="dt-published published" datetime="{{ post.date | htmlDateString }}">
+				{{ post.date | readableDate("LLLL yyyy") }}
+			</time>
+		</a>
+	</li>
+{% endfor %}
+</ul>

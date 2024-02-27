@@ -4,8 +4,8 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>{{ title or metadata.title }}</title>
-		{% set description %}{{ summary or description or metadata.description}}{% endset %}
-		<meta name="description" content="{{ description }}">
+		{% set description %}{{ summary or description or metadata.description }}{% endset %}
+		<meta name="description" content="{{ summary or description }}">
 		<link rel="icon" type="image/x-icon" href="/favicon.ico">
 
 		{#- Atom and JSON feeds included by default #}
@@ -66,20 +66,17 @@
 	</head>
 	<body>
 		<a href="#skip" class="visually-hidden">Skip to main content</a>
-		<header>
-			<a href="/" class="home-link">
-				<img src="/img/logo.png" class="logo" alt="{{ metadata.title }}" width="48px" height="48px" />
+		<header class="header">
+			<a href="/" class="header__card h-card u-url" rel="me" href="/" {% if page.url == "/" %} aria-current="page"{% endif %}>
+				<img src="/img/avatar.jpeg" class="header__logo" alt="{{ metadata.title }}" width="48px" height="48px" />
+				<span class="header__card-name">Aleksandr Shoronov</span>
 			</a>
 
-			{#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
-			<nav>
-				<h2 class="visually-hidden">Top level navigation menu</h2>
-				<ul class="nav">
-				{%- for entry in collections.all | eleventyNavigation %}
-					<li class="nav-item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
-				{%- endfor %}
-				</ul>
-			</nav>
+			<ul class="nav">
+			{%- for entry in collections.all | eleventyNavigation %}
+				<li class="nav__item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
+			{%- endfor %}
+			</ul>
 			<div class="social">
 				<a href="https://t.me/underootlabs" target="_blank">
 					<img src="/img/tg.png" alt="Telegram logo" />
@@ -94,7 +91,7 @@
 			{{ content | safe }}
 		</main>
 
-		<footer>
+		<footer class="footer">
 			<small>
 				Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>
 			</small>

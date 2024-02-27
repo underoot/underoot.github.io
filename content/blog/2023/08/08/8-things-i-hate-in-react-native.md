@@ -1,6 +1,6 @@
 ---
 title: 📹 8 things I hate in React Native
-description: 8 things I hate in React Native
+description: As an experienced React Native engineer I have some thoughts about things that I don't like about this technology. Let's discuss eight parts of React Native, which I hate the most
 date: 2023-08-08
 telegramPostId: 92
 ---

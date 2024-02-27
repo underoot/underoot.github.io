@@ -1,6 +1,7 @@
 ---
 title: How to execute JS like a binary
 date: 2021-05-11
+description: How to execute JavaScript files like a binary file with usage of Linux custom binary formats
 ---
 There are dozens of binary file formats that supported by operating systems thatwe use. Binary format is standard that helps operating system to determine howto execute file: read content, load part of them into a memory, extract additional data etc.
 
