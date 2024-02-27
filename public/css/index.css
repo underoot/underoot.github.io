@@ -1,8 +1,8 @@
 /* Defaults */
 :root {
-	--font-family: 'Computer Modern', Jost, -apple-system, system-ui, sans-serif;
-	--font-family-book: 'Computer Modern Book', Jost, -apple-system, system-ui, sans-serif;
-	--font-family-heading: 'Computer Modern Sans', -apple-system, system-ui, sans-serif;
+	--font-family: -apple-system, system-ui, sans-serif;
+	--font-family-book: -apple-system, system-ui, sans-serif;
+	--font-family-heading: -apple-system, system-ui, sans-serif;
 	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
 }
 
