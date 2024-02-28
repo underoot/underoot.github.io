@@ -1,6 +1,5 @@
 module.exports = {
-	tags: [
-		"posts"
-	],
-	"layout": "layouts/post.njk",
+	tags: ["posts"],
+	date: "git Created",
+	layout: "layouts/post.njk"
 };
