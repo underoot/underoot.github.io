@@ -5,8 +5,8 @@ module.exports = {
 	"language": "en",
 	"description": "Personal blog of street coder, podcaster, Linux fun and just kind guy!",
 	"assets": {
-		"cover": "/img/cover.png",
-		"splash": "/img/splash.png",
+		"cover": "/img/cover.jpeg",
+		"splash": "/img/splash.jpeg",
 	},
 	"author": {
 		"name": "Aleksandr Shoronov",
