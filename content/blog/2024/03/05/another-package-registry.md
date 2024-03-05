@@ -10,7 +10,7 @@ First of all, JSR is drived by <a href="https://deno.com/blog/jsr_open_beta" tar
 
 Well, yes, for ten recent years of `npm`, their pages of packages got just only TS icon and files tab. But what else we actually need from package registry web interface? Usually I take a look on README, versions, dependencies, statistics of downloads and link to source code.
 
-JSR supports automatic building of your code for all environments, but usually my CD pipeline doing it and I can control and tune it. Moreover, not every package actually needs it, and I won't be happy when package registry will spend time and resources to do things nobody needs.
+JSR supports automatic building of your `.d.ts` files, but usually my CD pipeline doing it and I can control it. Moreover, not every package actually needs it, and I won't be happy when package registry will spend time and resources to do things nobody needs.
 
 JSR will automatically generate docs from your typings. This feature seems good to me. At least from what I see from Rust ecosystem, for example: developers there use to use by default good _de facto_ default documentation system, and it's good to have it in JS/TS world too.
 
