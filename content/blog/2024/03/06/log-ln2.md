@@ -1,6 +1,6 @@
 ---
 tags:
-	- shorts
+  - shorts
 ---
 What I like in the old codebase of web projects. it's chance to see history of real projects in old "dark" times of web. For example you take a look on <a href="https://github.com/mapbox/mapbox-gl-js/blob/v3.2.0/src/geo/transform.js#L1327" taget="_blank">the line code</a> of project with 10 years history:
 ```js
