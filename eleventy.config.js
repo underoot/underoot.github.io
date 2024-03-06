@@ -1,5 +1,6 @@
 const { DateTime } = require("luxon");
 const minifyXML = require("minify-xml");
+const markdownItMathjax = require("markdown-it-mathjax3");
 const markdownItAnchor = require("markdown-it-anchor");
 const yaml = require("js-yaml");
 const markdownIt = require("markdown-it");
@@ -95,6 +96,7 @@ module.exports = function(eleventyConfig) {
 
 	// Customize Markdown library settings:
 	eleventyConfig.amendLibrary("md", mdLib => {
+		mdLib.use(markdownItMathjax);
 		mdLib.use(markdownItAnchor, {
 			permalink: markdownItAnchor.permalink.ariaHidden({
 				placement: "after",

@@ -30,6 +30,7 @@
 		"js-yaml": "^4.1.0",
 		"luxon": "^3.3.0",
 		"markdown-it-anchor": "^8.6.7",
+		"markdown-it-mathjax3": "^4.3.2",
 		"minify-xml": "^3.4.0"
 	}
 }
