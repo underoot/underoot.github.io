@@ -1,7 +1,7 @@
 ---
-title: Ruble roller coaster
+title: Ruble Roller Coaster
 description: >
-  I've build during one evening 3D visualization, art object of Ruble roller coaster,
+  I've build during one winter evening art object of Ruble Roller Coaster,
   which is a metaphor of exchange rate of russian ruble to US dollar.
 splash: content/splash.png
 ---
