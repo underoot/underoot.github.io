@@ -8,6 +8,9 @@ module.exports = {
 		"cover": "/img/cover.jpeg",
 		"splash": "/img/splash.jpeg",
 	},
+	"social": {
+		"twitter": "https://twitter.com/underoot",
+	},
 	"author": {
 		"name": "Aleksandr Shoronov",
 		"email": "alexshoronov@gmail.com",
