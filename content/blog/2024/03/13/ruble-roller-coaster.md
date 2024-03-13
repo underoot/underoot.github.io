@@ -3,6 +3,7 @@ title: Ruble roller coaster
 description: >
   I've build during one evening 3D visualization, art object of Ruble roller coaster,
   which is a metaphor of exchange rate of russian ruble to US dollar.
+splash: content/splash.png
 ---
 
 Once upon a time, during one long winter evening between my test assignment for new job and falling asleep exhausted I've decided to build one simple art object, which I wanted to build long time ago. It's visualization of ruble exchange rate dynamics to USA dollar in form of a roller coaster in 3D from first point of view. Exchange rate fluctuates a lot, so it's a good metaphor for roller coaster, isn't it?
