@@ -1,6 +1,7 @@
 ---
 title: "Elvis Operator"
 splash: https://images.unsplash.com/photo-1519508299351-658aa1d7f3a2?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&dl=susan-mohr-INLHpZKShao-unsplash.jpg
+date: 2023-06-22
 description: |
   Elvis operator in many computer languages is a super powerful thing.
   But what is the origin of this operator and is it exists in JavaScript?

@@ -1,5 +1,6 @@
 ---
 title: Ruble Roller Coaster
+date: 2024-03-13
 description: >
   I've build during one winter evening art object of Ruble Roller Coaster,
   which is a metaphor of exchange rate of russian ruble to US dollar.
