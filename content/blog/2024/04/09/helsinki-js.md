@@ -2,6 +2,7 @@
 title: Helsinki JS. April edition
 date: 2024-04-09
 tags: [helsinkijs, meetup]
+splash: content/splash.jpg
 description: "Helsinki JS meetup was held in the office of Hive. Venue and talks were definitely worth the visit. Organizers did a great job and announced quite curious information about the upcoming summer event."
 ---
 
