@@ -1,5 +1,6 @@
 ---
 title: Another package registry
+date: 2024-03-05
 description: JSR, a new package registry for JavaScript. Is it really needed? Or it's just a new hype?
 ---
 When I was on FOSDEM this year in <a href="https://fosdem.org/2024/schedule/event/fosdem-2024-3665-building-your-own-javascript-runtime-with-rust/" target="_blank">the talk of Leo Kettmeir</a> from Deno, he talked about closed beta access to their new package registry — <a href="https://jsr.io/" target="_blank">JSR</a> . I kept not so much attention to it. Recently, with announcement of public beta access, discussions around the Internet started to appear.

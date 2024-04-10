@@ -3,6 +3,7 @@ title: My 2023 in glance
 description: >
   2023 goes to the end and it's time to look back and see what happened.
 splash: content/photo_2023-12-30_15-56-35.jpg
+date: 2023-12-30
 telegramPostId: 123
 ---
 - For the first time visited <a href="https://www.openstreetmap.org/relation/1473947" target="_blank">Egypt</a> 🇪🇬
