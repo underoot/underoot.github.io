@@ -2,6 +2,8 @@
 module.exports = {
 	"title": "Aleksandr Shoronov",
 	"url": process.env.NODE_ENV === "production" ? "https://underoot.dev" : "http://localhost:8080",
+	"icon": "/img/icon.jpeg",
+	"logo": "/img/avatar.jpeg",
 	"language": "en",
 	"description": "Personal blog of street coder, podcaster, Linux fun and just kind guy!",
 	"assets": {
