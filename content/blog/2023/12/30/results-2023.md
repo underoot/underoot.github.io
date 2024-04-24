@@ -8,17 +8,17 @@ telegramPostId: 123
 ---
 - For the first time visited <a href="https://www.openstreetmap.org/relation/1473947" target="_blank">Egypt</a> 🇪🇬
 - Switched from <a href="https://support.apple.com/kb/SP779" target="_blank">iPhone </a> to <a href="https://www.samsung.com/global/galaxy/galaxy-z-fold4/" target="_blank">Android 🤖</a>
-- Started <a href="https://t.me/underootlabs" target="_blank">my Telegram channel</a>
+- Started <a href="https://t.me/underoot" target="_blank">my Telegram channel</a>
 - Finished B1 Estonian language course
 - Passed A2 Estonian language exam. Yah, ma räägin eesti keelt!
 - Visited <a href="/blog/2023/02/06/fosdem2023/" target="_blank">FOSDEM</a>
 - Had skiing in Estonia
 - Enjoyed beautiful nature of Estonia
 - Actively used <a href="https://chat.openai.com/" target="_blank">ChatGPT</a> and <a href="https://github.com/features/copilot" target="_blank">Copilot</a> for writing code 🤖
-- Started <a href="https://www.youtube.com/@underootlabs" target="_blank">my Youtube channel</a> (will continue soon)
+- Started <a href="https://www.youtube.com/@underoot" target="_blank">my Youtube channel</a> (will continue soon)
 - Bought an electric piano
 - Bought vinyl for the first time, but haven't bought player yet
-- Saw a beautiful astronomical event: <a href="https://t.me/underootlabs/42" target="_blank">Moon near Venus and Pleiades</a>
+- Saw a beautiful astronomical event: <a href="https://t.me/underoot/42" target="_blank">Moon near Venus and Pleiades</a>
 - Visited <a href="https://www.openstreetmap.org/relation/34914" target="_blank">Helsinki</a> in the summer
 - Attended <a href="https://meetabit.com/events/helsinkijs-april-2023" target="_blank">HelsinkiJS</a> in April
 - Find out my favorite beverage: <a href="https://nokianpanimo.fi/tuote/sunn-cream-soda/" target="_blank">Cream soda</a> from Nokian Panimo
@@ -38,7 +38,7 @@ telegramPostId: 123
 - Used 5G network for the first time
 - Resigned from <a href="https://bolt.eu" target="_blank">Bolt</a> 💚
 - Started working in <a href="https://mapbox.com" target="_blank">Mapbox</a> 🗺
-- Participated in <a href="https://t.me/underootlabs/112" target="_blank">Junction 2023 hackathon</a>
+- Participated in <a href="https://t.me/underoot/112" target="_blank">Junction 2023 hackathon</a>
 - Wrote a simple <a href="https://underoot.dev/emerji/" target="_blank">browser game</a> about Emoji 😉
 - Moved from <a href="https://support.apple.com/kb/SP809" target="_blank">Intel-based</a> Macbook to <a href="https://support.apple.com/kb/SP898" target="_blank">Apple Silicon-based</a> one
 - Migrated to <a href="https://www.openstreetmap.org/relation/54224" target="_blank">Finland</a>
