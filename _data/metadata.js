@@ -1,9 +1,9 @@
 // prettier-ignore
 module.exports = {
-	"title": "Aleksandr Shoronov",
+	"title": "underoot",
 	"url": process.env.NODE_ENV === "production" ? "https://underoot.dev" : "http://localhost:8080",
 	"icon": "/img/icon.jpeg",
-	"logo": "/img/avatar.jpeg",
+	"logo": "/img/logo.jpeg",
 	"language": "en",
 	"description": "Personal blog of street coder, podcaster, Linux fun and just kind guy!",
 	"assets": {
