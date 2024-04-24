@@ -209,7 +209,8 @@ blockquote {
 }
 
 .header__logo {
-	background-color: #7bb5f4
+	background-color: #6ee9cc;
+	border-radius: 4px;
 }
 
 @media (max-width: 720px) {
