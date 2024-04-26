@@ -6,7 +6,7 @@ tags: typescript
 ---
 One of the most painful things in TypeScript was the inability to infer types in predicates. For example, you have a collection with possibly `null` or `undefined` values and you want to filter them out. Before, even with filtering such values out, TypeScript was unable to infer the type of item of the collection:
 ```typescript
-const collection = [1, 2, null, 3, undefined, 4];
+const collection = [1.1, 2.3, null, 3.5, undefined, 4.5];
 const filtered = collection.filter(v => {
     return v !== null && v !== undefined;
 });
@@ -20,7 +20,7 @@ filtered.forEach(value => value.toFixed());
 
 But with TypeScript 5.5 beta, you can finally do this and TypeScript will infer the type of the collection correctly, so it will know that `filtered` is an array of numbers without `null` or `undefined` values. But the trick, that I use sometimes to simplify the code, unfortunately, doesn't work:
 ```typescript
-const collection = [1, 2, null, 3, undefined, 4];
+const collection = [1.1, 2.3, null, 3.5, undefined, 4.5];
 const filtered = collection.filter(Boolean);
 
 filtered.forEach(value => value.toFixed());
