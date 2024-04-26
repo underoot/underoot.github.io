@@ -20,7 +20,7 @@ permalink: /podcast/feed.xml
 				<itunes:name>{{ metadata.author.name }}</itunes:name>
 				<itunes:email>{{ metadata.author.email }}</itunes:email>
 		</itunes:owner>
-		<itunes:image href="{{ metadata.url + metadata.assets.cover }}" />
+		<itunes:image href="{{ metadata.url + metadata.assets.logo }}" />
 		<itunes:category text="Technology" />
 		<itunes:category text="News">
 			<itunes:category text="Tech News" />
@@ -39,7 +39,7 @@ permalink: /podcast/feed.xml
 			<itunes:author>{{ metadata.author.name }}</itunes:author>
 			<itunes:explicit>no</itunes:explicit>
 			<itunes:summary>{{ post.data.summary or post.data.description | safe }}</itunes:summary>
-			<itunes:image href="{{ metadata.url + metadata.assets.cover }}" />
+			<itunes:image href="{{ metadata.url + metadata.assets.logo }}" />
 		</item>
 		{%- endfor %}
 	</channel>

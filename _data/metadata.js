@@ -2,13 +2,12 @@
 module.exports = {
 	"title": "underoot",
 	"url": process.env.NODE_ENV === "production" ? "https://underoot.dev" : "http://localhost:8080",
-	"icon": "/img/icon.jpeg",
-	"logo": "/img/logo.jpeg",
 	"language": "en",
 	"description": "Personal blog of street coder, podcaster, Linux fun and just kind guy!",
 	"assets": {
-		"cover": "/img/cover.jpeg",
-		"splash": "/img/splash.jpeg",
+		"icon": "/img/icon.jpeg",
+		"logo": "/img/logo.jpeg",
+		"splash": "/img/splash.jpeg"
 	},
 	"social": {
 		"twitter": "https://twitter.com/underoot",
