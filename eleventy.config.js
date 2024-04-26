@@ -14,13 +14,13 @@ const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 const pluginDrafts = require("./eleventy.config.drafts.js");
 const pluginImages = require("./eleventy.config.images.js");
 
-module.exports = function(eleventyConfig) {
+module.exports = function (eleventyConfig) {
 	// Copy the contents of the `public` folder to the output folder
 	// For example, `./public/css/` ends up in `_site/css/`
 	eleventyConfig.addPassthroughCopy({
 		"./public/": "/",
 		"./node_modules/prismjs/themes/prism-okaidia.css": "/css/prism-okaidia.css",
-		"./node_modules/@11ty/is-land/is-land.js": "/is-land.js"
+		"./node_modules/@11ty/is-land/is-land.js": "/is-land.js",
 	});
 
 	// Run Eleventy when these files change:
@@ -36,13 +36,13 @@ module.exports = function(eleventyConfig) {
 	// Official plugins
 	eleventyConfig.addPlugin(pluginRss);
 	eleventyConfig.addPlugin(pluginSyntaxHighlight, {
-		preAttributes: { tabindex: 0 }
+		preAttributes: { tabindex: 0 },
 	});
 	eleventyConfig.addPlugin(pluginNavigation);
 	eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
 	eleventyConfig.addPlugin(pluginBundle);
 
-	eleventyConfig.addDataExtension("yml", contents => yaml.load(contents));
+	eleventyConfig.addDataExtension("yml", (contents) => yaml.load(contents));
 
 	// Filters
 	eleventyConfig.addFilter("readableDate", (dateObj, format, zone) => {
@@ -52,12 +52,20 @@ module.exports = function(eleventyConfig) {
 		);
 	});
 
-	eleventyConfig.addFilter("htmlDateString", dateObj => {
+	eleventyConfig.addFilter("withTag", function (collection, tag) {
+		if (!tag) return collection;
+		const filtered = collection.filter((item) =>
+			(item.data.tags ?? []).includes(tag)
+		);
+		return filtered;
+	});
+
+	eleventyConfig.addFilter("htmlDateString", (dateObj) => {
 		// dateObj input: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
 		return DateTime.fromJSDate(dateObj, { zone: "utc" }).toISO();
 	});
 
-	eleventyConfig.addFilter("htmlDateStringShort", dateObj => {
+	eleventyConfig.addFilter("htmlDateStringShort", (dateObj) => {
 		// dateObj input: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
 		return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("MMM yyyy");
 	});
@@ -80,39 +88,39 @@ module.exports = function(eleventyConfig) {
 	});
 
 	// Return all the tags used in a collection
-	eleventyConfig.addFilter("getAllTags", collection => {
+	eleventyConfig.addFilter("getAllTags", (collection) => {
 		let tagSet = new Set();
 		for (let item of collection) {
-			(item.data.tags || []).forEach(tag => tagSet.add(tag));
+			(item.data.tags || []).forEach((tag) => tagSet.add(tag));
 		}
 		return Array.from(tagSet);
 	});
 
 	eleventyConfig.addFilter("filterTagList", function filterTagList(tags) {
 		return (tags || []).filter(
-			tag => ["all", "nav", "post", "posts"].indexOf(tag) === -1
+			(tag) => ["all", "nav", "post", "posts"].indexOf(tag) === -1
 		);
 	});
 
 	// Customize Markdown library settings:
-	eleventyConfig.amendLibrary("md", mdLib => {
+	eleventyConfig.amendLibrary("md", (mdLib) => {
 		mdLib.use(markdownItMathjax);
 		mdLib.use(markdownItAnchor, {
 			permalink: markdownItAnchor.permalink.ariaHidden({
 				placement: "after",
 				class: "header-anchor",
 				symbol: "#",
-				ariaHidden: false
+				ariaHidden: false,
 			}),
 			level: [1, 2, 3, 4],
-			slugify: eleventyConfig.getFilter("slugify")
+			slugify: eleventyConfig.getFilter("slugify"),
 		});
 	});
 
-	eleventyConfig.addTransform("htmlmin", function(content) {
+	eleventyConfig.addTransform("htmlmin", function (content) {
 		if (this.page.outputPath && this.page.outputPath.endsWith(".xml")) {
 			return minifyXML.minify(content, {
-				shortenNamespaces: false
+				shortenNamespaces: false,
 			});
 		}
 
@@ -143,7 +151,7 @@ module.exports = function(eleventyConfig) {
 			input: "content", // default: "."
 			includes: "../_includes", // default: "_includes"
 			data: "../_data", // default: "_data"
-			output: "_site"
+			output: "_site",
 		},
 
 		// -----------------------------------------------------------------
@@ -156,6 +164,6 @@ module.exports = function(eleventyConfig) {
 		// When paired with the HTML <base> plugin https://www.11ty.dev/docs/plugins/html-base/
 		// it will transform any absolute URLs in your HTML to include this
 		// folder name and does **not** affect where things go in the output folder.
-		pathPrefix: "/"
+		pathPrefix: "/",
 	};
 };
