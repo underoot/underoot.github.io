@@ -39,7 +39,7 @@ permalink: /podcast/in_commute.xml
 			<itunes:author>{{ metadata.author.name }}</itunes:author>
 			<itunes:explicit>no</itunes:explicit>
 			<itunes:summary>{{ post.data.summary or post.data.description | safe }}</itunes:summary>
-			<itunes:image href="{{ metadata.url + '/img/in_commute.jpeg' }}" />
+			<itunes:image href="{{ metadata.url + '/img/in_commute_cover.jpeg' }}" />
 		</item>
 		{%- endfor %}
 	</channel>
