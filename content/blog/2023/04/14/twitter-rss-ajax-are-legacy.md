@@ -13,11 +13,12 @@ description: >
   </ul>
 tags:
   - podcasts
+  - glitchy_da_vinci
 splash: https://images.unsplash.com/photo-1595287137144-cf60a87f39d9?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&dl=chris-j-davis-7ezFz2Hxd40-unsplash.jpg&w=2400
 episode: 2
 audio:
   title: Twitter, RSS, AJAX are legacy?
-  src: https://underoot.dev/audio/gdv_e2.mp3
+  src: https://cdn.underoot.dev/audio/gdv_e2.mp3
   length: 44588297
   duration: 1392
 ---

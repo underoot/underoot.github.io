@@ -1,18 +1,18 @@
 ---
-permalink: /podcast/feed.xml
+permalink: /podcast/in_commute.xml
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
 	<channel>
-		<title>Glitchy Da Vinci</title>
+		<title>In commute</title>
 		<description>
-			<![CDATA[{{ metadata.description }}]]>
+			<![CDATA[Morning show with technical news, interesting facts and a lot of fun!]]>
 		</description>
 		<copyright>СС BY-NC-ND 4.0</copyright>
 		<language>en</language>
-		<link>{{ metadata.url + "/tags/glitchy_da_vinci/"}}</link>
+		<link>{{ metadata.url + "/tags/in_commute/"}}</link>
 		<atom:link href="{{ metadata.url + page.url }}" rel="self" type="application/rss+xml" />
-		<itunes:subtitle>Technology news</itunes:subtitle>
+		<itunes:subtitle>Technical morning show</itunes:subtitle>
 		<itunes:type>episodic</itunes:type>
 		<itunes:author>{{ metadata.author.name }}</itunes:author>
 		<itunes:explicit>no</itunes:explicit>
@@ -20,12 +20,12 @@ permalink: /podcast/feed.xml
 				<itunes:name>{{ metadata.author.name }}</itunes:name>
 				<itunes:email>{{ metadata.author.email }}</itunes:email>
 		</itunes:owner>
-		<itunes:image href="{{ metadata.url + '/img/glitchy_da_vinci_cover.png' }}" />
+		<itunes:image href="{{ metadata.url + '/img/in_commute.jpeg' }}" />
 		<itunes:category text="Technology" />
 		<itunes:category text="News">
 			<itunes:category text="Tech News" />
 		</itunes:category>
-		{%- for post in collections.podcasts | withTag('glitchy_da_vinci') | reverse %}
+		{%- for post in collections.podcasts | withTag('in_commute') | reverse %}
 		{% set absolutePostUrl %}{{ post.url | htmlBaseUrl(metadata.url) }}{% endset %}
 		<item>
 			<title>{{ post.data.audio.title or post.data.title }}</title>
@@ -39,7 +39,7 @@ permalink: /podcast/feed.xml
 			<itunes:author>{{ metadata.author.name }}</itunes:author>
 			<itunes:explicit>no</itunes:explicit>
 			<itunes:summary>{{ post.data.summary or post.data.description | safe }}</itunes:summary>
-			<itunes:image href="{{ metadata.url + '/img/glitchy_da_vinci_cover.png' }}" />
+			<itunes:image href="{{ metadata.url + '/img/in_commute.jpeg' }}" />
 		</item>
 		{%- endfor %}
 	</channel>
