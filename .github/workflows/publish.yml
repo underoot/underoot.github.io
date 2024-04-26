@@ -13,6 +13,18 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version-file: .nvmrc
+      - name: Setup AWS
+        run: |
+          aws configure set aws_access_key_id $AWS_ACCESS_KEY_ID \
+          && aws configure set aws_secret_access_key $AWS_SECRET_ACCESS_KEY \
+          && aws configure set region eu-central-1
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      - name: Sync with S3
+        run: aws s3 sync --endpoint=https://fra1.digitaloceanspaces.com s3://$S3_BUCKET_NAME _site
+        env:
+          S3_BUCKET_NAME: ${{ secrets.S3_BUCKET_NAME }}
       - name: Install dependencies
         run: npm ci
       - name: Build
@@ -21,11 +33,6 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: _site
-      - name: Setup AWS
-        run: aws configure set aws_access_key_id $AWS_ACCESS_KEY_ID && aws configure set aws_secret_access_key $AWS_SECRET_ACCESS_KEY && aws configure set region eu-central-1
-        env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       - name: Deploy to S3
         run: aws s3 sync --endpoint=https://fra1.digitaloceanspaces.com _site s3://$S3_BUCKET_NAME
         env:
