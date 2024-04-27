@@ -1,0 +1,11 @@
+---
+layout: layouts/post.njk
+---
+{% block preface %}
+<h2>Audio</h2>
+<audio src='{{ "https://dts.podtrac.com/redirect.mp3/" + audio.src }}' controls></audio>
+{% endblock %}
+{% block content %}
+	{{ content | safe }}
+{% endblock %}
+
