@@ -1,5 +1,5 @@
 ---
-title: In commute. Episode 2
+title: RN, Ghost, and bugs
 description: "Software Mansion introduced their own IDE for React Native, Ghost goes to fediverse and much more in new episode \"In commute\""
 date: 2024-04-24
 tags:
