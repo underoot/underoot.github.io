@@ -18,7 +18,7 @@ splash: https://images.unsplash.com/photo-1595287137144-cf60a87f39d9?ixlib=rb-4.
 episode: 2
 audio:
   title: Twitter, RSS, AJAX are legacy?
-  src: https://cdn.underoot.dev/audio/gdv_e2.mp3
+  src: cdn.underoot.dev/audio/gdv_e2.mp3
   length: 44588297
   duration: 1392
 ---

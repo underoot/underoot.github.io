@@ -8,7 +8,7 @@ tags:
 episode: 2
 audio:
   title: RN, Ghost, and bugs
-  src: https://cdn.underoot.dev/audio/in_commute_e2.mp3
+  src: cdn.underoot.dev/audio/in_commute_e2.mp3
   length: 8276374
   duration: 339
 ---

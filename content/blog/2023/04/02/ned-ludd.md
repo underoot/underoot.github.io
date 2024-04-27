@@ -12,7 +12,7 @@ splash: https://images.unsplash.com/photo-1497997092403-f091fcf5b6c4
 episode: 1
 audio:
   title: Ned Ludd
-  src: https://cdn.underoot.dev/audio/gdv_e1.mp3
+  src: cdn.underoot.dev/audio/gdv_e1.mp3
   length: 15309740
   duration: 477
 telegramPostId: 39
