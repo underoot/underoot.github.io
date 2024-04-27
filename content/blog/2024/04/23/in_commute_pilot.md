@@ -8,7 +8,7 @@ tags:
 episode: 1
 audio:
   title: Pilot
-  src: https://cdn.underoot.dev/audio/in_commute_pilot.mp3
+  src: cdn.underoot.dev/audio/in_commute_pilot.mp3
   length: 1872719
   duration: 224
 ---

@@ -8,7 +8,7 @@ tags:
 episode: 4
 audio:
   title: Windows Ads, Node 22, TS 5.5 beta
-  src: https://cdn.underoot.dev/audio/in_commute_e4.mp3
+  src: cdn.underoot.dev/audio/in_commute_e4.mp3
   length: 6444392
   duration: 265
 ---

@@ -8,7 +8,7 @@ tags:
 episode: 3
 audio:
   title: Meta, Apple burn money
-  src: https://cdn.underoot.dev/audio/in_commute_e3.mp3
+  src: cdn.underoot.dev/audio/in_commute_e3.mp3
   length: 2212377
   duration: 267
 ---
