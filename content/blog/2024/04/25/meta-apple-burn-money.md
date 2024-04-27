@@ -14,7 +14,7 @@ audio:
   duration: 267
 ---
 ## Description
-Apple and Meta spend money in innovative ways, and more in new episode "In commute"
+Apple and Meta spend money in innovative ways, and more in new episode "In commute".
 
 ## Links
 - <a href="https://www.macrumors.com/2024/04/23/apple-cuts-vision-pro-shipments/" target="_blank">Apple cuts Vision Pro shipment</a>
