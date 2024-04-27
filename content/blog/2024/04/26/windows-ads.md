@@ -1,6 +1,6 @@
 ---
 title: Windows Ads, Node 22, TS 5.5 beta
-description: "Windows 11 introduces adds in Start Menu, new versions of TypeScript and Node.js, and more in new episode \"In commute\""
+description: "Windows 11 introduces ads in Start Menu, new versions of TypeScript and Node.js, and more in new episode \"In commute\""
 date: 2024-04-26
 tags:
   - podcasts
@@ -16,4 +16,4 @@ audio:
 <audio src='{{ "https://dts.podtrac.com/redirect.mp3/" + audio.src }}' controls></audio>
 
 ## Description
-Windows 11 introduces adds in Start Menu, new versions of TypeScript and Node.js, and more in new episode "In commute"
+Windows 11 introduces ads in Start Menu, new versions of TypeScript and Node.js, and more in new episode "In commute"
