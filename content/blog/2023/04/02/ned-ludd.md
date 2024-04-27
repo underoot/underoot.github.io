@@ -10,6 +10,7 @@ tags:
   - glitchy_da_vinci
 splash: https://images.unsplash.com/photo-1497997092403-f091fcf5b6c4
 episode: 1
+layout: layouts/episode.njk
 audio:
   title: Ned Ludd
   src: cdn.underoot.dev/audio/gdv_e1.mp3
@@ -17,10 +18,6 @@ audio:
   duration: 477
 telegramPostId: 39
 ---
-## Audio
-
-<audio src='{{ "https://dts.podtrac.com/redirect.mp3/" + audio.src }}' controls></audio>
-
 <small>In audio is being used soundtrack <a href="https://soundcloud.com/savestate/leaving-the-atmosphere" target="_blank">Savestate — Leaving the Atmosphere</a></small>
 
 ## Transcript

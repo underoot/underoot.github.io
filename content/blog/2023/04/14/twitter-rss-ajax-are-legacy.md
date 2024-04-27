@@ -16,16 +16,13 @@ tags:
   - glitchy_da_vinci
 splash: https://images.unsplash.com/photo-1595287137144-cf60a87f39d9?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&dl=chris-j-davis-7ezFz2Hxd40-unsplash.jpg&w=2400
 episode: 2
+layout: layouts/episode.njk
 audio:
   title: Twitter, RSS, AJAX are legacy?
   src: cdn.underoot.dev/audio/gdv_e2.mp3
   length: 44588297
   duration: 1392
 ---
-
-## Audio
-<audio src='{{ "https://dts.podtrac.com/redirect.mp3/" + audio.src }}' controls></audio>
-
 <small>In audio is being used soundtrack <a href="https://soundcloud.com/savestate/leaving-the-atmosphere" target="_blank">Savestate — Leaving the Atmosphere</a></small>
 
 ## Description
