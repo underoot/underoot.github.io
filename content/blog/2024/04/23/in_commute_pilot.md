@@ -22,3 +22,7 @@ My favourite thing is to launch random things and sometimes bury them in the dus
 
 My bet: 90 days! 🤞
 Challenge accepted!
+
+# Links
+- <a href="https://about.fb.com/news/2024/04/introducing-our-open-mixed-reality-ecosystem/" target="_blank">About Meta Horizon OS</a>
+- <a href="https://www.yubico.com/products/" target="_blank">About YubiKey</a>
