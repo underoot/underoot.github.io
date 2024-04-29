@@ -15,7 +15,7 @@ Okay, maybe a web client of Telegram will support what I want? I've tried A clie
 
 <img src="{% imageUrl 'content/web_a.png' %}">
 
-Already better, but where is my meta information? Let's maybe try K client, which is a web client of Telegram as well, with cool and stylish names. One, two, three, four 🪄:
+Already better, but where is my meta information? Let's maybe try K client, which is a web client of Telegram as well: what are the cool and stylish names, aren't?. One, two, three, four 🪄:
 
 <img src="{% imageUrl 'content/web_k.png' %}">
 
