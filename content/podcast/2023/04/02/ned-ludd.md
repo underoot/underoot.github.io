@@ -6,10 +6,7 @@ description: |
   <p>Recently a group of famous scientists, businessmen, and engineers signed up for an open letter "Pause Giant AI Experiments" which spotlights the hypothetical weakness of modern society for the results of a new technical revolution. It's not the first time when humanity faces so dramatic changes.</p>
   <p>Let's talk about the Luddites — enemies of the technical progress of the Industrial Revolution.</p>
 tags:
-  - podcasts
   - glitchy_da_vinci
-eleventyExcludeFromCollections:
-  - posts
 splash: https://images.unsplash.com/photo-1497997092403-f091fcf5b6c4
 episode: 1
 layout: layouts/episode.njk

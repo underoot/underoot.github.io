@@ -3,10 +3,7 @@ title: RN, Ghost, and bugs
 description: Software Mansion introduced their own IDE for React Native, Ghost goes to fediverse and much more in new episode "In commute".
 date: 2024-04-24
 tags:
-  - podcasts
   - in_commute
-eleventyExcludeFromCollections:
-  - posts
 episode: 2
 layout: layouts/episode.njk
 audio:

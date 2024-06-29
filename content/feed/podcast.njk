@@ -25,7 +25,7 @@ permalink: /podcast/feed.xml
 		<itunes:category text="News">
 			<itunes:category text="Tech News" />
 		</itunes:category>
-		{%- for post in collections.podcasts | withTag('glitchy_da_vinci') | reverse %}
+		{%- for post in collections.all | withTag('glitchy_da_vinci') | reverse %}
 		{% set absolutePostUrl %}{{ post.url | htmlBaseUrl(metadata.url) }}{% endset %}
 		<item>
 			<title>{{ post.data.audio.title or post.data.title }}</title>

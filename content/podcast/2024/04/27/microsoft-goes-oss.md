@@ -3,10 +3,7 @@ title: Microsoft goes OSS
 date: 2024-04-27
 description: Microsoft published to open-source MS-DOS 4, I found out that flag days application in Finland is written on React Native and much more in new episode of "In commute".
 tags:
-  - podcasts
   - in_commute
-eleventyExcludeFromCollections:
-  - posts
 episode: 5
 layout: layouts/episode.njk
 audio:

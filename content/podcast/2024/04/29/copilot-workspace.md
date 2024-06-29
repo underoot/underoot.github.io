@@ -3,10 +3,7 @@ title: Copilot Workspace
 description: GitHub introduced new system Copilot Workspace, which can get as an input specification of project in natural language and create project from scratch based on it. Listen about it in new episode of "In commute"
 date: 2024-04-29 20:00:00
 tags:
-  - podcasts
   - in_commute
-eleventyExcludeFromCollections:
-  - posts
 episode: 7
 layout: layouts/episode.njk
 audio:
