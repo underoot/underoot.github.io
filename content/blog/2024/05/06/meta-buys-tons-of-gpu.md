@@ -5,6 +5,8 @@ description: Meta spent almost as much as the Manhattan Project on GPUs in today
 tags:
   - podcasts
   - in_commute
+eleventyExcludeFromCollections:
+  - posts
 episode: 14
 layout: layouts/episode.njk
 audio:

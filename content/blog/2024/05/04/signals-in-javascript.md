@@ -5,6 +5,8 @@ description: Signals — it's new proposal to JavaScript, which introduces react
 tags:
   - podcasts
   - in_commute
+eleventyExcludeFromCollections:
+  - posts
 layout: layouts/episode.njk
 episode: 12
 audio:

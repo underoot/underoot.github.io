@@ -5,6 +5,8 @@ date: 2024-05-02
 tags:
   - podcasts
   - in_commute
+eleventyExcludeFromCollections:
+  - posts
 episode: 10
 layout: layouts/episode.njk
 audio:

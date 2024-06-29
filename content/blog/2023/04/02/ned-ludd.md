@@ -8,6 +8,8 @@ description: |
 tags:
   - podcasts
   - glitchy_da_vinci
+eleventyExcludeFromCollections:
+  - posts
 splash: https://images.unsplash.com/photo-1497997092403-f091fcf5b6c4
 episode: 1
 layout: layouts/episode.njk

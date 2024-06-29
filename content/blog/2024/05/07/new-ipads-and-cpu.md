@@ -5,6 +5,8 @@ description: Apple on their event in 7th May announced new line of iPads, access
 tags:
   - podcasts
   - in_commute
+eleventyExcludeFromCollections:
+  - posts
 episode: 15
 layout: layouts/episode.njk
 audio:
