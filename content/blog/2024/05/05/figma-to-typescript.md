@@ -5,6 +5,8 @@ description: Figma moved from their own computer language to TypeScript. Listen 
 tags:
   - podcasts
   - in_commute
+eleventyExcludeFromCollections:
+  - posts
 layout: layouts/episode.njk
 episode: 13
 audio:

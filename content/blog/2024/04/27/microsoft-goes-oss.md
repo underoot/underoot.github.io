@@ -5,6 +5,8 @@ description: Microsoft published to open-source MS-DOS 4, I found out that flag 
 tags:
   - podcasts
   - in_commute
+eleventyExcludeFromCollections:
+  - posts
 episode: 5
 layout: layouts/episode.njk
 audio:

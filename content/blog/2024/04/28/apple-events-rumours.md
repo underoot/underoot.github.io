@@ -5,6 +5,8 @@ description: Apple upcoming events and rumours around them and space game "Equin
 tags:
   - podcasts
   - in_commute
+eleventyExcludeFromCollections:
+  - posts
 episode: 6
 layout: layouts/episode.njk
 audio:
