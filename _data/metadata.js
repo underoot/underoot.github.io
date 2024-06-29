@@ -12,6 +12,7 @@ module.exports = {
 	"author": {
 		"name": "Aleksandr Shoronov",
 		"email": "alexshoronov@gmail.com",
-		"url": "https://underoot.dev/about/"
+		"url": "https://underoot.dev/about/",
+		"mastodon": "@underoot@mastodon.social"
 	}
 }

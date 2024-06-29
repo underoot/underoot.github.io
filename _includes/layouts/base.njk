@@ -42,6 +42,7 @@
 			<meta property="og:site_name" content="{{ metadata.title }}">
 			<meta property="og:locale" content="{{ language or metadata.language }}">
 			<meta property="article:author" content="{{ metadata.url }}">
+			<meta property="fediverse:creator" content="{{ metadata.author.mastodon }}">
 		{%- endblock -%}
 
 		<script defer data-domain="underoot.dev" src="https://stat.underoot.dev/js/script.js"></script>
