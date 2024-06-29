@@ -3,12 +3,7 @@ title: New iPads and CPU
 date: 2024-05-07
 description: Apple on their event in 7th May announced new line of iPads, accessories for them and dozens of additional updates. Listen in the new episode "In commute".
 tags:
-  - podcasts
   - in_commute
-eleventyImport:
-  collections: ["podcasts"]
-eleventyExcludeFromCollections:
-  - posts
 episode: 15
 layout: layouts/episode.njk
 audio:

@@ -3,10 +3,7 @@ title: Apple events rumours and Equinox
 date: 2024-04-28
 description: Apple upcoming events and rumours around them and space game "Equinox" that I'm recently found and totally impressed with in new episode of "In commute"
 tags:
-  - podcasts
   - in_commute
-eleventyExcludeFromCollections:
-  - posts
 episode: 6
 layout: layouts/episode.njk
 audio:
