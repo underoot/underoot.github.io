@@ -3,7 +3,6 @@ const minifyXML = require("minify-xml");
 const markdownItMathjax = require("markdown-it-mathjax3");
 const markdownItAnchor = require("markdown-it-anchor");
 const yaml = require("js-yaml");
-const markdownIt = require("markdown-it");
 
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
@@ -13,6 +12,23 @@ const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 
 const pluginDrafts = require("./eleventy.config.drafts.js");
 const pluginImages = require("./eleventy.config.images.js");
+
+const addTargetBlankToExternalLinks = (md) => {
+  const defaultRender = md.renderer.rules.link_open || function(tokens, idx, options, env, self) {
+    return self.renderToken(tokens, idx, options);
+  };
+
+  md.renderer.rules.link_open = function(tokens, idx, options, env, self) {
+    const hrefIndex = tokens[idx].attrIndex('href');
+    if (hrefIndex >= 0) {
+      const href = tokens[idx].attrs[hrefIndex][1];
+      if (href.startsWith('http://') || href.startsWith('https://')) {
+        tokens[idx].attrPush(['target', '_blank']);
+      }
+    }
+    return defaultRender(tokens, idx, options, env, self);
+  };
+};
 
 module.exports = function (eleventyConfig) {
 	eleventyConfig.setServerOptions({
@@ -118,6 +134,7 @@ module.exports = function (eleventyConfig) {
 			level: [1, 2, 3, 4],
 			slugify: eleventyConfig.getFilter("slugify"),
 		});
+		mdLib.use(addTargetBlankToExternalLinks);
 	});
 
 	eleventyConfig.addTransform("htmlmin", function (content) {
