@@ -1,6 +1,5 @@
 ---
 title: Node.js threads
-draft: true
 description: Node.js is often mistakenly thought of as a single-threaded JavaScript engine. However, this is not accurate. Experienced Node.js engineers are aware of the separate libuv thread pool used for delegating synchronous a file system and a DNS utility operations out of the main thread. But, in reality, the actual number of threads is much larger. If you start Node.js you will see 10 threads alongside with main thread.
 date: 2024-06-30
 tags:
@@ -8,7 +7,7 @@ tags:
   - nodejs
 ---
 Node.js is often mistakenly thought of as a **single-threaded** JavaScript engine. However, this is not accurate. Experienced Node.js engineers are aware of the separate libuv thread pool used for delegating synchronous a file system and a DNS utility operations (like `getaddrinfo` and `getnameinfo`) out of the main thread. But, in reality, the actual number of threads is much larger. If you start Node.js you will see 10 threads alongside with main thread:
-```
+```sh
 ps -m <PID>
 USER       PID   TT   %CPU STAT PRI     STIME     UTIME COMMAND
 underoot 14489 s006    3.1 S    31T   0:00.70   0:00.27 node index.mjs
