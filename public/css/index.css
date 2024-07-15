@@ -357,3 +357,45 @@ h2 + .header-anchor {
 	font-size: 1.5em;
 }
 
+.books {
+	display: grid;
+	gap: 1em;
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.books__link {
+	display: flex;
+	align-items: flex-start;
+}
+
+.books li {
+	margin-bottom: 24px;
+}
+
+.books img {
+	margin-right: 12px;
+}
+
+.books__author {
+	font-size: 0.8125em; /* 13px /16 */
+	word-spacing: -0.5px;
+	color: var(--color-gray-90);
+}
+
+@media (max-width: 720px) {
+	.books {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (max-width: 425px) {
+	.books__link {
+		flex-direction: column;
+	}
+
+	.books img {
+		margin-right: 0;
+		margin-bottom: 8px;
+	}
+}
