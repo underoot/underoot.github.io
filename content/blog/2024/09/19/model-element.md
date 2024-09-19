@@ -1,6 +1,7 @@
 ---
 title: The model element proposal
 description: The upcoming W3C TPAC event will discuss the `<model>` element proposal, which aims to bring 3D content to the web in a more native way, allowing developers to use 3D models in the same way they use images today.
+splash: content/splash.png
 date: 2024-09-19
 tags: web, 3d, w3c
 
