@@ -5,7 +5,6 @@ The best personal home page ever.
 ## Prerequisites
 
 - Install Node.js and npm
-- Install Git LFS (Large File Storage) if you want to work with large files. See [Git LFS](https://git-lfs.github.com/)
 
 ## Getting Started
 
