@@ -2,6 +2,7 @@
 title: "XR Hack: My Experience at the Mixed Reality Hackathon"
 description: "I participated in the XRHack in Stockholm, a hackathon for developing games and applications in mixed reality. I joined a team to develop an airport tower simulator game for Meta Quest. Here's my experience and what I learned."
 date: 2024-10-20
+splash: content/IMG_20241020_153135_514.jpg
 tags: [hackathon, xr, unity]
 ---
 
