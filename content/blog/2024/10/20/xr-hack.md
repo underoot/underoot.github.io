@@ -28,6 +28,8 @@ My teammates developed a logic for marking the track of the planes, which was th
 
 <iframe width="429" height="764" src="https://www.youtube.com/embed/9cMk7cetimc" title="Crazy Planes – Flight Control but in Mixed Reality! #XRHack #hackathon #vr #extendedreality" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="width: 100%;"></iframe>
 
+By the way, we had a neighbour team, who actually decided to go with WebXR to develop the application with a virtual gallery of images on the walls of your room. You can come to the frame and dictate to the headset microphone what you want to see inside the frame, and AI will generate an image inside of the frame. It’s cool that, despite my scepticism, WebXR can be used for prototyping during a hackathon.
+
 We were able [to finish the game](https://devpost.com/software/crazy-planes) to the state enough to present it, but we didn't win any prizes, unfortunately. But I was happy that I was able to participate in the hackathon and I learnt a lot and definitely had a lot of fun. So, if you think that you are not skilled enough and experienced enough to participate in the hackathon, I can say that it's not true. You can find a team and you can have a lot of fun and experience. And also, you can make new connections, which can be useful in the future for your career.
 
 <script src="https://unpkg.com/@appnest/masonry-layout/umd/masonry-layout.min.js"></script>
