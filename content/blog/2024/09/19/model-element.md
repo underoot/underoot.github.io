@@ -3,7 +3,10 @@ title: The model element proposal
 description: The upcoming W3C TPAC event will discuss the `<model>` element proposal, which aims to bring 3D content to the web in a more native way, allowing developers to use 3D models in the same way they use images today.
 splash: content/splash.png
 date: 2024-09-19
-tags: web, 3d, w3c
+tags:
+  - web
+  - 3d
+  - w3c
 
 ---
 We used to think about content of web pages as 2D surface, because we are used to see them on 2D screens. Yes, there are things like [z-index](https://developer.mozilla.org/en-US/docs/Web/CSS/z-index), [CSS transforms](https://developer.mozilla.org/en-US/docs/Web/CSS/transform) and [WebGL context](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) that can make web pages 3D, but all that things only simulate 3D in some different ways.
