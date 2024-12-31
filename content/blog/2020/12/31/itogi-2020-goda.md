@@ -3,6 +3,9 @@ title: Итоги 2020 года
 description: В этом посте я расскажу о своих достижениях и событиях, которые произошли в 2020 году
 date: 2020-12-31
 language: ru
+tags:
+  - personal
+  - review
 ---
 Получил наклейки от <a href="https://fbk.info" target="_blank">ФБК</a>.
 
