@@ -59,6 +59,7 @@ This year had a lot of events around. It's my first year in Finland after I foun
 - Used public library of Helsinki. It's a very comfortable service and I regret that haven't used the public library in Estonia to compare.
 - I participated in "[Noon against Putin](https://en.wikipedia.org/wiki/Noon_Against_Putin)" and voted against the Russian bloody dictator.
 - I passed 500 days streack on [Duolingo](https://www.duolingo.com/profile/alexshoronov).
+- This year I began to play foosball regularly with my friends once per month.
 - Traveled a lot around Finland and not only: [Barcelona](https://en.wikipedia.org/wiki/Barcelona), [Brussels](https://en.wikipedia.org/wiki/Brussels), [Hurghada](https://en.wikipedia.org/wiki/Hurghada) and much more. Thanks to my wife for that!
 
 A lot happened in my life alongside what I've already described. But it's time to run away from a keyboard, shred salads (old Russian tradition, you know) and enjoy the New Year's Eve. I wish you all the best in the upcoming year and I hope that it will bring us peace!
