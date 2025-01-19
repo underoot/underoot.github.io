@@ -10,7 +10,7 @@ tags:
 ---
 For a long time, I've been a fan of ambient sound for work concentration. In the summer I started use for that amazing project [Moodist](https://moodist.mvze.net/). There you can select and mix various sounds from sounds of nature like rain, forest, wind, waves, and cracks of bonfire to sounds of a city like trains, cafes, airports, and so on.
 
-Also, I am a big fan of working headphones with enabled noise cancelation. To my surprise, I found that my usual workflow with clicking the play button on my headphones to turn on and off the sound from Moodist doesn't work as it does on other sites like YouTube. I also noticed that media controls on Mac don't work with Moodist. It was the reason why my headphones didn't work with it.
+Also, I am a big fan of working with headphones with enabled noise cancelation. To my surprise, I found that my usual workflow with clicking the play button on my headphones to turn on and off the sound from Moodist doesn't work as it does on other sites like YouTube. I also noticed that media controls on Mac don't work with Moodist. It was the reason why my headphones didn't work with it.
 
 Thank God, it's an open-source project, and I stumbled upon [the open issue](https://github.com/remvze/moodist/issues/19) about it in the GitHub repository of the project. According to the short discussion on the issue, the author of the project uses Web Audio API instead of [HTML5 audio](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio) because of the issue with short breaks between loops. But switching to Web Audio API caused the issue with media controls. It doesn't work, and the Media Session API specification does not mention Web Audio API.
 
