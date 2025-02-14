@@ -1,6 +1,6 @@
 ---
 title: Annoyed by cookie banners? Firefox to the rescue!
-splash: https://unsplash.com/photos/xUUZcpQlqpM/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8Mnx8Zm94fGVufDB8fHx8MTcwMDc0MjIyM3ww&force=true&w=2400
+splash: content/splash.jpg
 date: 2023-11-23
 description: |
   Recently released Firefox 120 is introducing a new feature, which will allow you to get rid of cookie banners on websites by automatically rejecting them.
