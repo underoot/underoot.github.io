@@ -7,7 +7,7 @@ description: |
   <p>Let's talk about the Luddites — enemies of the technical progress of the Industrial Revolution.</p>
 tags:
   - glitchy_da_vinci
-splash: https://images.unsplash.com/photo-1497997092403-f091fcf5b6c4
+splash: content/splash.jpg
 episode: 1
 layout: layouts/episode.njk
 audio:
