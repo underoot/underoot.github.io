@@ -8,7 +8,7 @@ episode: 7
 layout: layouts/episode.njk
 audio:
   title: Copilot Workspace
-  src: cdn.underoot.dev/audio/in_commute_e7.mp3
+  src: cdn2.underoot.dev/audio/in_commute_e7.mp3
   length: 7848339
   duration: 322
 ---

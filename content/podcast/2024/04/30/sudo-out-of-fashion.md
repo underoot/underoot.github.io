@@ -8,7 +8,7 @@ episode: 8
 layout: layouts/episode.njk
 audio:
   title: sudo is out of fashion
-  src: cdn.underoot.dev/audio/in_commute_e8.mp3
+  src: cdn2.underoot.dev/audio/in_commute_e8.mp3
   length: 2510609
   duration: 299
 ---

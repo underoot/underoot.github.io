@@ -18,7 +18,7 @@ episode: 2
 layout: layouts/episode.njk
 audio:
   title: Twitter, RSS, AJAX are legacy?
-  src: cdn.underoot.dev/audio/gdv_e2.mp3
+  src: cdn2.underoot.dev/audio/gdv_e2.mp3
   length: 44588297
   duration: 1392
 ---

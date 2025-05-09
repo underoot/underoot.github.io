@@ -8,7 +8,7 @@ episode: 14
 layout: layouts/episode.njk
 audio:
   title: Meta buys tons of GPU
-  src: cdn.underoot.dev/audio/in_commute_e14.mp3
+  src: cdn2.underoot.dev/audio/in_commute_e14.mp3
   length: 2761640
   duration: 113
 ---
