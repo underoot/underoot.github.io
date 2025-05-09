@@ -8,7 +8,7 @@ episode: 1
 layout: layouts/episode.njk
 audio:
   title: Pilot
-  src: cdn2.underoot.dev/audio/in_commute_pilot.mp3
+  src: cdn.underoot.dev/audio/in_commute_pilot.mp3
   length: 1872719
   duration: 224
 ---

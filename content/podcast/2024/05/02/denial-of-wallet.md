@@ -8,7 +8,7 @@ episode: 10
 layout: layouts/episode.njk
 audio:
   title: Denial of Wallet
-  src: cdn2.underoot.dev/audio/in_commute_e10.mp3
+  src: cdn.underoot.dev/audio/in_commute_e10.mp3
   length: 6119250
   duration: 248
 ---

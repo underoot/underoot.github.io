@@ -8,7 +8,7 @@ layout: layouts/episode.njk
 episode: 11
 audio:
   title: Passkeys and Observatory
-  src: cdn2.underoot.dev/audio/in_commute_e11.mp3
+  src: cdn.underoot.dev/audio/in_commute_e11.mp3
   length: 10917457
   duration: 450
 ---

@@ -8,7 +8,7 @@ episode: 4
 layout: layouts/episode.njk
 audio:
   title: Windows Ads, Node 22, TS 5.5 beta
-  src: cdn2.underoot.dev/audio/in_commute_e4.mp3
+  src: cdn.underoot.dev/audio/in_commute_e4.mp3
   length: 6444392
   duration: 265
 ---

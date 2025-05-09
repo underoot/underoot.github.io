@@ -8,7 +8,7 @@ episode: 2
 layout: layouts/episode.njk
 audio:
   title: RN, Ghost, and bugs
-  src: cdn2.underoot.dev/audio/in_commute_e2.mp3
+  src: cdn.underoot.dev/audio/in_commute_e2.mp3
   length: 8276374
   duration: 339
 ---
