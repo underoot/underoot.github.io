@@ -8,7 +8,7 @@ episode: 3
 layout: layouts/episode.njk
 audio:
   title: Meta, Apple burn money
-  src: cdn2.underoot.dev/audio/in_commute_e3.mp3
+  src: cdn.underoot.dev/audio/in_commute_e3.mp3
   length: 2212377
   duration: 267
 ---

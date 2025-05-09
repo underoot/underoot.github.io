@@ -8,7 +8,7 @@ layout: layouts/episode.njk
 episode: 13
 audio:
   title: Figma's journey to TypeScript
-  src: cdn2.underoot.dev/audio/in_commute_e13.mp3
+  src: cdn.underoot.dev/audio/in_commute_e13.mp3
   length: 5871824
   duration: 243
 ---

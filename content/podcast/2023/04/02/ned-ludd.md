@@ -12,7 +12,7 @@ episode: 1
 layout: layouts/episode.njk
 audio:
   title: Ned Ludd
-  src: cdn2.underoot.dev/audio/gdv_e1.mp3
+  src: cdn.underoot.dev/audio/gdv_e1.mp3
   length: 15309740
   duration: 477
 telegramPostId: 39

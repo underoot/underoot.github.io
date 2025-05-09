@@ -8,7 +8,7 @@ episode: 9
 layout: layouts/episode.njk
 audio:
   title: Google lay-offs and fart
-  src: cdn2.underoot.dev/audio/in_commute_e9.mp3
+  src: cdn.underoot.dev/audio/in_commute_e9.mp3
   length: 8944953
   duration: 369
 ---

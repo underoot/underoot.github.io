@@ -8,7 +8,7 @@ episode: 15
 layout: layouts/episode.njk
 audio:
   title: New iPads and CPU
-  src: cdn2.underoot.dev/audio/in_commute_e15.mp3
+  src: cdn.underoot.dev/audio/in_commute_e15.mp3
   length: 10770353
   duration: 446
 ---

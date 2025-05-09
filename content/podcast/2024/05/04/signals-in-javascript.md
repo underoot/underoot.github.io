@@ -8,7 +8,7 @@ layout: layouts/episode.njk
 episode: 12
 audio:
   title: Signals in JavaScript
-  src: cdn2.underoot.dev/audio/in_commute_e12.mp3
+  src: cdn.underoot.dev/audio/in_commute_e12.mp3
   length: 4872993
   duration: 200
 ---

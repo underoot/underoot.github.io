@@ -8,7 +8,7 @@ episode: 6
 layout: layouts/episode.njk
 audio:
   title: Apple events rumours and Equinox
-  src: cdn2.underoot.dev/audio/in_commute_e6.mp3
+  src: cdn.underoot.dev/audio/in_commute_e6.mp3
   length: 6209997
   duration: 255
 ---
