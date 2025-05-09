@@ -8,7 +8,7 @@ episode: 5
 layout: layouts/episode.njk
 audio:
   title: MS goes OSS, Finland flag days app on RN
-  src: cdn.underoot.dev/audio/in_commute_e5.mp3
+  src: cdn2.underoot.dev/audio/in_commute_e5.mp3
   length: 8292925
   duration: 345
 ---

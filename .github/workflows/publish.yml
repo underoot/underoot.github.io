@@ -17,14 +17,16 @@ jobs:
         run: |
           aws configure set aws_access_key_id $AWS_ACCESS_KEY_ID \
           && aws configure set aws_secret_access_key $AWS_SECRET_ACCESS_KEY \
-          && aws configure set region eu-central-1
+          && aws configure set region $AWS_REGION
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_REGION: ${{ secrets.AWS_REGION }}
       - name: Sync with S3
-        run: aws s3 sync --endpoint=https://fra1.digitaloceanspaces.com s3://$S3_BUCKET_NAME _site
+        run: aws s3 sync --endpoint=$AWS_ENDPOINT_URL s3://$S3_BUCKET_NAME _site
         env:
           S3_BUCKET_NAME: ${{ secrets.S3_BUCKET_NAME }}
+          AWS_ENDPOINT_URL: ${{ secrets.AWS_ENDPOINT_URL }}
       - name: Install dependencies
         run: npm ci
       - name: Build
@@ -34,9 +36,10 @@ jobs:
         with:
           path: _site
       - name: Deploy to S3
-        run: aws s3 sync --endpoint=https://fra1.digitaloceanspaces.com _site s3://$S3_BUCKET_NAME
+        run: aws s3 sync --endpoint=$AWS_ENDPOINT_URL _site s3://$S3_BUCKET_NAME
         env:
           S3_BUCKET_NAME: ${{ secrets.S3_BUCKET_NAME }}
+          AWS_ENDPOINT_URL: ${{ secrets.AWS_ENDPOINT_URL }}
   deploy:
     runs-on: ubuntu-22.04
     needs: build
