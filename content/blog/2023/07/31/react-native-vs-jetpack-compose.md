@@ -4,7 +4,6 @@ description: I'm sharing my experience and my thoughts about Jetpack Compose and
 date: 2023-07-31
 tags:
   - video
-telegramPostId: 90
 ---
 I'm a software engineer who the last two years mostly busy with a job of the development of a mobile application on React Native. But recently I decided to learn a native stack for the development of mobile applications for Android. I enrolled in to course from Google for beginners in Jetpack Compose — a modern UI framework on Kotlin. I was totally impressed with the abilities of Kotlin and Jetpack compose.
 
