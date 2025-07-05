@@ -4,7 +4,6 @@ description: As an experienced React Native engineer I have some thoughts about 
 date: 2023-08-08
 tags:
   - video
-telegramPostId: 92
 ---
 As React Native engineer I have a lot of experience with it, and, for sure, I have in mind things that I don't like about this technology. That's the normal way of technology, that it is not perfect, but an understanding of weak parts of technologies helps us to understand areas of application and it's limitations.
 

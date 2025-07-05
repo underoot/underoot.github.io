@@ -15,7 +15,6 @@ audio:
   src: cdn.underoot.dev/audio/gdv_e1.mp3
   length: 15309740
   duration: 477
-telegramPostId: 39
 ---
 <small>In audio is being used soundtrack <a href="https://soundcloud.com/savestate/leaving-the-atmosphere" target="_blank">Savestate — Leaving the Atmosphere</a></small>
 

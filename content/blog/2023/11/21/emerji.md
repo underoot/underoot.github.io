@@ -4,7 +4,6 @@ splash: content/splash.jpg
 date: 2023-11-21
 description: |
   I've built game with Emoji, which is, basically, analogue of 2048, but built on concept of Zero-Width-Joiner. It's called Emerji.
-telegramPostId: 119
 ---
 
 ## TL;DR

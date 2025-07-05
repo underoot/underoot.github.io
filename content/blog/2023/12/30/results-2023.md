@@ -7,7 +7,6 @@ date: 2023-12-30
 tags:
   - personal
   - review
-telegramPostId: 123
 ---
 - For the first time visited <a href="https://www.openstreetmap.org/relation/1473947" target="_blank">Egypt</a> 🇪🇬
 - Switched from <a href="https://support.apple.com/kb/SP779" target="_blank">iPhone </a> to <a href="https://www.samsung.com/global/galaxy/galaxy-z-fold4/" target="_blank">Android 🤖</a>
