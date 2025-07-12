@@ -3,7 +3,7 @@ title: How to execute JS like a binary
 date: 2021-05-11
 description: How to execute JavaScript files like a binary file with usage of Linux custom binary formats
 ---
-There are dozens of binary file formats that supported by operating systems thatwe use. Binary format is standard that helps operating system to determine howto execute file: read content, load part of them into a memory, extract additional data etc.
+There are dozens of binary file formats that supported by operating systems that we use. Binary format is standard that helps operating system to determine howto execute file: read content, load part of them into a memory, extract additional data etc.
 
 How operating system determines how it should execute one or the other binary file? There are several ways to do that: one of that is to look at file extension. For example if you use Windows operating system, you can easily rename any text file to add `.exe`-extension and after that it will be looks like executable file, but, for sure, it cannot be executed because it doesn't follow structure of standard executable file for Windows.
 
@@ -17,7 +17,7 @@ If you are using UNIX-like operating system, you can easily check content of any
 0000004
 ```
 
-In linux executable file is executed by kernel and format of executable is determinated using either magic numbers or file extension. Built-in module _binfmt_ is responsible for this process. In linux 5.9 you can find <a href="https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/tree/fs?h=linux-5.9.y" target="_blank">seven</a> file formats that kernel supports out of box. And, surprisingly, one of the format is shebang scripts — scripts, that start with `#!` symbol combination. Thus, if you run, using your favorite shell program, script, which has permission to be executed, kernel will decide what to do with your script.
+In linux executable file is executed by kernel and format of executable is determinated using either magic numbers or file extension. Built-in module _binfmt_ is responsible for this process. In linux 5.9 you can find <a href="https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/tree/fs?h=linux-5.9.y" target="_blank">seven</a> file formats that kernel supports out of box (take a look onto files with prefix `binfmt` there in the list). And, surprisingly, one of the format is shebang scripts — scripts, that start with `#!` symbol combination. Thus, if you run, using your favorite shell program, script, which has permission to be executed, kernel will decide what to do with your script.
 
 But the most interesting part of this mechanism that you can easily extend itusing <a href="https://www.kernel.org/doc/html/latest/admin-guide/binfmt-misc.html" target="_blank">custom binary formats</a>. By default, your distribution has mounted folder `binfmt_misc` in `/proc/sys/fs`:
 
