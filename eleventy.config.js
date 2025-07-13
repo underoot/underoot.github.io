@@ -1,5 +1,6 @@
 const { DateTime } = require("luxon");
 const minifyXML = require("minify-xml");
+const markdownIt = require("markdown-it");
 const markdownItMathjax = require("markdown-it-mathjax3");
 const markdownItAnchor = require("markdown-it-anchor");
 const yaml = require("js-yaml");
@@ -14,25 +15,34 @@ const pluginDrafts = require("./eleventy.config.drafts.js");
 const pluginImages = require("./eleventy.config.images.js");
 
 const addTargetBlankToExternalLinks = (md) => {
-  const defaultRender = md.renderer.rules.link_open || function(tokens, idx, options, env, self) {
-    return self.renderToken(tokens, idx, options);
-  };
+	const defaultRender =
+		md.renderer.rules.link_open ||
+		function (tokens, idx, options, env, self) {
+			return self.renderToken(tokens, idx, options);
+		};
 
-  md.renderer.rules.link_open = function(tokens, idx, options, env, self) {
-    const hrefIndex = tokens[idx].attrIndex('href');
-    if (hrefIndex >= 0) {
-      const href = tokens[idx].attrs[hrefIndex][1];
-      if (href.startsWith('http://') || href.startsWith('https://')) {
-        tokens[idx].attrPush(['target', '_blank']);
-      }
-    }
-    return defaultRender(tokens, idx, options, env, self);
-  };
+	md.renderer.rules.link_open = function (tokens, idx, options, env, self) {
+		const hrefIndex = tokens[idx].attrIndex("href");
+		if (hrefIndex >= 0) {
+			const href = tokens[idx].attrs[hrefIndex][1];
+			if (href.startsWith("http://") || href.startsWith("https://")) {
+				tokens[idx].attrPush(["target", "_blank"]);
+			}
+		}
+		return defaultRender(tokens, idx, options, env, self);
+	};
 };
+
+const md = markdownIt({
+	html: true,
+	breaks: true,
+	linkify: true,
+	typographer: true,
+}).use(addTargetBlankToExternalLinks);
 
 module.exports = function (eleventyConfig) {
 	eleventyConfig.setServerOptions({
-		showAllHosts: true
+		showAllHosts: true,
 	});
 	// Copy the contents of the `public` folder to the output folder
 	// For example, `./public/css/` ends up in `_site/css/`
@@ -77,6 +87,10 @@ module.exports = function (eleventyConfig) {
 			(item.data.tags ?? []).includes(tag)
 		);
 		return filtered;
+	});
+
+	eleventyConfig.addFilter("markdown", (content) => {
+		return md.render(content);
 	});
 
 	eleventyConfig.addFilter("htmlDateString", (dateObj) => {
