@@ -1,19 +1,17 @@
-basics:
+bio:
   name: Aleksandr Shoronov
-  label: Senior Software Engineer
-  image: https://avatars.githubusercontent.com/u/2480721
+  title: Senior Software Engineer
   email: alex.shoronov@gmail.com
-  phone: +372 5667 1227
   url: https://underoot.dev
   highlights:
-    - A software engineer with more than 8 years of experience in software design
-    - Developed applications and infrastructure systems for fintech, transport and educational spheres
-    - Result-oriented, focused on business values, strong communication skills, constant learner
-    - Interested in UI, practices and paradigms in software, system programming, micro-electronics
+    - "Full-stack engineer, eager to learn and deliver the best solutions."
+    - "Web technologies guru: JavaScript, TypeScript, React and ecosystem, HTML, CSS, WebGL, React Native, Node.js, PostgresSQL, MongoDB, Redis and others."
+    - "Software engineer with 10 years of experience with front-end and back-end technologies."
+    - "Developed applications, libraries and infrastructure systems for a fin-tech, e-commerce, transport, educational and cartographic spheres."
+    - "Areas of professional interests: computer graphics, game development, math, algorithms, spatial computing, Linux system programming."
+    - "Ready for consultancy and mentorship."
   location:
-    city: Tallinn
-    countryCode: EE
-    region: Harjumaa
+    city: Helsinki
   profiles:
   - network: GitHub
     username: underoot
@@ -22,6 +20,17 @@ basics:
     username: underoot
     url: https://www.linkedin.com/in/underoot/
 work:
+- company: Mapbox
+  url: https://mapbox.com
+  positions:
+  - position: "Software Development Engineer II, Graphics"
+    startDate: 2023-11-27
+    highlights:
+      - "Working on maps open-source engine mapbox-gl-js and its ecosystem."
+      - "Delivered icon customization feature: performant and optimized vector icons client rasterization."
+      - "Analyzed and optimized initial load performance of the engine. Improved metrics up to 5 times for low-tech mobile devices."
+      - "Rebuilt benchmarks infrastructure to control and support performance measurements."
+      - "Improved quality of the engine by closing long-standing issues and by improving testing infrastructure."
 - company: Bolt
   url: https://bolt.eu
   summary: >
@@ -30,71 +39,62 @@ work:
   positions:
   - position: Senior Software Engineer
     startDate: 2021-10-01
+    endDate: 2023-10-27
     highlights:
-      - "Boosted fleet utilization by 25% by developing features for the mobile application"
-      - "Improved performance of the mobile application by 30% by refactoring and optimizing code"
-      - "Technologies: React Native, Detox, TypeScript, Android Studio"
+      - "Lead development of React Native application for teams that service a fleet of rental micro mobility vehicles. Application were used by operation teams in more than 200 cities in the EU."
+      - "Delivered a WebGL monitoring application for car-sharing with the ability to handle up to 50k real-time vehicle markers on the map."
+      - "Lead initiatives and supported front-end developer community inside Rentals department."
+      - "Technologies: React, React Native, Detox, RxJS, Redux Observable, Node.js, TypeScript, Node.js, MySQL, WebGL."
   - position: Software Engineer
     startDate: 2020-12-07
     endDate: 2021-09-30
     highlights:
-      - "Actively participated in the development of the mobile application for operating vehicles"
-      - "Developed a map-based monitoring system for a fleet of micro-mobility vehicles, which becomes a foundation for the same products in the future"
-      - "Technologies: React, TypeScript, WebGL, Google Maps SDK, Node.js, MySQL"
-- company: Yandex.Money
-  url: https://yoomoney.ru
-  positions:
-  - position: Senior Software Engineer
-    startDate: 2020-01-24
-    endDate: 2020-11-24
-    summary: >
-      Participated in the complete cycle of development of a new cash management service
-      with a new for me React Native technology stack: from scratch to launch
-    highlights:
-      - "Developed 20+ screens in the mobile app, enhancing user experience"
-      - "Implemented a React Native native module for tokenization bank cards in the application"
-      - "Created a personal cabinet web application, which allowed business clients to manage accounts and cards"
-      - "Technologies: React Native, TypeScript, Redux, Detox, Fastlane, Swift, Kotlin"
+      - "Involved in development of the React Native applications for teams that service a fleet of rental vehicles in micro-mobility and car-sharing departments. Applications were used by operation teams in more than 200 cities in the EU."
+      - "Developed React admin portal to help operations teams visualize the status of the fleet for micro-mobility and car-sharing products."
+      - "Took ownership over interactive maps in an admin portal for micro-mobility and car-sharing products. Developed complex cartographic UI with robust extensibility in mind."
+      - "Participated in development of Node.js micro services, which supported functionality of micro-mobility services."
 - company: Yandex
   url: https://ya.ru
   positions:
+  - position: Senior Software Engineer (Yandex.Money)
+    startDate: 2017-06-26
+    endDate: 2020-11-24
+    highlights:
+      - "Developed web and mobile banking applications using React, Redux, Redux Toolkit, Styled Components, React Native and Nest.js based stack. Developed native modules for integration of the React Native application with authorization SDK and Apple Pay."
+      - "Developed the UI for personalized sales and bonuses project by Yandex.Money using React, Redux, Redux Thunk. Developed and maintained the business logic layer of the project using Node.js."
+      - "Developed a high-load service that delivers common elements of the Yandex.Money site interface and helps share UI layer between dozens of frontend micro-services of the company."
+      - "Worked in the platform team of the front-end department. Involved in the process of migration and refactoring XML/XSLT-based monolithic service to Node.js micro services. Maintain CI/CD platform of the frontend department using Jenkins, Groovy, Node.js. Supported various development tools actively used by dozens of product teams inside the department."
+      - "Managed frontend team of 5 developers: planning, one-to-one. Participated in hiring procedure as an interviewer. Involved in improving development processes and tools of frontend department. Participated in organization of Node.js course Yandex.Money Node School for web-developers."
   - position: User Interface Developer
-    startDate: 2019-01-28
-    endDate: 2020-01-23
+    startDate: 2019-01-14
+    endDate: 2020-01-24
     highlights:
-      - "Involved in educational services development for schools and universities with 1000+ students. For example, Yandex.Contest — a platform for programming competitions and a checker system"
-      - "Involved in courses about web development at IFMO as a lecturer and methodologist. Helped in improving the qualification for 30 students with the help of my efforts"
-      - "Technologies: React, TypeScript, Node.js, MongoDB, PostgreSQL"
-- company: Yandex.Money
-  url: https://yoomoney.ru
-  positions:
-  - position: Senior Software Engineer
+      - "Developed, improved and adapted the national education project \"Ya.Professional\" for mobile devices using full BEM-stack. Designed and developed API for UI of the project using Node.js, Sequelize, PostgreSQL."
+      - "Developed UI of \"Yandex.Contest\" administrative panel using React, Redux, Redux Saga, React Final Form, TypeScript, Node.js. Managed process of interaction of backend and frontend teams in the project."
+      - "Involved in courses about web development among the 3rd year students of IFMO university as lecturer and methodologist which help in improving the qualifications for 30 students. Was a mentor of an Intern during summer internship at Yandex."
+  - position: Software Engineer (Yandex.Money)
     startDate: 2016-07-25
-    endDate: 2019-01-25
+    endDate: 2017-06-23
     highlights:
-      - "I was developing back-end and web pages of a high-load check-out system \"Yandex.Kassa\""
-      - "Promoted to SSE, and later, in this position, joined the platform team. There I participated in the development of high-load common services for all Yandex.Money products"
-      - "Technologies: Node.js, Jenkins, React, BEM methodology"
+      - "Developed UI-components and pages of high-load e-commerce project \"Yandex.Kassa\" using full BEM-stack."
+      - "Maintain business logic of payments system using Node.js, Express.js."
 - company: Cloud Technologies
   url: https://smartycrm.com
   positions:
   - position: Senior Software Engineer
-    startDate: 2015-01-12
+    startDate: 2015-09-14
     endDate: 2016-07-15
     highlights:
-      - "Started as a Junior Software Engineer and was involved in the front-end of the CRM product"
-      - "Later led the development of back-end microservices for that CRM product"
-      - "Technologies: React, Ember.js, Node.js, MongoDB, RabbitMQ, Docker, Kubernetes"
-- company: Mozilla
-  url: https://mozilla.org
-  positions:
-  - position: OSS Contributor
-    summary: >
-      Contributed to the development of the Firefox browser and got familiar with the development process of a large open-source project.
+      - "Involved in development UI-parts of the CRM system using React, Redux, Redux Thunk."
+      - "Refactored monolithic server to micro-services using Node.js, Express.js, MongoDB, RabbitMQ."
+      - "Managed team of 4 backend developers: involved in planning and gathering requirements from business, code review and making technical specification of projects, in cross-teams meetings, organized trainings."
+      - "Created continuous integration process for project's micro-services with using self-written E2E platform with using Docker, Jenkins."
+  - position: Junior Software Engineer
+    startDate: 2015-01-12
+    endDate: 2015-09-11
     highlights:
-      - <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=889057">Made the Console log sources toolbar responsive</a>
-      - <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1790067">Removed the warning about Relative position of table rows</a>
-      - "Technologies: JavaScript, C++, XUL"
+      - "Developed several parts of ERP/CRM-project Smarty PRO using Ember.js;"
+      - "Maintain infrastructure code of projects: client libraries and UI-kit."
 education:
   institution: Ivanovo State Power University
   url: http://ispu.ru

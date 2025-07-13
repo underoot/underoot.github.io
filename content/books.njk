@@ -1,0 +1,40 @@
+---
+layout: layouts/base.njk
+eleventyNavigation:
+  key: I've read
+  order: 2
+---
+<style>
+.book {
+	margin-bottom: 1.5em;
+}
+.book__author {
+	font-style: italic;
+}
+.book__review {
+	font-size: 0.9em;
+}
+.book__date {
+	font-size: 0.8em;
+	color: var(--color-gray-20);
+}
+</style>
+
+<h1>I've read</h1>
+<ul>
+	{% for book in books %}
+		<li class="book">
+			<a href="{{ book.url }}" target="_blank">{{ book.title }}</a> by
+			{% for author in book.authors %}
+				<span class="book__author">{{ author }}</span>
+				{% if not loop.last %}, {% endif %}
+			{% endfor %}
+			{% if book.review %}
+				<p class="book__review">{{ book.review | markdown | safe }}</p>
+			{% endif %}
+			{% if book.read_date %}
+				<div class="book__date">{{ book.read_date | htmlDateStringShort }}</div>
+			{% endif %}
+		</li>
+	{% endfor %}
+</ul>

@@ -12,11 +12,9 @@
 		<div class="post__content e-content p-summary entry-summary">
 			{{ content | safe }}
 		</div>
-		<a class="post__date" href="{{ post.url }}">
-			<time class="dt-published published" datetime="{{ post.date | htmlDateString }}">
-				{{ post.date | readableDate("LLLL yyyy") }}
-			</time>
-		</a>
+		<time class="post__date" class="dt-published published" datetime="{{ post.date | htmlDateString }}">
+			{{ post.date | readableDate("LLLL yyyy") }}
+		</time>
 	</li>
 {% endfor %}
 </ul>
