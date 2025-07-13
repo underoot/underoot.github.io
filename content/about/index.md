@@ -4,38 +4,7 @@ eleventyNavigation:
   key: About Me
   order: 4
 ---
-<style>
-  @keyframes shake {
-    0% { transform: rotate(0deg); }
-    25% { transform: rotate(5deg); }
-    50% { transform: rotate(-5deg); }
-    75% { transform: rotate(5deg); }
-    100% { transform: rotate(0deg); }
-  }
-  .hand {
-    display: inline-block;
-    animation: shake 1s 3;
-    transform-origin: bottom right;
-    font-size: 3em;
-    margin-top: 1rem;
-    text-align: center;
-  }
-  .links {
-    display: flex;
-    gap: 1em;
-    margin-top: 2em;
-  }
-
-  .links a {
-    color: var(--fgColor-default);
-    text-decoration: none;
-    transition: filter 0.3s ease;
-  }
-
-  .links a:hover {
-    filter: invert(0.5);
-  }
-</style>
+<link rel="stylesheet" href="/css/about.css">
 <div class="hand">👋</div>
 
 I'm Sasha, a software engineer with more than 10 years of development experience. I started my programming journey at the beginning of the XX century when my father brought home an old computer based on 80386SX. When I touched it for the first time, I removed one crucial .BAT file that caused the system not to boot. But before I managed to rewrite the hit scores of the "Minesweeper" game.

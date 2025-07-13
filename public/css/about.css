@@ -1,0 +1,32 @@
+@keyframes shake {
+	0% { transform: rotate(0deg); }
+	25% { transform: rotate(5deg); }
+	50% { transform: rotate(-5deg); }
+	75% { transform: rotate(5deg); }
+	100% { transform: rotate(0deg); }
+}
+
+.hand {
+	display: inline-block;
+	animation: shake 1s 3;
+	transform-origin: bottom right;
+	font-size: 3em;
+	margin-top: 1rem;
+	text-align: center;
+}
+
+.links {
+	display: flex;
+	gap: 1em;
+	margin-top: 2em;
+}
+
+.links a {
+	color: var(--fgColor-default);
+	text-decoration: none;
+	transition: filter 0.3s ease;
+}
+
+.links a:hover {
+	filter: invert(0.5);
+}
