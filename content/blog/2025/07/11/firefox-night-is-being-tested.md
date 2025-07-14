@@ -11,4 +11,4 @@ For a long time I've been using Firefox Nightly on the desktop and on my mobile 
 
 But recently, I realized that I was using a nightly build when I saw the testing label "I'm a temporary text to indicate you're on the new Tab Fragment" on the new tab interface.
 
-<img src="{% imageUrl 'content/screenshot.jpg' %}" alt="Firefox Nightly interface with label 'I'm a temporary text to indicate you're on the new Tab Fragment'" style="max-width: 100%; height: auto; margin: 0 auto; display: block;" />
+<img src="{% imageUrl 'content/screenshot.jpg' %}" alt="Firefox Nightly interface with label 'I'm a temporary text to indicate you're on the new Tab Fragment'" style="width: 100%; height: auto; margin: 0 auto; display: block;" />
