@@ -1,0 +1,14 @@
+.progress {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 4px;
+	background-color: var(--color-gray-90);
+	animation-timeline: scroll();
+	animation-name: post-progress;
+}
+
+@keyframes post-progress {
+	0% { width: 0; }
+	100% { width: 100%; }
+}
