@@ -74,6 +74,7 @@
 
 	</head>
 	<body>
+		{% block top %}{% endblock %}
 		<a href="#skip" class="visually-hidden">Skip to main content</a>
 		<header class="header">
 			<a href="/" class="header__card h-card u-url" rel="me" href="/" {% if page.url == "/" %} aria-current="page"{% endif %}>
