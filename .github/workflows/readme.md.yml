@@ -12,9 +12,9 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout Content
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
       - name: Checkout README.md
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           repository: 'underoot/underoot'
           ssh-key: ${{ secrets.UNDEROOT_SSH_KEY }}
