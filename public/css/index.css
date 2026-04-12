@@ -298,6 +298,11 @@ blockquote {
 	object-fit: cover;
 }
 
+.post__date-link {
+	color: var(--color-gray-20);
+	text-decoration-color: var(--color-gray-20);
+}
+
 .post__date {
 	font-size: 0.8125em; /* 13px /16 */
 	color: var(--color-gray-20);
