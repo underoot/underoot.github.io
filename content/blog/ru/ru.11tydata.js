@@ -1,6 +1,7 @@
 module.exports = {
 	tags: ["posts"],
 	layout: "layouts/post.njk",
+	language: "ru",
 	eleventyComputed: {
 		permalink: (data) => {
 			const date = data.date;
@@ -9,7 +10,7 @@ module.exports = {
 			const year = d.getUTCFullYear();
 			const month = String(d.getUTCMonth() + 1).padStart(2, "0");
 			const day = String(d.getUTCDate()).padStart(2, "0");
-			return `/blog/${year}/${month}/${day}/${data.page.fileSlug}/`;
+			return `/blog/ru/${year}/${month}/${day}/${data.page.fileSlug}/`;
 		},
 	},
 };
