@@ -1,18 +1,17 @@
-const { DateTime } = require("luxon");
-const minifyXML = require("minify-xml");
-const markdownIt = require("markdown-it");
-const markdownItMathjax = require("markdown-it-mathjax3");
-const markdownItAnchor = require("markdown-it-anchor");
-const yaml = require("js-yaml");
+import { DateTime } from "luxon";
+import minifyXML from "minify-xml";
+import markdownIt from "markdown-it";
+import markdownItMathjax from "markdown-it-mathjax3";
+import markdownItAnchor from "markdown-it-anchor";
+import yaml from "js-yaml";
 
-const pluginRss = require("@11ty/eleventy-plugin-rss");
-const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const pluginBundle = require("@11ty/eleventy-plugin-bundle");
-const pluginNavigation = require("@11ty/eleventy-navigation");
-const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
+import pluginRss from "@11ty/eleventy-plugin-rss";
+import pluginSyntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
+import pluginNavigation from "@11ty/eleventy-navigation";
+import { EleventyHtmlBasePlugin } from "@11ty/eleventy";
 
-const pluginDrafts = require("./eleventy.config.drafts.js");
-const pluginImages = require("./eleventy.config.images.js");
+import pluginDrafts from "./eleventy.config.drafts.mjs";
+import pluginImages from "./eleventy.config.images.mjs";
 
 const addTargetBlankToExternalLinks = (md) => {
 	const defaultRender =
@@ -40,7 +39,7 @@ const md = markdownIt({
 	typographer: true,
 }).use(addTargetBlankToExternalLinks);
 
-module.exports = function (eleventyConfig) {
+export default function (eleventyConfig) {
 	eleventyConfig.setServerOptions({
 		showAllHosts: true,
 	});
@@ -69,7 +68,9 @@ module.exports = function (eleventyConfig) {
 	});
 	eleventyConfig.addPlugin(pluginNavigation);
 	eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
-	eleventyConfig.addPlugin(pluginBundle);
+
+	eleventyConfig.addBundle("css");
+	eleventyConfig.addBundle("js");
 
 	eleventyConfig.addDataExtension("yml", (contents) => yaml.load(contents));
 
@@ -200,4 +201,4 @@ module.exports = function (eleventyConfig) {
 		// folder name and does **not** affect where things go in the output folder.
 		pathPrefix: "/",
 	};
-};
+}
