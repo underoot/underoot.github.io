@@ -25,7 +25,7 @@
 		"@11ty/eleventy-navigation": "^1.0.5",
 		"@11ty/eleventy-plugin-rss": "^1.2.0",
 		"@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
-		"@11ty/is-land": "^4.0.0",
+		"@11ty/is-land": "^5.0.1",
 		"js-yaml": "^4.1.0",
 		"luxon": "^3.3.0",
 		"markdown-it-anchor": "^9.2.0",
