@@ -29,7 +29,7 @@
 		"js-yaml": "^4.1.0",
 		"luxon": "^3.3.0",
 		"markdown-it-anchor": "^9.2.0",
-		"markdown-it-mathjax3": "^4.3.2",
+		"markdown-it-mathjax3": "^5.2.0",
 		"minify-xml": "^3.4.0"
 	},
 	"overrides": {
