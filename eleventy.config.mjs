@@ -1,5 +1,5 @@
 import { DateTime } from "luxon";
-import minifyXML from "minify-xml";
+import {minify} from "minify-xml";
 import markdownIt from "markdown-it";
 import markdownItMathjax from "markdown-it-mathjax3";
 import markdownItAnchor from "markdown-it-anchor";
@@ -154,7 +154,7 @@ export default function (eleventyConfig) {
 
 	eleventyConfig.addTransform("htmlmin", function (content) {
 		if (this.page.outputPath && this.page.outputPath.endsWith(".xml")) {
-			return minifyXML.minify(content, {
+			return minify(content, {
 				shortenNamespaces: false,
 			});
 		}
