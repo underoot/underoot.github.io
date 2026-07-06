@@ -9,12 +9,9 @@ Was traveling today with my family near <a href="https://osm.org/go/0xgBViQcX--?
 
 A full switch of environment helps to reboot before the next workweek!
 
-<script src="https://unpkg.com/@appnest/masonry-layout/umd/masonry-layout.min.js"></script>
-<masonry-layout gap="20">
-<img src="{% imageUrl 'content/001.jpeg' %}" alt="Corgi in the forest" />
-<img src="{% imageUrl 'content/002.jpeg' %}" alt="Corgi on the bridge" />
-<img src="{% imageUrl 'content/003.jpeg' %}" alt="Corgi on the trail" />
-<img src="{% imageUrl 'content/004.jpeg' %}" alt="Sky through pines" />
-<img src="{% imageUrl 'content/005.jpeg' %}" alt="Sun through pines" />
-<img src="{% imageUrl 'content/006.jpeg' %}" alt="Sunny field" />
-</masonry-layout>
+![Corgi in the forest](content/001.jpeg)
+![Corgi on the bridge](content/002.jpeg)
+![Corgi on the trail](content/003.jpeg)
+![Sky through pines](content/004.jpeg)
+![Sun through pines](content/005.jpeg)
+![Sunny field](content/006.jpeg)

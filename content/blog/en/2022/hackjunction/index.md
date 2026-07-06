@@ -24,8 +24,8 @@ A couple of important takeaways:
 		margin-bottom: 24px;
 	}
 </style>
-{% image "content/1667739772383.jpg", "First slide" %}
-{% image "content/1667739772324.jpg", "Second slide" %}
-{% image "content/1667739772441.jpg", "Third slide" %}
-{% image "content/1667739772499.jpg", "Fourth slide" %}
+<img src="content/1667739772383.jpg" alt="First slide" />
+<img src="content/1667739772324.jpg" alt="Second slide" />
+<img src="content/1667739772441.jpg" alt="Third slide" />
+<img src="content/1667739772499.jpg" alt="Fourth slide" />
 </div>

@@ -14,7 +14,7 @@ description: |
 
 Personally, I like this feature and I've tested it for a couple of sites. For example for <a href="https://bbc.com">bbc.com</a> it didn't work, but for <a href="https://google.com">google.com</a> it worked perfectly.
 
-<img src="{% imageUrl 'content/banner_bbc.jpg' %}" width="100%" />
+<img src="content/banner_bbc.jpg" width="100%" alt="Cookie banner on bbc.com" />
 
 Available two modes of banner processing - mouse click simulation (`cookiebanners.bannerClicking.enabled`) and cookie injection with selected mode flag (`cookiebanners.cookieInjector.enabled`)
 

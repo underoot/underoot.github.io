@@ -10,15 +10,12 @@ My vacation is going to the end this week, so will see you on the next one 😉
 
 And, happy birthday to me! 🎉
 
-<script src="https://unpkg.com/@appnest/masonry-layout/umd/masonry-layout.min.js"></script>
-<masonry-layout gap="20">
-<img src="{% imageUrl 'content/001.jpeg' %}" alt="Sirmione" />
-<img src="{% imageUrl 'content/002.jpeg' %}" alt="Verona" />
-<img src="{% imageUrl 'content/003.jpeg' %}" alt="Winding mountain road of Nothern Italy" />
-<img src="{% imageUrl 'content/004.jpeg' %}" alt="Mini Italy" />
-<img src="{% imageUrl 'content/005.jpeg' %}" alt="Mountains of San Marino" />
-<img src="{% imageUrl 'content/006.jpeg' %}" alt="Some road with nature" />
-<img src="{% imageUrl 'content/007.jpeg' %}" alt="Leaning Tower of Pisa" />
-<img src="{% imageUrl 'content/008.jpeg' %}" alt="Fantastic view" />
-<img src="{% imageUrl 'content/009.jpeg' %}" alt="Milan Cathedral" />
-</masonry-layout>
+![Sirmione](content/001.jpeg)
+![Verona](content/002.jpeg)
+![Winding mountain road of Nothern Italy](content/003.jpeg)
+![Mini Italy](content/004.jpeg)
+![Mountains of San Marino](content/005.jpeg)
+![Some road with nature](content/006.jpeg)
+![Leaning Tower of Pisa](content/007.jpeg)
+![Fantastic view](content/008.jpeg)
+![Milan Cathedral](content/009.jpeg)

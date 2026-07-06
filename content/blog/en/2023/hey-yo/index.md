@@ -9,4 +9,4 @@ But the next week is should be promising in terms of content for this channel (I
 
 **Illustration**: mentioned bloomed snowdrops
 
-<img src="{%imageUrl 'content/001.jpeg' %}" />
+![](content/001.jpeg)

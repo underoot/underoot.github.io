@@ -9,10 +9,7 @@ Well, this week was full of epic fights with React Native at work, so I will lau
 
 By the way, summer is already on the porch! Don't forget to enjoy summertime! 🌞
 
-<script src="https://unpkg.com/@appnest/masonry-layout/umd/masonry-layout.min.js"></script>
-<masonry-layout gap="20">
-<img src="{% imageUrl 'content/001.jpeg' %}" alt="Corgi on the couch" />
-<img src="{% imageUrl 'content/002.jpeg' %}" alt="Cat on the table" />
-<img src="{% imageUrl 'content/003.jpeg' %}" alt="Corgi on the stairs" />
-<img src="{% imageUrl 'content/004.jpeg' %}" alt="Cat enjoys life" />
-</masonry-layout>
+![Corgi on the couch](content/001.jpeg)
+![Cat on the table](content/002.jpeg)
+![Corgi on the stairs](content/003.jpeg)
+![Cat enjoys life](content/004.jpeg)

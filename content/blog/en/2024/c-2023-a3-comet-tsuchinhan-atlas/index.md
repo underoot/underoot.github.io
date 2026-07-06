@@ -12,8 +12,8 @@ I’ve attached some screenshots showing an emulated view of the comet in the sk
 
 <style>.gallery img { height: auto; }</style>
 <div class="gallery">
-{% image "content/emulated.png", "Emulated view of the comet for the 15th October" %}
+<img src="content/emulated.png" alt="Emulated view of the comet for the 15th October" />
 <caption>Emulated view of the comet for the 15th October</caption>
-{% image "content/path.png", "Anticipated path of the comet for October" %}
+<img src="content/path.png" alt="Anticipated path of the comet for October" />
 <caption>Anticipated path of the comet for October (author <a href="https://commons.wikimedia.org/wiki/File:C2023.A3.10.2024.png" target="_blank">Bautsch</a>)</caption>
 </div>

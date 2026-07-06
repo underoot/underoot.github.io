@@ -32,12 +32,9 @@ We were able [to finish the game](https://devpost.com/software/crazy-planes) to 
 
 <iframe width="429" height="764" src="https://www.youtube.com/embed/9cMk7cetimc" title="Crazy Planes – Flight Control but in Mixed Reality! #XRHack #hackathon #vr #extendedreality" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="width: 100%;"></iframe>
 
-<script src="https://unpkg.com/@appnest/masonry-layout/umd/masonry-layout.min.js"></script>
-<masonry-layout gap="20">
-<img src="{% imageUrl 'content/IMG_20241020_152842_235.jpg' %}" alt="The main stage" />
-<img src="{% imageUrl 'content/IMG_20241020_152842_085.jpg' %}" alt="The street nearby" />
-<img src="{% imageUrl 'content/IMG_20241020_152842_248.jpg' %}" alt="The beutiful church in Stockholm" />
-<img src="{% imageUrl 'content/IMG_20241020_152842_421.jpg' %}" alt="Me with coffee" />
-<img src="{% imageUrl 'content/IMG_20241020_152841_769.jpg' %}" alt="I'm playing our game at home" />
-<img src="{% imageUrl 'content/IMG_20241020_153135_514.jpg' %}" alt="My team" />
-</masonry-layout>
+![The main stage](content/IMG_20241020_152842_235.jpg)
+![The street nearby](content/IMG_20241020_152842_085.jpg)
+![The beutiful church in Stockholm](content/IMG_20241020_152842_248.jpg)
+![Me with coffee](content/IMG_20241020_152842_421.jpg)
+![I'm playing our game at home](content/IMG_20241020_152841_769.jpg)
+![My team](content/IMG_20241020_153135_514.jpg)

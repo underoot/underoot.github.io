@@ -15,7 +15,7 @@ In the upcoming [W3C TPAC](https://www.w3.org/2024/09/TPAC/), event where member
 
 <div class="gallery">
 <style>.gallery img { height: auto; }</style>
-{% image "content/splash.png", "The demo of model element proposal" %}
+<img src="content/splash.png" alt="The demo of model element proposal" />
 <caption>The demo of model element proposal</caption>
 </div>
 

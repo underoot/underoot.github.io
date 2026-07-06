@@ -13,13 +13,10 @@ Thank you, <a href="https://www.linkedin.com/in/aleksei-khlebaev-933950123/" tar
 
 Thank you, organizers, speakers, volunteers and participants. It was inspiring, hacky and atmospheric! 🥳
 
-<script src="https://unpkg.com/@appnest/masonry-layout/umd/masonry-layout.min.js"></script>
-<masonry-layout gap="20">
-<img src="{% imageUrl 'content/1675609771577.jpg' %}" alt="Speech on the main stage" />
-<img src="{% imageUrl 'content/1675609771574.jpg' %}" alt="What's new with Firefox Profile" />
-<img src="{% imageUrl 'content/1675609772726.jpg' %}" alt="Building a Web UI for the Fedora installer" />
-<img src="{% imageUrl 'content/1675609771281.jpg' %}" alt="JS Track" />
-<img src="{% imageUrl 'content/1675609771373.jpg' %}" alt="After-party" />
-<img src="{% imageUrl 'content/1675609772436.jpg' %}" alt="I'm in Brussels" />
-<img src="{% imageUrl 'content/1675609772480.jpg' %}" alt="ULB" />
-</masonry-layout>
+![Speech on the main stage](content/1675609771577.jpg)
+![What's new with Firefox Profile](content/1675609771574.jpg)
+![Building a Web UI for the Fedora installer](content/1675609772726.jpg)
+![JS Track](content/1675609771281.jpg)
+![After-party](content/1675609771373.jpg)
+![I'm in Brussels](content/1675609772436.jpg)
+![ULB](content/1675609772480.jpg)

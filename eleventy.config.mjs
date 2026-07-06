@@ -9,6 +9,7 @@ import pluginRss from "@11ty/eleventy-plugin-rss";
 import pluginSyntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 import pluginNavigation from "@11ty/eleventy-navigation";
 import { EleventyHtmlBasePlugin } from "@11ty/eleventy";
+import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 
 import pluginDrafts from "./eleventy.config.drafts.mjs";
 import pluginImages from "./eleventy.config.images.mjs";
@@ -32,6 +33,44 @@ const addTargetBlankToExternalLinks = (md) => {
 	};
 };
 
+// Wraps groups of 2+ consecutive images in a single paragraph with
+// `<masonry-layout>` instead of `<p>`, so `![a](x)\n![b](y)` in markdown
+// auto-galleries without any custom syntax.
+const autoMasonryGallery = (md) => {
+	const isWhitespaceOrSoftbreak = (token) =>
+		token.type === "softbreak" || (token.type === "text" && token.content.trim() === "");
+
+	md.renderer.rules.paragraph_open = function (tokens, idx, options, env, self) {
+		const inline = tokens[idx + 1];
+		const imageCount =
+			inline?.type === "inline"
+				? inline.children.filter((child) => child.type === "image").length
+				: 0;
+		const isGallery =
+			imageCount >= 2 &&
+			inline.children.every(
+				(child) => child.type === "image" || isWhitespaceOrSoftbreak(child)
+			);
+
+		env.isGallery = isGallery;
+
+		if (isGallery) {
+			return `<script defer src="/js/masonry-layout.min.js"></script><masonry-layout gap="20">`;
+		}
+
+		return self.renderToken(tokens, idx, options);
+	};
+
+	md.renderer.rules.paragraph_close = function (tokens, idx, options, env, self) {
+		if (env.isGallery) {
+			env.isGallery = false;
+			return "</masonry-layout>";
+		}
+
+		return self.renderToken(tokens, idx, options);
+	};
+};
+
 const md = markdownIt({
 	html: true,
 	breaks: true,
@@ -49,6 +88,7 @@ export default function (eleventyConfig) {
 		"./public/": "/",
 		"./node_modules/prismjs/themes/prism-okaidia.css": "/css/prism-okaidia.css",
 		"./node_modules/@11ty/is-land/is-land.js": "/is-land.js",
+		"./node_modules/@appnest/masonry-layout/umd/masonry-layout.min.js": "/js/masonry-layout.min.js",
 	});
 
 	// Run Eleventy when these files change:
@@ -60,6 +100,12 @@ export default function (eleventyConfig) {
 	// App plugins
 	eleventyConfig.addPlugin(pluginDrafts);
 	eleventyConfig.addPlugin(pluginImages);
+	eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+		formats: ["avif", "webp", "auto"],
+		outputDir: "./_site/img/",
+		urlPath: "/img/",
+		defaultAttributes: { loading: "lazy", decoding: "async" },
+	});
 
 	// Official plugins
 	eleventyConfig.addPlugin(pluginRss);
@@ -150,6 +196,7 @@ export default function (eleventyConfig) {
 			slugify: eleventyConfig.getFilter("slugify"),
 		});
 		mdLib.use(addTargetBlankToExternalLinks);
+		mdLib.use(autoMasonryGallery);
 	});
 
 	eleventyConfig.addTransform("htmlmin", function (content) {

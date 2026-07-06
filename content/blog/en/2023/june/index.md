@@ -6,13 +6,10 @@ tags: bestphotosoftheweek
 ---
 How is your week going? Mine is quite busy, but anyway, I remember about traditional <a href="/tags/bestphotosoftheweek" target="_blank">#bestphotosoftheweek</a>
 
-<script src="https://unpkg.com/@appnest/masonry-layout/umd/masonry-layout.min.js"></script>
-<masonry-layout gap="20">
-<img src="{% imageUrl 'content/001.jpeg' %}" alt="Sunset" />
-<img src="{% imageUrl 'content/002.jpeg' %}" alt="Cat suspects" />
-<img src="{% imageUrl 'content/003.jpeg' %}" alt="Barbeque" />
-<img src="{% imageUrl 'content/004.jpeg' %}" alt="Sun through pines" />
-<img src="{% imageUrl 'content/005.jpeg' %}" alt="Squirel" />
-<img src="{% imageUrl 'content/006.jpeg' %}" alt="Flower" />
-<img src="{% imageUrl 'content/007.jpeg' %}" alt="Small door for mice" />
-</masonry-layout>
+![Sunset](content/001.jpeg)
+![Cat suspects](content/002.jpeg)
+![Barbeque](content/003.jpeg)
+![Sun through pines](content/004.jpeg)
+![Squirel](content/005.jpeg)
+![Flower](content/006.jpeg)
+![Small door for mice](content/007.jpeg)

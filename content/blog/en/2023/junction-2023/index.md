@@ -13,10 +13,7 @@ The idea is quite simple: it's an application, which motivates children to repea
 
 I saw a lot of hate speech (which is bad meanwhile) that hackaton becomes more focused on concepts rather than prototypes (see the latest attached screenshot). Well, I cannot totally agree with that, and I think that concept and clear message by product/idea/whatever is more important
 
-<script src="https://unpkg.com/@appnest/masonry-layout/umd/masonry-layout.min.js"></script>
-<masonry-layout gap="20">
-<img src="{% imageUrl 'content/001.jpeg' %}" alt="Hackaton venue" />
-<img src="{% imageUrl 'content/002.jpeg' %}" alt="Our team" />
-<img src="{% imageUrl 'content/003.jpeg' %}" alt="Testing phase" />
-<img src="{% imageUrl 'content/004.jpeg' %}" alt="Joke about this hackaton" />
-</masonry-layout>
+![Hackaton venue](content/001.jpeg)
+![Our team](content/002.jpeg)
+![Testing phase](content/003.jpeg)
+![Joke about this hackaton](content/004.jpeg)

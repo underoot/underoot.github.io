@@ -49,19 +49,15 @@ See all of you in 2024! 🎉
 
 I hope that it will bring us <span style="background: -webkit-linear-gradient(#0066cc 50%, #ffcc00); -webkit-background-clip: text;-webkit-text-fill-color: transparent;">peace 🕊️</span> and happiness!
 
-<script src="https://unpkg.com/@appnest/masonry-layout/umd/masonry-layout.min.js"></script>
-<masonry-layout gap="20">
-<img src="{% imageUrl 'content/photo_2023-12-30_15-56-26.jpg' %}" alt="Winter forest" />
-<img src="{% imageUrl 'content/photo_2023-12-30_15-56-24.jpg' %}" alt="Auditorium on FOSDEM 2023" />
-<img src="{% imageUrl 'content/photo_2023-12-30_15-56-28.jpg' %}" alt="Milan's steet" />
-<img src="{% imageUrl 'content/photo_2023-12-30_15-56-30.jpg' %}" alt="Computer in Estonian computer museum" />
-<img src="{% imageUrl 'content/photo_2023-12-30_15-56-32.jpg' %}" alt="Bike parade in Tallinn" />
-<img src="{% imageUrl 'content/photo_2023-12-30_15-56-33.jpg' %}" alt="Pile from stones on Estonian beach" />
-<img src="{% imageUrl 'content/photo_2023-12-30_15-56-35.jpg' %}" alt="My first nothern lights" />
-<img src="{% imageUrl 'content/photo_2023-12-30_15-56-36.jpg' %}" alt="My wife take a photo of Branicki Palace in Białystok" />
-<img src="{% imageUrl 'content/photo_2023-12-30_15-56-38.jpg' %}" alt="We in Hague faster then Putin" />
-<img src="{% imageUrl 'content/photo_2023-12-30_15-56-40.jpg' %}" alt="Bolt HQ" />
-<img src="{% imageUrl 'content/photo_2023-12-30_15-56-41.jpg' %}" alt="Tables of Junction 2023" />
-<img src="{% imageUrl 'content/photo_2023-12-30_15-56-43.jpg' %}" alt="Senate square in Helsinki" />
-
-</masonry-layout>
+![Winter forest](content/photo_2023-12-30_15-56-26.jpg)
+![Auditorium on FOSDEM 2023](content/photo_2023-12-30_15-56-24.jpg)
+![Milan's steet](content/photo_2023-12-30_15-56-28.jpg)
+![Computer in Estonian computer museum](content/photo_2023-12-30_15-56-30.jpg)
+![Bike parade in Tallinn](content/photo_2023-12-30_15-56-32.jpg)
+![Pile from stones on Estonian beach](content/photo_2023-12-30_15-56-33.jpg)
+![My first nothern lights](content/photo_2023-12-30_15-56-35.jpg)
+![My wife take a photo of Branicki Palace in Białystok](content/photo_2023-12-30_15-56-36.jpg)
+![We in Hague faster then Putin](content/photo_2023-12-30_15-56-38.jpg)
+![Bolt HQ](content/photo_2023-12-30_15-56-40.jpg)
+![Tables of Junction 2023](content/photo_2023-12-30_15-56-41.jpg)
+![Senate square in Helsinki](content/photo_2023-12-30_15-56-43.jpg)

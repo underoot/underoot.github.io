@@ -16,7 +16,7 @@ Thank God, it's an open-source project, and I stumbled upon [the open issue](htt
 
 In short, Media Session API gives websites a way to control what user sees in the media controls of their operating system. Every single OS nowadays has some sort of place where it displays UI with play/pause, next/previous track, and stop buttons alongside the artwork of the current playing media. Media Session API gives you the ability to control what is displayed there and control what to do on the webpage when an user interacts with UI of Media Controls, but only if you play something on your webpage.
 <figure>
-	<img src="{% imageUrl 'content/media_controls_macos.png' %}" style="width: 100%" alt="The Media Controls on MacOS with playing The Kiffness - Eating the Cats ft. Donald Trump (Debate Remix)" />
+	<img src="content/media_controls_macos.png" style="width: 100%" alt="The Media Controls on MacOS with playing The Kiffness - Eating the Cats ft. Donald Trump (Debate Remix)" />
 	<figcaption>Example of the Media Controls on MacOS</figcaption>
 </figure>
 

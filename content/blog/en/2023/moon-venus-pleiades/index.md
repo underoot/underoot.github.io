@@ -12,11 +12,8 @@ Some stars seem close to each other, but it's just an optical illusion and they 
 
 Other photos are just beautiful pictures of the sky from that night. By the way, on Sunday night you also can see Moon, which will be closer to Venus. Don't miss the chance to see the beauty of the sky!
 
-<script src="https://unpkg.com/@appnest/masonry-layout/umd/masonry-layout.min.js"></script>
-<masonry-layout gap="20">
-<img src="{% imageUrl 'content/001.jpeg' %}" alt="Moon, Venus, and Pleiades" />
-<img src="{% imageUrl 'content/002.jpeg' %}" alt="Sky full of stars with the lights from the road" />
-<img src="{% imageUrl 'content/003.jpeg' %}" alt="Sky and water" />
-<img src="{% imageUrl 'content/004.jpeg' %}" alt="Milky Way" />
-<img src="{% imageUrl 'content/005.jpeg' %}" alt="Moonlight" />
-</masonry-layout>
+![Moon, Venus, and Pleiades](content/001.jpeg)
+![Sky full of stars with the lights from the road](content/002.jpeg)
+![Sky and water](content/003.jpeg)
+![Milky Way](content/004.jpeg)
+![Moonlight](content/005.jpeg)

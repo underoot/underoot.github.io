@@ -9,15 +9,15 @@ Recently I decided again to record podcasts. One of the platforms to start with 
 
 Well, I've prepared everything with <a href="https://overcast.fm/forecast" target="_blank">Forecast</a>, as I usually do and already started uploading of marked audio file. And what I see: the official Mac client of Telegram consumed everything from meta information except for the art album.
 
-<img src="{% imageUrl 'content/desktop.png' %}">
+![](content/desktop.png)
 
 Okay, maybe a web client of Telegram will support what I want? I've tried A client (don't mix up with <a href="https://web.archive.org/web/20220224044948/https://telegram.org/apps" target="_blank">Z client</a>, why they decided to change the name, by the way, 🤔) first of all, and what I see:
 
-<img src="{% imageUrl 'content/web_a.png' %}">
+![](content/web_a.png)
 
 Already better, but where is my meta information? Let's maybe try K client, which is a web client of Telegram as well: what are the cool and stylish names, aren't?. One, two, three, four 🪄:
 
-<img src="{% imageUrl 'content/web_k.png' %}">
+![](content/web_k.png)
 
 ## TdLib and rolled up sleeves to the rescue
 
@@ -84,7 +84,7 @@ await client.invoke({
 
 And voilà, I've got my audio file with meta information in my Telegram channel and everything from art to meta right in place:
 
-<img src="{% imageUrl 'content/result.png' %}">
+![](content/result.png)
 
 By the way, subscribe to my <a href="https://t.me/underoot" target="_blank">Telegram channel</a> to listen to my daily podcast about technical news and other fun stuff. I'm also publishing my podcasts on the rest of platforms like <a href="https://podcasts.apple.com/fi/podcast/in-commute/id1743474765" target="_blank">Apple Podcasts</a>, <a href="https://open.spotify.com/show/3zXxPMUdC8KnhZserRT8oC?si=2a8252ccb4db402e" target="_blank">Spotify</a>, <a href="https://www.youtube.com/playlist?list=PL-lkc8Fj6Q8-pKzYo8YzHOAPoqZYImbUy" target="_blank">YouTube Music</a>, etc. So, you can listen to it wherever you want. Stay tuned! 🎧
 ```

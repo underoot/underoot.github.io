@@ -33,7 +33,7 @@ auto d = a ? a : c;
 
 But why the Elvis operator is called so? Answer that ligature of the operator is like the very famous <a href="https://en.wikipedia.org/wiki/Quiff" target="_blank">quiff</a> of Rock'n'Roll star — Elvis Presley:
 
-<img src="{% imageUrl 'content/elvis_quiff.jpg' %}" width="100%" />
+<img src="content/elvis_quiff.jpg" width="100%" alt="Elvis Presley's quiff" />
 
 There is the same <a href="https://emoticon.fandom.com/wiki/Elvis_Presley" target="_blank">emoticon</a>, which was an inspiration for the authors of this name.
 

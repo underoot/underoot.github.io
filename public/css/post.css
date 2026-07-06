@@ -12,3 +12,13 @@
 	0% { width: 0; }
 	100% { width: 100%; }
 }
+
+masonry-layout picture {
+	display: block;
+}
+
+masonry-layout img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
