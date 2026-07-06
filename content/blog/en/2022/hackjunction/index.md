@@ -16,16 +16,10 @@ A couple of important takeaways:
 
 - Hackathons it's a fantastic opportunity not only to try your luck and professional skills but grow up your network 👍
 
-<div class="gallery">
-<style>
-	.gallery img {
-		width: 100%;
-		height: auto;
-		margin-bottom: 24px;
-	}
-</style>
-<img src="content/1667739772383.jpg" alt="First slide" />
-<img src="content/1667739772324.jpg" alt="Second slide" />
-<img src="content/1667739772441.jpg" alt="Third slide" />
-<img src="content/1667739772499.jpg" alt="Fourth slide" />
-</div>
+![First slide](content/1667739772383.jpg)
+
+![Second slide](content/1667739772324.jpg)
+
+![Third slide](content/1667739772441.jpg)
+
+![Fourth slide](content/1667739772499.jpg)

@@ -15,10 +15,9 @@ Also, I am a big fan of working with headphones with enabled noise cancelation. 
 Thank God, it's an open-source project, and I stumbled upon [the open issue](https://github.com/remvze/moodist/issues/19) about it in the GitHub repository of the project. According to the short discussion on the issue, the author of the project uses Web Audio API instead of [HTML5 audio](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio) because of the issue with short breaks between loops. But switching to Web Audio API caused the issue with media controls. It doesn't work, and the Media Session API specification does not mention Web Audio API.
 
 In short, Media Session API gives websites a way to control what user sees in the media controls of their operating system. Every single OS nowadays has some sort of place where it displays UI with play/pause, next/previous track, and stop buttons alongside the artwork of the current playing media. Media Session API gives you the ability to control what is displayed there and control what to do on the webpage when an user interacts with UI of Media Controls, but only if you play something on your webpage.
-<figure>
-	<img src="content/media_controls_macos.png" style="width: 100%" alt="The Media Controls on MacOS with playing The Kiffness - Eating the Cats ft. Donald Trump (Debate Remix)" />
-	<figcaption>Example of the Media Controls on MacOS</figcaption>
-</figure>
+
+![The Media Controls on MacOS with playing The Kiffness - Eating the Cats ft. Donald Trump (Debate Remix)](content/media_controls_macos.png)
+*Example of the Media Controls on MacOS*
 
 I come up with a brilliant idea: why not add a silent audio track to the project and sync its playback state with the state of the application? Well, it's only a couple of hours of work I thought. I was wrong.
 

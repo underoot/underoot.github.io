@@ -290,6 +290,12 @@ blockquote {
 
 .post {
 	display: block;
+	margin: 1em 0 0.5em;
+}
+
+.post h3 {
+	margin: 0;
+	margin-bottom: 0.5em;
 }
 
 .post__content img {

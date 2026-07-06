@@ -10,10 +10,8 @@ Get ready to witness the comet [C/2023 A3 (Tsuchinshan-ATLAS)](https://en.m.wiki
 
 I’ve attached some screenshots showing an emulated view of the comet in the sky for October 15th from Stellarium software. You can also see the anticipated path of the comet for October. Don’t miss out on this celestial spectacle!
 
-<style>.gallery img { height: auto; }</style>
-<div class="gallery">
-<img src="content/emulated.png" alt="Emulated view of the comet for the 15th October" />
-<caption>Emulated view of the comet for the 15th October</caption>
-<img src="content/path.png" alt="Anticipated path of the comet for October" />
-<caption>Anticipated path of the comet for October (author <a href="https://commons.wikimedia.org/wiki/File:C2023.A3.10.2024.png" target="_blank">Bautsch</a>)</caption>
-</div>
+![Emulated view of the comet for the 15th October](content/emulated.png)
+
+![Anticipated path of the comet for October](content/path.png)
+
+Anticipated path of the comet for October (author <a href="https://commons.wikimedia.org/wiki/File:C2023.A3.10.2024.png" target="_blank">Bautsch</a>)

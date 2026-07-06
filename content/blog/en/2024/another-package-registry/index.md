@@ -21,6 +21,4 @@ Okay, but I can use `npm` and `yarn` (maybe shouldn't the last one) packages in 
 
 I don't want to be too conservative and I'm open to new things. **But** I super tired of marketing bullshit and hypnotic unclear messages from every new framework, tool, registry which want  __really__ change the world and replace everything around you.
 
-<a href="https://xkcd.com/927" target="_blank">
-	<img src="https://imgs.xkcd.com/comics/standards.png" width="100%" alt="xkcd: Standards" />
-</a>
+[![xckd: Standards](https://imgs.xkcd.com/comics/standards.png)](https://xkcd.com/927)
