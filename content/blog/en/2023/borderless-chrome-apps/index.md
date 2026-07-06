@@ -4,7 +4,7 @@ description: In the 115th release of Chrome, borderless applications have been i
 date: 2023-06-01
 ---
 
-<a href="https://www.phoronix.com/news/Chrome-115-Beta" target="_blank">In the 115th release of Chrome</a>, borderless applications have been introduced. It totally does not make sense if you develop classic web pages and applications, but if you make PWA, then it will be a good option for tuning your application's look and feel. You can control an app's appearance, even controls and borders, which are usually controlled by the window manager of your choice (or of choice of OS engineers)
+[In the 115th release of Chrome](https://www.phoronix.com/news/Chrome-115-Beta), borderless applications have been introduced. It totally does not make sense if you develop classic web pages and applications, but if you make PWA, then it will be a good option for tuning your application's look and feel. You can control an app's appearance, even controls and borders, which are usually controlled by the window manager of your choice (or of choice of OS engineers)
 
 
 To me, as a fan of tiling window managers I usually completely disable window decoration, because for me they are useless: based on the content of the window I quickly understand if it is a terminal or browser and controls windows with keyboard shortcuts.

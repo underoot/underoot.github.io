@@ -6,47 +6,47 @@ tags:
   - personal
   - review
 ---
-Получил наклейки от <a href="https://fbk.info" target="_blank">ФБК</a>.
+Получил наклейки от [ФБК](https://fbk.info).
 
 Прочитал Конституцию в прежней редакции.
 
-Уволился из <a href="https://yandex.ru" target="_blank">Яндекса</a>.
+Уволился из [Яндекса](https://yandex.ru).
 
-Вернулся в <a href="https://money.yandex.ru" target="_blank">Яндекс.Деньги</a>.
+Вернулся в [Яндекс.Деньги](https://money.yandex.ru).
 
-Посетил <a href="https://goo.gl/maps/SVWAPhqw2qXrgrJF8" target="_blank">Брюссель</a>.
+Посетил [Брюссель](https://goo.gl/maps/SVWAPhqw2qXrgrJF8).
 
-Впервые поучаствовал в <a href="https://archive.fosdem.org/2020/" target="_blank">FOSDEM</a>.
+Впервые поучаствовал в [FOSDEM](https://archive.fosdem.org/2020/).
 
 Впервые завел на конференции разговор с иностранцем.
 
-Задонатил <a href="https://www.opensuse.org/" target="_blank">OpenSUSE</a>.
+Задонатил [OpenSUSE](https://www.opensuse.org/).
 
 Выпил крафтовое пиво OpenSUSE.
 
 Попробовал бельгийские вафли.
 
-Увидел <a href="https://goo.gl/maps/9MPD6jSFyh6givTZ6" target="_blank">писающего мальчика</a> и <a href="https://goo.gl/maps/GPBPGQD7f864ibyf7" target="_blank">писающую девочку</a>.
+Увидел [писающего мальчика](https://goo.gl/maps/9MPD6jSFyh6givTZ6) и [писающую девочку](https://goo.gl/maps/GPBPGQD7f864ibyf7).
 
-Освоил <a href="https://reactnative.dev" target="_blank">React Native</a>.
+Освоил [React Native](https://reactnative.dev).
 
 Тушил пожары на работе.
 
 Завел нового члена семьи — корги.
 
-Спаял волновод с <a href="https://en.wikipedia.org/wiki/Surface-mount_technology" target="_blank">SMD</a>.
+Спаял волновод с [SMD](https://en.wikipedia.org/wiki/Surface-mount_technology).
 
-Поучаствовал в 28 стримах <a href="https://www.youtube.com/channel/UCqq1LRv6KKh0bh4JrG_5vDA" target="_blank">Фронтенд Юности на YouTube</a>.
+Поучаствовал в 28 стримах [Фронтенд Юности на YouTube](https://www.youtube.com/channel/UCqq1LRv6KKh0bh4JrG_5vDA).
 
-Купил один <a href="https://garagespace.dev" target="_blank">домен</a> и не использовал его.
+Купил один [домен](https://garagespace.dev) и не использовал его.
 
-Снялся в <a href="https://www.youtube.com/watch?v=zg3wJKuxZrE" target="_blank">интервью про Фронтенд Юность</a>.
+Снялся в [интервью про Фронтенд Юность](https://www.youtube.com/watch?v=zg3wJKuxZrE).
 
-Заболел <a href="https://twitter.com/underoot/status/1305585827850919936" target="_blank">COVID-19</a>.
+Заболел [COVID-19](https://twitter.com/underoot/status/1305585827850919936).
 
 Получил кучу звонков от мошенников.
 
-Посмотрел на <a href="https://www.youtube.com/watch?v=bnChQbxLkkI" target="_blank">запуск Crew Dragon</a>.
+Посмотрел на [запуск Crew Dragon](https://www.youtube.com/watch?v=bnChQbxLkkI).
 
 Запилил AR модельку.
 
@@ -60,39 +60,39 @@ tags:
 
 Компилировал Node.js на VDS.
 
-Поучаствовал в <a href="https://events.gnome.org/event/1/" target="_blank">GUADEC 2020</a>.
+Поучаствовал в [GUADEC 2020](https://events.gnome.org/event/1/).
 
-Увидел комету <a href="https://en.wikipedia.org/wiki/Comet_NEOWISE" target="_blank">NEOWISE</a> в <a href="https://twitter.com/underoot/status/1284972789670322178" target="_blank">бинокль</a>.
+Увидел комету [NEOWISE](https://en.wikipedia.org/wiki/Comet_NEOWISE) в [бинокль](https://twitter.com/underoot/status/1284972789670322178).
 
 Купил свой первый телескоп.
 
-Увидел галактики <a href="https://en.wikipedia.org/wiki/Andromeda_Galaxy" target="_blank">М31</a>, <a href="https://en.wikipedia.org/wiki/Messier_32" target="_blank">М32</a>, <a href="https://en.wikipedia.org/wiki/Messier_110" target="_blank">М110</a>, <a href="https://en.wikipedia.org/wiki/Dumbbell_Nebula" target="_blank">М27</a>, <a href="https://en.wikipedia.org/wiki/Ring_Nebula" target="_blank">М57</a>, <a href="https://en.wikipedia.org/wiki/Messier_35" target="_blank">М35</a>, а также <a href="https://en.wikipedia.org/wiki/Moon" target="_blank">Луну</a>, <a href="https://en.wikipedia.org/wiki/Mars" target="_blank">Марс</a>, <a href="https://en.wikipedia.org/wiki/Jupiter" target="_blank">Юпитер</a>, <a href="https://en.wikipedia.org/wiki/Saturn" target="_blank">Сатурн</a>.
+Увидел галактики [М31](https://en.wikipedia.org/wiki/Andromeda_Galaxy), [М32](https://en.wikipedia.org/wiki/Messier_32), [М110](https://en.wikipedia.org/wiki/Messier_110), [М27](https://en.wikipedia.org/wiki/Dumbbell_Nebula), [М57](https://en.wikipedia.org/wiki/Ring_Nebula), [М35](https://en.wikipedia.org/wiki/Messier_35), а также [Луну](https://en.wikipedia.org/wiki/Moon), [Марс](https://en.wikipedia.org/wiki/Mars), [Юпитер](https://en.wikipedia.org/wiki/Jupiter), [Сатурн](https://en.wikipedia.org/wiki/Saturn).
 
-Познал что значит <a href="http://astro-talks.ru/forum/viewtopic.php?f=18&t=71" target="_blank">запотевшая оптика</a>.
+Познал что значит [запотевшая оптика](http://astro-talks.ru/forum/viewtopic.php?f=18&t=71).
 
 Катался на яхте.
 
-Впервые посетил <a href="https://goo.gl/maps/EAGDNB4pJqyKx6QbA" target="_blank">Казань</a> и ел <a href="https://ru.wikipedia.org/wiki/Эчпочмак" target="_blank">эчпочмак</a>.
+Впервые посетил [Казань](https://goo.gl/maps/EAGDNB4pJqyKx6QbA) и ел [эчпочмак](https://ru.wikipedia.org/wiki/Эчпочмак).
 
 Впервые заказал шампанское в гостиничный номер и ни о чем не жалею.
 
-Програмировал в <a href="https://github.com/features/codespaces" target="_blank">GitHub CodeSpaces</a>.
+Програмировал в [GitHub CodeSpaces](https://github.com/features/codespaces).
 
-Пил пиво с <a href="https://twitter.com/chicoxyzzy" target="_blank">Сережей Рубановым</a>.
+Пил пиво с [Сережей Рубановым](https://twitter.com/chicoxyzzy).
 
-Завел аккаунт в <a href="https://untappd.com" target="_blank">Untappd</a>.
+Завел аккаунт в [Untappd](https://untappd.com).
 
-Уволился из <a href="https://yoomoney.ru" target="_blank">ЮMoney</a>.
+Уволился из [ЮMoney](https://yoomoney.ru).
 
-Переехал в <a href="https://goo.gl/maps/Wu5a9R8MDG3F8whn8" target="_blank">Таллинн</a>.
+Переехал в [Таллинн](https://goo.gl/maps/Wu5a9R8MDG3F8whn8).
 
-Устроился в <a href="https://bolt.eu/" target="_blank">Bolt</a>.
+Устроился в [Bolt](https://bolt.eu/).
 
 Познал, что значит тосковать по родным из-за рубежа.
 
 Начал изучать эстонский.
 
-Впервые сыграл в <a href="https://en.wikipedia.org/wiki/Among_Us" target="_blank">Among Us</a> и <a href="https://codenames.game/" target="_blank">Codenames</a>.
+Впервые сыграл в [Among Us](https://en.wikipedia.org/wiki/Among_Us) и [Codenames](https://codenames.game/).
 
 Впервые начал жить в доме.
 

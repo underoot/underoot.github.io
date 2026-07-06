@@ -16,7 +16,7 @@ const filtered = collection.filter(v => {
  */
 filtered.forEach(value => value.toFixed());
 ```
-<a href="https://www.typescriptlang.org/play/?ts=5.4.5#code/MYewdgzgLgBKA28CmwoEtwwLwwNoEYAaGAJmLAFdFiBmYisAEyQDM0wlHiAWAXQG4AUKEiw28KEgBOnbHBCIU6cADpxkqQAoAbtgB8MAN6CYpmDKgUpYGLoCEWHJUQwAZK9swHOBszYdGIQBfAEohQQB6ACookyiYAAEwEEkYAFEpKRApAC4YAHJtAEN4CiR8mDQIGAAHEAgINAAjeABPAud4CuyC31Z2Tny4iMF1aU41bLSi4AALHRKy-VtFpBUoEAAxNAAPTk0QsKA" target="_blank">Link to playground</a>
+[Link to playground](https://www.typescriptlang.org/play/?ts=5.4.5#code/MYewdgzgLgBKA28CmwoEtwwLwwNoEYAaGAJmLAFdFiBmYisAEyQDM0wlHiAWAXQG4AUKEiw28KEgBOnbHBCIU6cADpxkqQAoAbtgB8MAN6CYpmDKgUpYGLoCEWHJUQwAZK9swHOBszYdGIQBfAEohQQB6ACookyiYAAEwEEkYAFEpKRApAC4YAHJtAEN4CiR8mDQIGAAHEAgINAAjeABPAud4CuyC31Z2Tny4iMF1aU41bLSi4AALHRKy-VtFpBUoEAAxNAAPTk0QsKA)
 
 But with TypeScript 5.5 beta, you can finally do this and TypeScript will infer the type of the collection correctly, so it will know that `filtered` is an array of numbers without `null` or `undefined` values. But the trick, that I use sometimes to simplify the code, unfortunately, doesn't work:
 ```typescript
@@ -25,9 +25,9 @@ const filtered = collection.filter(Boolean);
 
 filtered.forEach(value => value.toFixed());
 ```
-<a href="https://www.typescriptlang.org/play/?ts=5.5.0-dev.20240426#code/MYewdgzgLgBKA28CmwoEtwwLwwNoEYAaGAJmLAFdFiBmYisAEyQDM0wlHiAWAXQG4AUKEiw28KEgBOnbHBCIU6cADpxkqQAoAQiAVIAhmACUQwQHoAVJcExLMAAJgQkmAFEpUkFIBcMAOQAbgbwFEj+MGgQMAAOIBAQaABG8ACeAZSIEd4BDMxsHIz+tpbmgurSnGrebgbAABaawaFI2AB8MM1hKlAgAGJoAB6cmsamQA" target="_blank">Link to playground</a>
+[Link to playground](https://www.typescriptlang.org/play/?ts=5.5.0-dev.20240426#code/MYewdgzgLgBKA28CmwoEtwwLwwNoEYAaGAJmLAFdFiBmYisAEyQDM0wlHiAWAXQG4AUKEiw28KEgBOnbHBCIU6cADpxkqQAoAQiAVIAhmACUQwQHoAVJcExLMAAJgQkmAFEpUkFIBcMAOQAbgbwFEj+MGgQMAAOIBAQaABG8ACeAZSIEd4BDMxsHIz+tpbmgurSnGrebgbAABaawaFI2AB8MM1hKlAgAGJoAB6cmsamQA)
 
 But anyway, I'm happy that it's minus one thing that make logic of the code and type system of TypeScript inconsistent.
 
-The rest of the features of TypeScript 5.5 beta can be found in the <a href="https://devblogs.microsoft.com/typescript/announcing-typescript-5-5-beta/" target="_blank">official announcement</a>.
+The rest of the features of TypeScript 5.5 beta can be found in the [official announcement](https://devblogs.microsoft.com/typescript/announcing-typescript-5-5-beta/).
 ```

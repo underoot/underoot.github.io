@@ -14,4 +14,4 @@ I’ve attached some screenshots showing an emulated view of the comet in the sk
 
 ![Anticipated path of the comet for October](content/path.png)
 
-Anticipated path of the comet for October (author <a href="https://commons.wikimedia.org/wiki/File:C2023.A3.10.2024.png" target="_blank">Bautsch</a>)
+Anticipated path of the comet for October (author [Bautsch](https://commons.wikimedia.org/wiki/File:C2023.A3.10.2024.png))

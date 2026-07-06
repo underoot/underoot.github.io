@@ -8,42 +8,42 @@ tags:
   - personal
   - review
 ---
-- For the first time visited <a href="https://www.openstreetmap.org/relation/1473947" target="_blank">Egypt</a> 🇪🇬
-- Switched from <a href="https://support.apple.com/kb/SP779" target="_blank">iPhone </a> to <a href="https://www.samsung.com/global/galaxy/galaxy-z-fold4/" target="_blank">Android 🤖</a>
-- Started <a href="https://t.me/underoot" target="_blank">my Telegram channel</a>
+- For the first time visited [Egypt](https://www.openstreetmap.org/relation/1473947) 🇪🇬
+- Switched from [iPhone ](https://support.apple.com/kb/SP779) to [Android 🤖](https://www.samsung.com/global/galaxy/galaxy-z-fold4/)
+- Started [my Telegram channel](https://t.me/underoot)
 - Finished B1 Estonian language course
 - Passed A2 Estonian language exam. Yah, ma räägin eesti keelt!
-- Visited <a href="/blog/2023/02/06/fosdem2023/" target="_blank">FOSDEM</a>
+- Visited [FOSDEM](/blog/2023/02/06/fosdem2023/)
 - Had skiing in Estonia
 - Enjoyed beautiful nature of Estonia
-- Actively used <a href="https://chat.openai.com/" target="_blank">ChatGPT</a> and <a href="https://github.com/features/copilot" target="_blank">Copilot</a> for writing code 🤖
-- Started <a href="https://www.youtube.com/@underoot" target="_blank">my Youtube channel</a> (will continue soon)
+- Actively used [ChatGPT](https://chat.openai.com/) and [Copilot](https://github.com/features/copilot) for writing code 🤖
+- Started [my Youtube channel](https://www.youtube.com/@underoot) (will continue soon)
 - Bought an electric piano
 - Bought vinyl for the first time, but haven't bought player yet
-- Saw a beautiful astronomical event: <a href="https://t.me/underoot/42" target="_blank">Moon near Venus and Pleiades</a>
-- Visited <a href="https://www.openstreetmap.org/relation/34914" target="_blank">Helsinki</a> in the summer
-- Attended <a href="https://meetabit.com/events/helsinkijs-april-2023" target="_blank">HelsinkiJS</a> in April
-- Find out my favorite beverage: <a href="https://nokianpanimo.fi/tuote/sunn-cream-soda/" target="_blank">Cream soda</a> from Nokian Panimo
-- Visited <a href="https://www.openstreetmap.org/relation/365331" target="_blank">Italy</a> with road trip on a rent car
-- Attended <a href="https://arvutimuuseum.ee" target="_blank">Estonian computer museum</a> during <a href="https://www.instagram.com/estonianmuseums/" target="_blank">night of museums</a>
-- Traveled to <a href="https://www.openstreetmap.org/relation/147194"  target="_blank">Hijumaa</a> to see lavender field
-- Visited <a href="https://www.visitestonia.com/en/kirna-manor-park">tulip festival</a> in Kirna manor park
-- Reproduced physical experiment of <a href="https://en.wikipedia.org/wiki/Camera_obscura" target="_blank">camera obscura</a>
+- Saw a beautiful astronomical event: [Moon near Venus and Pleiades](https://t.me/underoot/42)
+- Visited [Helsinki](https://www.openstreetmap.org/relation/34914) in the summer
+- Attended [HelsinkiJS](https://meetabit.com/events/helsinkijs-april-2023) in April
+- Find out my favorite beverage: [Cream soda](https://nokianpanimo.fi/tuote/sunn-cream-soda/) from Nokian Panimo
+- Visited [Italy](https://www.openstreetmap.org/relation/365331) with road trip on a rent car
+- Attended [Estonian computer museum](https://arvutimuuseum.ee) during [night of museums](https://www.instagram.com/estonianmuseums/)
+- Traveled to [Hijumaa](https://www.openstreetmap.org/relation/147194) to see lavender field
+- Visited [tulip festival](https://www.visitestonia.com/en/kirna-manor-park) in Kirna manor park
+- Reproduced physical experiment of [camera obscura](https://en.wikipedia.org/wiki/Camera_obscura)
 - Participated in bike parade
 - Was in camping for the night during summer
 - Bought hand grinder for coffee
-- Saw <a href="https://www.imdb.com/title/tt26762515" target="_blank">Kaka, kevad ja teised</a>, <a href="https://www.imdb.com/title/tt6718170" target="_blank">The Super Mario Bros. Movie, <a href="https://www.imdb.com/title/tt1517268" target="_blank">Barbie</a>, <a href="https://www.imdb.com/title/tt13287846" target="_blank">Napoleon</a> in cinema
+- Saw [Kaka, kevad ja teised](https://www.imdb.com/title/tt26762515), [The Super Mario Bros. Movie](https://www.imdb.com/title/tt6718170), [Barbie](https://www.imdb.com/title/tt1517268), [Napoleon](https://www.imdb.com/title/tt13287846) in cinema
 - Observed nothern lights for the first time in my life
-- Bought <a href="https://en.wikipedia.org/wiki/Mazda_CX-5" target="_blank">a new car</a>
-- Was disappointed in <a href="https://x.com" target="_blank">Twitter</a>
+- Bought [a new car](https://en.wikipedia.org/wiki/Mazda_CX-5)
+- Was disappointed in [Twitter](https://x.com)
 - Visited 7 countries, alongside of Estonia, during the road trip in Europe
 - Used 5G network for the first time
-- Resigned from <a href="https://bolt.eu" target="_blank">Bolt</a> 💚
-- Started working in <a href="https://mapbox.com" target="_blank">Mapbox</a> 🗺
-- Participated in <a href="https://t.me/underoot/112" target="_blank">Junction 2023 hackathon</a>
-- Wrote a simple <a href="https://underoot.dev/emerji/" target="_blank">browser game</a> about Emoji 😉
-- Moved from <a href="https://support.apple.com/kb/SP809" target="_blank">Intel-based</a> Macbook to <a href="https://support.apple.com/kb/SP898" target="_blank">Apple Silicon-based</a> one
-- Migrated to <a href="https://www.openstreetmap.org/relation/54224" target="_blank">Finland</a>
+- Resigned from [Bolt](https://bolt.eu) 💚
+- Started working in [Mapbox](https://mapbox.com) 🗺
+- Participated in [Junction 2023 hackathon](https://t.me/underoot/112)
+- Wrote a simple [browser game](https://underoot.dev/emerji/) about Emoji 😉
+- Moved from [Intel-based](https://support.apple.com/kb/SP809) Macbook to [Apple Silicon-based](https://support.apple.com/kb/SP898) one
+- Migrated to [Finland](https://www.openstreetmap.org/relation/54224)
 
 See all of you in 2024! 🎉
 

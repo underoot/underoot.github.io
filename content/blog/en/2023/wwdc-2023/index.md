@@ -7,6 +7,6 @@ tags:
   - wwdc
 ---
 
-Today is going to be the keynote of Apple WWDC23. WWDC is an annual Apple conference for developers, which is usually more interesting for the last ones, but often important customer announcements are done there. One of the expected announcements for this year is <a href="https://www.macrumors.com/2023/06/05/kuo-apple-headset-could-launch-as-late-as-early-2024/" target="_blank">the AR/MR headset</a>.
+Today is going to be the keynote of Apple WWDC23. WWDC is an annual Apple conference for developers, which is usually more interesting for the last ones, but often important customer announcements are done there. One of the expected announcements for this year is [the AR/MR headset](https://www.macrumors.com/2023/06/05/kuo-apple-headset-could-launch-as-late-as-early-2024/).
 
-So, the keynote will be already in one and half hour and can be watched online with <a href="https://m.youtube.com/watch?v=GYkq9Rgoj8E" target="_blank">YouTube</a>, <a href="https://apple.com" target="_blank">apple.com</a> or Apple TV.
+So, the keynote will be already in one and half hour and can be watched online with [YouTube](https://m.youtube.com/watch?v=GYkq9Rgoj8E), [apple.com](https://apple.com) or Apple TV.

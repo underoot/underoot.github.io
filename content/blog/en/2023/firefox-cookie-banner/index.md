@@ -6,13 +6,13 @@ description: |
   Recently released Firefox 120 is introducing a new feature, which will allow you to get rid of cookie banners on websites by automatically rejecting them.
 ---
 
-<a href="https://www.mozilla.org/en-US/firefox/120.0/releasenotes/" target="_blank">Recent release</a> of Firefox is introducing a new feature, which will allow you to get rid of cookie banners on websites by automatically rejecting them. Currently, it has been rolled out only to Germany users in private windows. But this feature also can be enabled in other countries and in normal windows: in `about:config` set `cookiebanners.service.mode` to
+[Recent release](https://www.mozilla.org/en-US/firefox/120.0/releasenotes/) of Firefox is introducing a new feature, which will allow you to get rid of cookie banners on websites by automatically rejecting them. Currently, it has been rolled out only to Germany users in private windows. But this feature also can be enabled in other countries and in normal windows: in `about:config` set `cookiebanners.service.mode` to
 
 - `1` to reject all cookie banners and ignore ones that allow only confirming cookies
 - `2` to reject all cookie banners and conirm ones that allow only confirming cookies
 - `0` to disable this feature.
 
-Personally, I like this feature and I've tested it for a couple of sites. For example for <a href="https://bbc.com">bbc.com</a> it didn't work, but for <a href="https://google.com">google.com</a> it worked perfectly.
+Personally, I like this feature and I've tested it for a couple of sites. For example for [bbc.com](https://bbc.com) it didn't work, but for [google.com](https://google.com) it worked perfectly.
 
 ![Cookie banner on bbc.com](content/banner_bbc.jpg)
 

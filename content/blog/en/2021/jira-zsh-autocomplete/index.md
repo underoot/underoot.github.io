@@ -11,11 +11,11 @@ What you, as software engineer, usually do? Right! You create new git branches a
 1. Go to my command line;
 1. Create a branch with the same name as the ticket's key, i.e. `feature/EXMPL-1234`.
 
-I have seen many times in different companies attempts of simplifying of that process: <a href="https://en.wikipedia.org/wiki/Bookmarklet" target="_blank">bookmarklets</a> that copy for you current tickets or browser extensions that complement JIRA ticketswith copy button UI etc.
+I have seen many times in different companies attempts of simplifying of that process: [bookmarklets](https://en.wikipedia.org/wiki/Bookmarklet) that copy for you current tickets or browser extensions that complement JIRA ticketswith copy button UI etc.
 
-In one day I decided to return to my old idea to learn about <a href="http://zsh.sourceforge.net/Doc/Release/Completion-System.html" target="_blank">ZSH completion system</a> and create completion that will do for me dirty job. And I've created it.
+In one day I decided to return to my old idea to learn about [ZSH completion system](http://zsh.sourceforge.net/Doc/Release/Completion-System.html) and create completion that will do for me dirty job. And I've created it.
 
-I use <a href="https://git-scm.com/book/en/v2/Git-Basics-Git-Aliases" target="_blank">Git aliases</a> in my Git setup and it works like a charm: you can create shorthands for all of operationsthat you do from console every day when you touch upon Git repositories, i.e.:
+I use [Git aliases](https://git-scm.com/book/en/v2/Git-Basics-Git-Aliases) in my Git setup and it works like a charm: you can create shorthands for all of operationsthat you do from console every day when you touch upon Git repositories, i.e.:
 
 ```
 ; ~/.gitconfig
@@ -31,7 +31,7 @@ Using that config you can easily do some everyday routine:
 ~ git co my-awesome-branch
 ```
 
-Great part of this functionality that autocompletion will works even with your aliases in ZSH. So, imagine that you would like to create alias for start point of your <a href="https://nvie.com/posts/a-successful-git-branching-model" target="_blank">Git flow</a>:
+Great part of this functionality that autocompletion will works even with your aliases in ZSH. So, imagine that you would like to create alias for start point of your [Git flow](https://nvie.com/posts/a-successful-git-branching-model):
 
 ```
 ; ~/.gitconfig
@@ -45,7 +45,7 @@ Great part of this functionality that autocompletion will works even with your a
 
 For our new alias `git fb` we've used alias that starts with exclamation markbecause our command isn't just mapping from value to name of sub-command of git — it is list of commands.
 
-So, imagine that you'd like to have completion for your name of tickets that will be based on your JIRA. It will be useful, right? I'm using <a href="https://www.zsh.org/" target="_blank">ZSH</a> as my shell and I will provide example of realization based on this shell.
+So, imagine that you'd like to have completion for your name of tickets that will be based on your JIRA. It will be useful, right? I'm using [ZSH](https://www.zsh.org/) as my shell and I will provide example of realization based on this shell.
 
 ZSH can automatically load functions for you from folders that you specify invariable fpath inside your ZSH initialization scripts, i.e. in `~/.zshrc`:
 
@@ -90,7 +90,7 @@ params=(One Two)
 _describe 'command' params
 ```
 
-The name of loadable function with underscore at start it is one of requirements of completion system. Other requirement is header of file: `#compdef ...`. This header describe command or other <a href="http://zsh.sourceforge.net/Doc/Release/Completion-System.html" target="_blank">options</a> for your autocomplete function. In this script we initialize array of strings that will be used as our completion items and the last line is one of the ZSH completion functions that provide <a href="https://github.com/zsh-users/zsh-completions/blob/master/zsh-completions-howto.org#writing-simple-completion-functions-using-_describe" target="_blank">the simplest way</a> to describe completion options.
+The name of loadable function with underscore at start it is one of requirements of completion system. Other requirement is header of file: `#compdef ...`. This header describe command or other [options](http://zsh.sourceforge.net/Doc/Release/Completion-System.html) for your autocomplete function. In this script we initialize array of strings that will be used as our completion items and the last line is one of the ZSH completion functions that provide [the simplest way](https://github.com/zsh-users/zsh-completions/blob/master/zsh-completions-howto.org#writing-simple-completion-functions-using-_describe) to describe completion options.
 
 Okay, it is possible to describe completion for executables and it's options. But what about our git aliases that we've created for git. Good news here that ZSH autocompletion scripts that come with Git, at least on OSX, provide to you way to describe completion for your Git aliases that will works as expected: you just need to create `$fpath/_git_<your alias here>` completion script and itwill be invoked with your Git alias.
 

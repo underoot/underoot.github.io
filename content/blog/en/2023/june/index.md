@@ -4,7 +4,7 @@ description: "How is your week going? Mine is quite busy, but anyway, I remember
 date: 2023-06-27
 tags: bestphotosoftheweek
 ---
-How is your week going? Mine is quite busy, but anyway, I remember about traditional <a href="/tags/bestphotosoftheweek" target="_blank">#bestphotosoftheweek</a>
+How is your week going? Mine is quite busy, but anyway, I remember about traditional [#bestphotosoftheweek](/tags/bestphotosoftheweek)
 
 ![Sunset](content/001.jpeg)
 ![Cat suspects](content/002.jpeg)

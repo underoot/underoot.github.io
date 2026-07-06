@@ -24,10 +24,10 @@ which will be rendered as:
 	<span style="font-size: 3rem;">&#x1FAF1;&#x200D;&#x1FAF2;</span>
 </div>
 
-Symbol `&#x200D;` is Zero-Width-Joiner. It is used to join two other symbols into one. In this case, two hands (`&#x1FAF1` or 🫱 and `&#x1FAF2` or 🫲) into one handshake. The full list of possible emoji with ZWJ can be seen <a href="https://unicode.org/emoji/charts/emoji-zwj-sequences.html" target="_blank">here</a>
+Symbol `&#x200D;` is Zero-Width-Joiner. It is used to join two other symbols into one. In this case, two hands (`&#x1FAF1` or 🫱 and `&#x1FAF2` or 🫲) into one handshake. The full list of possible emoji with ZWJ can be seen [here](https://unicode.org/emoji/charts/emoji-zwj-sequences.html)
 
 ## About game
 
 The game is built on the same concept. You need to join two same emojis into one. For example, if you have two hands, you can join them into one handshake. If you have two handshakes, you can join them into one hug, but with darker color skin. And so on.
 
-Try it out here: <a href="https://underoot.dev/emerji/" target="_blank">https://underoot.dev/emerji/</a>
+Try it out here: [https://underoot.dev/emerji/](https://underoot.dev/emerji/)
