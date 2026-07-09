@@ -1,9 +1,9 @@
 import { DateTime } from "luxon";
-import {minify} from "minify-xml";
+import { minify } from "minify-xml";
 import markdownIt from "markdown-it";
 import markdownItMathjax from "markdown-it-mathjax3";
 import markdownItAnchor from "markdown-it-anchor";
-import yaml from "js-yaml";
+import { load as YAMLLoad } from "js-yaml";
 
 import pluginRss from "@11ty/eleventy-plugin-rss";
 import pluginSyntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
@@ -118,7 +118,7 @@ export default function (eleventyConfig) {
 	eleventyConfig.addBundle("css");
 	eleventyConfig.addBundle("js");
 
-	eleventyConfig.addDataExtension("yml", (contents) => yaml.load(contents));
+	eleventyConfig.addDataExtension("yml", (contents) => YAMLLoad(contents));
 
 	// Filters
 	eleventyConfig.addFilter("readableDate", (dateObj, format, zone) => {
