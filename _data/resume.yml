@@ -1,4 +1,4 @@
-bio:
+basics:
   name: Aleksandr Shoronov
   title: Senior Software Engineer
   email: alex.shoronov@gmail.com
@@ -96,16 +96,16 @@ work:
       - "Developed several parts of ERP/CRM-project Smarty PRO using Ember.js;"
       - "Maintain infrastructure code of projects: client libraries and UI-kit."
 education:
-  institution: Ivanovo State Power University
-  url: http://ispu.ru
-  area: Software Engineering
-  studyType: Bachelor
-  startDate: 2011-09-05
-  endDate: 2015-06-26
-  highlights:
-    - "I practiced dozens of algorithms and data structures with C++, C# and other languages"
-    - "Participated in the ACM ICPC in 2013 and 2014 and reached the semi-finals in 2014"
-    - "My specialization helped me to understand the basics of software development and computer science and to get a good foundation for my future career"
+  - institution: Ivanovo State Power University
+    url: http://ispu.ru
+    area: Software Engineering
+    studyType: Bachelor
+    startDate: 2011-09-05
+    endDate: 2015-06-26
+    highlights:
+      - "I practiced dozens of algorithms and data structures with C++, C# and other languages"
+      - "Participated in the ACM ICPC in 2013 and 2014 and reached the semi-finals in 2014"
+      - "My specialization helped me to understand the basics of software development and computer science and to get a good foundation for my future career"
 awards:
   - title: I 💛 Frontend CTF 2022
     date: 2022-02-22

@@ -9,26 +9,26 @@ eleventyNavigation:
 		<path d="M12 2C8.13 2 5 5.13 5 9c0 4.28 7 13 7 13s7 -8.72 7 -13c0 -3.87 -3.13 -7 -7 -7zm0 9c-1.66 0 -3 -1.34 -3 -3s1.34 -3 3 -3s3 1.34 3 3s-1.34 3 -3 3z" id="icon_location" />
 	</defs>
 </svg>
-<h1>{{ resume.bio.name }}</h1>
-<h3>{{ resume.bio.title }}</h3>
+<h1>{{ resume.basics.name }}</h1>
+<h3>{{ resume.basics.title }}</h3>
 <p style="display: flex; align-items: center;">
 	<svg style="display: inline; margin-right: 8px;" viewBox="0 0 24 24" width="24" height="24">
 		<use xlink:href="#icon_location" fill="var(--text-color)" />
 	</svg>
-	{{ resume.bio.location.city }}
+	{{ resume.basics.location.city }}
 </p>
 <h2>Contact</h2>
-<a href="mailto:{{ resume.bio.email }}" class="email">{{ resume.bio.email }}</a>
+<a href="mailto:{{ resume.basics.email }}" class="email">{{ resume.basics.email }}</a>
 <h2>Links</h2>
 <div>
-	{% for profile in resume.bio.profiles %}
+	{% for profile in resume.basics.profiles %}
 		<a href="{{ profile.url }}" target="_blank">{{ profile.url }}</a><br />
 	{% endfor %}
 </div>
 
 <h2>Summary</h2>
 <ul>
-	{% for highlight in resume.bio.highlights %}
+	{% for highlight in resume.basics.highlights %}
 		<li>
 			{{ highlight }}
 		</li>
@@ -60,17 +60,19 @@ eleventyNavigation:
 {% endfor %}
 
 <h2>Education</h2>
-<div class="work__header">
-	<h3><a href="{{resume.education.url}}">{{ resume.education.institution }}</a>, {{ resume.education.studyType }}</h3>
-	<p>{{ resume.education.startDate | htmlDateStringShort }} - {%if resume.education.endDate %}{{ resume.education.endDate | htmlDateStringShort }}{% else %}Present{% endif %}</p>
-</div>
-{% if resume.education.summary %}<p>{{ resume.education.summary }}</p>{% endif %}
-{% if resume.education.highlights %}
-	<ul>
-		{% for highlight in resume.education.highlights %}
-			<li>
-				{{ highlight }}
-			</li>
-		{% endfor %}
-	</ul>
-{% endif %}
+{% for education in resume.education %}
+	<div class="work__header">
+		<h3><a href="{{resume.education.url}}">{{ education.institution }}</a>, {{ education.studyType }}</h3>
+		<p>{{ education.startDate | htmlDateStringShort }} - {%if education.endDate %}{{ education.endDate | htmlDateStringShort }}{% else %}Present{% endif %}</p>
+	</div>
+	{% if education.summary %}<p>{{ education.summary }}</p>{% endif %}
+	{% if education.highlights %}
+		<ul>
+			{% for highlight in education.highlights %}
+				<li>
+					{{ highlight }}
+				</li>
+			{% endfor %}
+		</ul>
+	{% endif %}
+{% endfor %}
