@@ -29,7 +29,7 @@
 		"@appnest/masonry-layout": "^2.2.3",
 		"js-yaml": "^5.2.1",
 		"luxon": "^3.3.0",
-		"markdown-it-anchor": "^9.2.0",
+		"markdown-it-anchor": "^9.2.1",
 		"markdown-it-mathjax3": "^5.2.0",
 		"minify-xml": "^4.5.2"
 	},
