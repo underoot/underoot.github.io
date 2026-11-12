@@ -146,8 +146,13 @@ export default function (eleventyConfig) {
 	});
 
 	eleventyConfig.addFilter("htmlDateStringShort", (dateObj) => {
+		const toDateTime = (value) => {
+      if (value instanceof Date) return DateTime.fromJSDate(value, { zone: "utc" });
+      if (typeof value === "string") return DateTime.fromISO(value, { zone: "utc" });
+      return DateTime.invalid("unsupported input");
+    };
 		// dateObj input: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
-		return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("MMM yyyy");
+		return toDateTime(dateObj).toFormat("MMM yyyy");
 	});
 
 	// Get the first `n` elements of a collection.
