@@ -62,7 +62,7 @@ eleventyNavigation:
 <h2>Education</h2>
 {% for education in resume.education %}
 	<div class="work__header">
-		<h3><a href="{{resume.education.url}}">{{ education.institution }}</a>, {{ education.studyType }}</h3>
+		<h3><a href="{{education.url}}">{{ education.institution }}</a>, {{ education.studyType }}</h3>
 		<p>{{ education.startDate | htmlDateStringShort }} - {%if education.endDate %}{{ education.endDate | htmlDateStringShort }}{% else %}Present{% endif %}</p>
 	</div>
 	{% if education.summary %}<p>{{ education.summary }}</p>{% endif %}
