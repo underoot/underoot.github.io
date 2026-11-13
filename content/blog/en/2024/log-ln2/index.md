@@ -1,4 +1,5 @@
 ---
+title: Logarithm trick in old web projects
 date: 2024-03-06
 tags:
   - shorts
