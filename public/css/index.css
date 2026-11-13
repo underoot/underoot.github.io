@@ -280,6 +280,100 @@ blockquote {
 	display: inline-block;
 }
 
+.burger,
+.burger-toggle {
+	display: none;
+}
+
+@media (max-width: 720px) {
+	.burger-toggle {
+		display: block;
+		position: absolute;
+		top: 1em;
+		right: 1em;
+		width: 40px;
+		height: 40px;
+		min-width: 0;
+		margin: 0;
+		padding: 0;
+		opacity: 0;
+		cursor: pointer;
+		z-index: 12;
+	}
+
+	.burger {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: 5px;
+		width: 40px;
+		min-width: 0;
+		height: 40px;
+		padding: 8px;
+		margin-left: auto;
+		position: relative;
+		z-index: 11;
+	}
+
+	.burger-toggle:focus-visible + .burger {
+		outline: 2px solid var(--text-color-link);
+	}
+
+	.burger__bar {
+		display: block;
+		width: 100%;
+		min-width: 0;
+		height: 2px;
+		padding: 0;
+		background: var(--text-color);
+	}
+
+	.burger-toggle:checked + .burger .burger__bar:nth-child(1) {
+		transform: translateY(7px) rotate(45deg);
+	}
+
+	.burger-toggle:checked + .burger .burger__bar:nth-child(2) {
+		opacity: 0;
+	}
+
+	.burger-toggle:checked + .burger .burger__bar:nth-child(3) {
+		transform: translateY(-7px) rotate(-45deg);
+	}
+
+	.nav {
+		display: none;
+	}
+
+	.burger-toggle:checked ~ .nav {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 1.5em;
+		position: fixed;
+		inset: 0;
+		z-index: 10;
+		min-width: 0;
+		padding: 1em;
+		background: var(--background-color);
+		font-size: 1.5em;
+	}
+
+	.burger-toggle:checked ~ .nav .nav__item {
+		min-width: 0;
+		padding: 0;
+		margin: 0;
+	}
+
+	.header {
+		position: relative;
+	}
+
+	body:has(.burger-toggle:checked) {
+		overflow: hidden;
+	}
+}
+
 .nav__item + .nav__item {
 	margin-left: 1em;
 }
@@ -362,12 +456,15 @@ h2 + .header-anchor {
 
 /* Pagination */
 .pagination {
-	display: flex;
-	justify-content: space-between;
+	display: grid;
+	grid-template-columns: 1fr auto 1fr;
 	align-items: center;
 	gap: 1rem;
 	margin: 2rem 0;
 }
+.pagination > :first-child { justify-self: start; }
+.pagination > :last-child { justify-self: end; }
+.pagination__pages { justify-self: center; }
 .pagination__pages {
 	display: flex;
 	flex-wrap: wrap;

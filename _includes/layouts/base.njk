@@ -82,6 +82,13 @@
 				<img src="{{metadata.assets.logo}}" class="header__logo" width="48px" height="48px" eleventy:ignore />
 			</a>
 
+			<input type="checkbox" id="menu-toggle" class="burger-toggle" aria-label="Menu">
+			<label for="menu-toggle" class="burger" aria-hidden="true">
+				<span class="burger__bar"></span>
+				<span class="burger__bar"></span>
+				<span class="burger__bar"></span>
+			</label>
+
 			<ul class="nav">
 			{%- for entry in collections.all | eleventyNavigation %}
 				<li class="nav__item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
