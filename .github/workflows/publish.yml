@@ -24,8 +24,12 @@ jobs:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: ${{ secrets.AWS_REGION }}
-      - name: Sync with S3
-        run: aws s3 sync --endpoint=$AWS_ENDPOINT_URL s3://$S3_BUCKET_NAME _site
+      - name: Restore build cache from S3
+        run: |
+          set -euo pipefail
+          mkdir -p _site/img .cache
+          aws s3 sync --endpoint=$AWS_ENDPOINT_URL s3://$S3_BUCKET_NAME/img _site/img
+          aws s3 sync --endpoint=$AWS_ENDPOINT_URL s3://$S3_BUCKET_NAME/eleventy-cache .cache
         env:
           S3_BUCKET_NAME: ${{ secrets.S3_BUCKET_NAME }}
           AWS_ENDPOINT_URL: ${{ secrets.AWS_ENDPOINT_URL }}
@@ -33,12 +37,17 @@ jobs:
         run: npm ci --no-audit --no-fund
       - name: Build
         run: npm run build
+      - name: Prune unreferenced images
+        run: node scripts/prune-images.mjs _site
       - name: Upload artifacts
         uses: actions/upload-pages-artifact@v5
         with:
           path: _site
-      - name: Deploy to S3
-        run: aws s3 sync --endpoint=$AWS_ENDPOINT_URL _site s3://$S3_BUCKET_NAME
+      - name: Save build cache to S3
+        run: |
+          set -euo pipefail
+          aws s3 sync --delete --endpoint=$AWS_ENDPOINT_URL _site/img s3://$S3_BUCKET_NAME/img
+          aws s3 sync --delete --endpoint=$AWS_ENDPOINT_URL .cache s3://$S3_BUCKET_NAME/eleventy-cache
         env:
           S3_BUCKET_NAME: ${{ secrets.S3_BUCKET_NAME }}
           AWS_ENDPOINT_URL: ${{ secrets.AWS_ENDPOINT_URL }}
