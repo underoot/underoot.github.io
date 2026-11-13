@@ -1,0 +1,15 @@
+---
+layout: layouts/home.njk
+language: ru
+translationKey: blog-index
+title: Блог
+pagination:
+  data: collections.postsRu
+  size: 10
+  reverse: true
+  alias: pagedPosts
+permalink: "/blog/ru/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 }}/{% endif %}"
+---
+{% set posts = pagedPosts | reverse %}
+{% include "posts.njk" %}
+{% include "pagination.njk" %}

@@ -41,7 +41,7 @@ tags:
 - Resigned from [Bolt](https://bolt.eu) 💚
 - Started working in [Mapbox](https://mapbox.com) 🗺
 - Participated in [Junction 2023 hackathon](https://t.me/underoot/112)
-- Wrote a simple [browser game](https://underoot.dev/emerji/) about Emoji 😉
+- Wrote a simple [browser game](https://shoronov.com/emerji/) about Emoji 😉
 - Moved from [Intel-based](https://support.apple.com/kb/SP809) Macbook to [Apple Silicon-based](https://support.apple.com/kb/SP898) one
 - Migrated to [Finland](https://www.openstreetmap.org/relation/54224)
 

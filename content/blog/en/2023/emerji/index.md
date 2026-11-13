@@ -30,4 +30,4 @@ Symbol `&#x200D;` is Zero-Width-Joiner. It is used to join two other symbols int
 
 The game is built on the same concept. You need to join two same emojis into one. For example, if you have two hands, you can join them into one handshake. If you have two handshakes, you can join them into one hug, but with darker color skin. And so on.
 
-Try it out here: [https://underoot.dev/emerji/](https://underoot.dev/emerji/)
+Try it out here: [https:/shoronov.com/emerji/](https://shoronov.com/emerji/)

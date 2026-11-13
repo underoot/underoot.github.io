@@ -1,0 +1,11 @@
+{% if pagination.pages.length > 1 %}
+<nav class="pagination" aria-label="Pagination">
+	{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}" rel="prev">&larr; {{ "Назад" if language == "ru" else "Newer" }}</a>{% else %}<span></span>{% endif %}
+	<ol class="pagination__pages">
+	{% for href in pagination.hrefs %}
+		<li><a href="{{ href }}"{% if loop.index0 == pagination.pageNumber %} aria-current="page"{% endif %}>{{ loop.index }}</a></li>
+	{% endfor %}
+	</ol>
+	{% if pagination.href.next %}<a href="{{ pagination.href.next }}" rel="next">{{ "Вперёд" if language == "ru" else "Older" }} &rarr;</a>{% else %}<span></span>{% endif %}
+</nav>
+{% endif %}

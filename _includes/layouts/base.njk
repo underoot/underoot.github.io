@@ -76,6 +76,7 @@
 	<body>
 		{% block top %}{% endblock %}
 		<a href="#skip" class="visually-hidden">Skip to main content</a>
+		{%- set alternates = collections.all | alternateLanguages(translationKey, language or metadata.language) %}
 		<header class="header">
 			<a href="/" class="header__card h-card u-url" rel="me" href="/" {% if page.url == "/" %} aria-current="page"{% endif %}>
 				<img src="{{metadata.assets.logo}}" class="header__logo" width="48px" height="48px" eleventy:ignore />
@@ -84,6 +85,9 @@
 			<ul class="nav">
 			{%- for entry in collections.all | eleventyNavigation %}
 				<li class="nav__item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
+			{%- endfor %}
+			{%- for alt in alternates %}
+				<li class="nav__item nav__item--lang"><a href="{{ alt.url }}" hreflang="{{ alt.data.language }}" lang="{{ alt.data.language }}">{{ {"en": "In English", "ru": "По-русски"}[alt.data.language] or alt.data.language }}</a></li>
 			{%- endfor %}
 			</ul>
 		</header>

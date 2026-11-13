@@ -358,3 +358,22 @@ a[href].header-anchor:focus,
 h2 + .header-anchor {
 	font-size: 1.5em;
 }
+
+
+/* Pagination */
+.pagination {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1rem;
+	margin: 2rem 0;
+}
+.pagination__pages {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.pagination a[aria-current="page"] { font-weight: bold; text-decoration: none; }

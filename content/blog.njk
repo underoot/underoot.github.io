@@ -1,8 +1,17 @@
 ---
 layout: layouts/home.njk
+language: en
+translationKey: blog-index
+pagination:
+  data: collections.postsEn
+  size: 10
+  reverse: true
+  alias: pagedPosts
+permalink: "/blog/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 }}/{% endif %}"
 eleventyNavigation:
   key: All posts
   order: 1
 ---
-{% set posts = collections.posts %}
+{% set posts = pagedPosts | reverse %}
 {% include "posts.njk" %}
+{% include "pagination.njk" %}

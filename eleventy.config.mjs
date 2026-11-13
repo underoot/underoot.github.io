@@ -120,12 +120,32 @@ export default function (eleventyConfig) {
 
 	eleventyConfig.addDataExtension("yml", (contents) => YAMLLoad(contents));
 
+	// Per-language post collections
+	for (const [name, lang] of [["postsEn", "en"], ["postsRu", "ru"]]) {
+		eleventyConfig.addCollection(name, (api) =>
+			api.getFilteredByTag("posts").filter((p) => p.data.language === lang)
+		);
+	}
+
 	// Filters
 	eleventyConfig.addFilter("readableDate", (dateObj, format, zone) => {
 		// Formatting tokens for Luxon: https://moment.github.io/luxon/#/formatting?id=table-of-tokens
 		return DateTime.fromJSDate(dateObj, { zone: zone || "utc" }).toFormat(
 			format || "dd LLLL yyyy"
 		);
+	});
+
+	// Pages sharing `translationKey` with the given page, in other languages.
+	// Paginated pages are collapsed to the first page of each language.
+	eleventyConfig.addFilter("alternateLanguages", (all, key, language) => {
+		if (!key) return [];
+		const seen = new Set();
+		return all.filter((item) => {
+			const lang = item.data.language;
+			if (item.data.translationKey !== key || !lang || lang === language || seen.has(lang)) return false;
+			seen.add(lang);
+			return true;
+		});
 	});
 
 	eleventyConfig.addFilter("withTag", function (collection, tag) {

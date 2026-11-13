@@ -49,12 +49,12 @@ This year had a lot of events around. It's my first year in Finland after I foun
 - For the first time, I was a mentor and helped to find a job for a developer and received [written recommendation](https://www.linkedin.com/in/underoot/) for that. That was a great and insightful experience and I'm glad that I could help.
 
 ## Social networks
-- Wrote 15 posts in [my blog](https://underoot.dev).
+- Wrote 15 posts in [my blog](https://shoronov.com).
 - Wrote 39 posts on my [Telegram channel](https://t.me/s/underoot)
 - Switched to more active usage of [Mastodon](https://mastodon.social/@underoot). Switched an instance there [already once](https://mastodon.social/@underoot/112462043805702529).
 
 ## Others
-- Finally, I implemented a joke game about the [Ruble exchange rate](https://underoot.dev/blog/2024/03/13/ruble-roller-coaster/).
+- Finally, I implemented a joke game about the [Ruble exchange rate](https://shoronov.com/blog/2024/03/13/ruble-roller-coaster/).
 - Started and closed [one podcast](https://underoot.dev/tags/in-commute/).
 - Used public library of Helsinki. It's a very comfortable service and I regret that haven't used the public library in Estonia to compare.
 - I participated in "[Noon against Putin](https://en.wikipedia.org/wiki/Noon_Against_Putin)" and voted against the Russian bloody dictator.
